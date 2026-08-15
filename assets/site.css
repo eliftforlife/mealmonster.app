@@ -158,7 +158,7 @@ h1 {
   line-height: 1.65;
 }
 
-.content-card ol { padding-left: 24px; }
+.content-card ol, .content-card ul { padding-left: 24px; }
 
 .button {
   display: inline-flex;
@@ -194,4 +194,3 @@ h1 {
   .hero { padding-bottom: 36px; }
   .footer { flex-direction: column; }
 }
-
