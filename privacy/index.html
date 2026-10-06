@@ -15,7 +15,7 @@
       <div class="nav-links"><a href="/">Home</a><a href="/support/">Support</a><a href="/consumer-health-data-privacy/">Health Data</a><a href="/terms/">Terms</a></div>
     </nav>
     <article class="content-card">
-      <p class="eyebrow">Effective September 6, 2026</p>
+      <p class="eyebrow">Effective October 6, 2026</p>
       <h1>Privacy Policy</h1>
       <p>Westbrook Software LLC, doing business as Meal Monster ("Meal Monster," "we," "us," or "our"), provides food logging, nutrition estimates, progress tracking, and related account features in the United States. This policy explains what personal information we collect, where it comes from, why we use it, when we disclose it, how long we keep it, and the choices available to you.</p>
       <p>Meal Monster is intended only for adults age 18 and older. It is a general wellness service, not a medical provider or emergency service.</p>
@@ -43,8 +43,8 @@
       <p><strong>Meal Monster does not sell or rent personal information. We do not share personal information for targeted advertising or cross-context behavioral advertising. We do not use health, fitness, nutrition, food-log, Apple Health, or AI content for advertising, marketing profiling, or unrelated data mining.</strong></p>
 
       <h2>AI processing and consent</h2>
-      <p>AI food logging is optional. Before the first AI request, Meal Monster asks for affirmative consent to send the meal text, voice recording, transcript, or food photo you choose to submit through Meal Monster servers to OpenAI for transcription, classification, and nutrition estimates. We record the notice version, processor, scope, and acceptance or revocation time. You can turn AI data sharing off in the app; barcode scanning remains available.</p>
-      <p>Meal Monster does not opt API content into training by OpenAI and requests that Responses API application state not be stored. Under OpenAI's current default controls, text API content may remain in abuse-monitoring logs for up to 30 days. OpenAI currently documents no abuse-monitoring or application-state retention for audio transcription requests. Raw voice audio is not stored by Meal Monster after the request completes.</p>
+      <p>AI food logging is optional. Before the first AI request, Meal Monster asks for affirmative consent to send only the meal content you choose to submit through Meal Monster servers to OpenAI: a typed meal description; a raw voice recording for transcription followed by its transcript for a nutrition estimate; or a selected food photo and optional meal or portion note. We do not send OpenAI your name, email address, Meal Monster account ID, nutrition goal, appetite setting, routine or schedule answers, food dislikes, Apple Health records, purchase data, or Friends data. We record the notice version, processor, scope, and acceptance or revocation time. You can turn AI data sharing off in the app; barcode scanning remains available.</p>
+      <p>OpenAI API data is not used to train OpenAI models by default, and Meal Monster does not opt API content into training. Responses API requests use <code>store: false</code>. Under OpenAI's current default controls, text and image API content may remain in abuse-monitoring logs for up to 30 days. OpenAI currently documents no abuse-monitoring or application-state retention for audio transcription requests. Raw voice audio and raw food photos are not stored by Meal Monster after the request completes.</p>
       <p>AI outputs and nutrition values are estimates and may be wrong or incomplete. Review and correct estimates before relying on or saving them.</p>
 
       <h2>Apple Health</h2>
@@ -57,7 +57,7 @@
       <h2>Service providers and disclosures</h2>
       <ul>
         <li><strong>Supabase:</strong> authentication, database and private profile-photo storage, server functions, access controls, and operational logs.</li>
-        <li><strong>OpenAI:</strong> selected meal text, voice audio, transcript, or food photo after consent, plus request metadata needed for AI food logging.</li>
+        <li><strong>OpenAI:</strong> selected meal text; raw voice audio for transcription and then its transcript for the estimate; or a selected food photo and optional meal or portion note, only after consent. Ordinary network metadata may accompany the request. Meal Monster does not include the profile, identity, Apple Health, purchase, or Friends fields listed above.</li>
         <li><strong>RevenueCat and Apple or Google app stores:</strong> app-user, product, transaction, subscription, and entitlement information.</li>
         <li><strong>Apple or Google sign-in:</strong> login and authentication information when selected.</li>
         <li><strong>Expo:</strong> push token, device and delivery information, and notification content needed to deliver reminders.</li>
