@@ -1,0 +1,26 @@
+# local environment and credentials
+.env*
+!.env.example
+!.env.*.example
+*.p8
+*.p12
+*.pfx
+*.pem
+*.key
+*.cer
+*.crt
+*.mobileprovision
+*.provisionprofile
+GoogleService-Info.plist
+google-services.json
+
+# dependencies and generated output
+node_modules/
+build/
+dist/
+.vercel/
+.netlify/
+
+# operating system files
+.DS_Store
+
