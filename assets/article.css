@@ -53,3 +53,11 @@ details p { margin: 8px 0 0; }
 @media (min-width: 760px) { .cards { grid-template-columns: 1fr 1fr; } }
 .brand span, .pill { white-space: nowrap; }
 @media (max-width: 400px) { .brand span { font-size: 16px; } .top nav { gap: 10px; } .top nav a { font-size: 14px; } .pill { padding: 8px 12px; } }
+
+/* official App Store badges (Apple artwork, unmodified) */
+.appstore { display: inline-block; line-height: 0; transition: transform .15s ease, opacity .15s; }
+.appstore img { height: 100%; width: auto; display: block; }
+.appstore:active { transform: scale(.97); opacity: .85; }
+.appstore.sm { height: 40px; } .appstore.md { height: 48px; margin-top: 8px; align-self: flex-start; }
+.cta { padding: 24px; gap: 20px; box-shadow: 0 14px 36px rgba(17, 24, 39, .08); }
+@media (max-width: 400px) { .appstore.sm { height: 36px; } }

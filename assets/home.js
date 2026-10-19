@@ -11,7 +11,7 @@
   }
 
   // sticky CTA: shows once the hero's own button has scrolled away, hides near the final CTA
-  var sticky = document.getElementById('sticky'), hero = document.querySelector('.hero .store-badge'), fin = document.querySelector('.final');
+  var sticky = document.getElementById('sticky'), hero = document.querySelector('.hero .appstore'), fin = document.querySelector('.final');
   if (sticky && hero && 'IntersectionObserver' in window) {
     var heroVis = true, finVis = false;
     var upd = function () { sticky.classList.toggle('show', !heroVis && !finVis); };
