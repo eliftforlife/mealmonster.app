@@ -1,4 +1,4 @@
-// Homepage motion: scroll reveals, the sticky App Store bar (after the hero), and a gentle auto-advance of the app-screen rail.
+// Homepage motion: scroll reveals and the sticky App Store bar (after the hero). No auto-scrolling: it fought touch scrolling on iPhone (10-19).
 (function () {
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var els = document.querySelectorAll('.reveal');
@@ -6,7 +6,7 @@
   else {
     var io = new IntersectionObserver(function (es) {
       es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-    }, { threshold: 0.15 });
+    }, { threshold: 0, rootMargin: '0px 0px -8% 0px' });
     els.forEach(function (e) { io.observe(e); });
   }
 
@@ -19,15 +19,4 @@
     if (fin) new IntersectionObserver(function (es) { finVis = es[0].isIntersecting; upd(); }, { threshold: 0.2 }).observe(fin);
   }
 
-  // app-screen rail: advance every 3.5 s on phones until the visitor touches it
-  var rail = document.getElementById('rail');
-  if (rail && !reduce && rail.scrollWidth > rail.clientWidth + 10) {
-    var i = 0, stop = false, figs = rail.querySelectorAll('figure');
-    ['touchstart', 'pointerdown', 'wheel'].forEach(function (ev) { rail.addEventListener(ev, function () { stop = true; }, { passive: true }); });
-    setInterval(function () {
-      if (stop || document.hidden) return;
-      i = (i + 1) % figs.length;
-      rail.scrollTo({ left: figs[i].offsetLeft - (rail.clientWidth - figs[i].clientWidth) / 2, behavior: 'smooth' });
-    }, 3500);
-  }
 })();
