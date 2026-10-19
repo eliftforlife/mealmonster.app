@@ -3,34 +3,172 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="The official home of Meal Monster support and account resources.">
-  <title>Meal Monster</title>
+  <title>Meal Monster: AI Food Tracker for iPhone. Log a Meal in One Sentence</title>
+  <meta name="description" content="Meal Monster is an iPhone food tracker. Describe what you ate in a sentence, by voice, with a photo, or a supported barcode, and get an editable calorie and macro estimate. See how your day adds up against your goals.">
+  <link rel="canonical" href="https://mealmonster.app/">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#f1f3f5">
   <link rel="icon" href="/assets/icon.png">
+  <link rel="apple-touch-icon" href="/assets/icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Meal Monster">
+  <meta property="og:url" content="https://mealmonster.app/">
+  <meta property="og:title" content="Meal Monster: log a meal in one sentence">
+  <meta property="og:description" content="An iPhone food tracker. Type, say, snap or scan what you ate, get an editable estimate, and see how your day adds up.">
+  <meta property="og:image" content="https://mealmonster.app/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Meal Monster: log a meal in one sentence">
+  <meta name="twitter:description" content="An iPhone food tracker. Type, say, snap or scan what you ate, get an editable estimate, and see how your day adds up.">
+  <meta name="twitter:image" content="https://mealmonster.app/assets/og.png">
   <link rel="stylesheet" href="/assets/site.css">
+  <link rel="stylesheet" href="/assets/home.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://mealmonster.app/#org",
+        "name": "Meal Monster",
+        "url": "https://mealmonster.app/",
+        "logo": "https://mealmonster.app/assets/icon.png",
+        "email": "support@mealmonster.app",
+        "sameAs": ["https://www.youtube.com/@mealmonsterapp", "https://apps.apple.com/app/id6787743894"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://mealmonster.app/#site",
+        "url": "https://mealmonster.app/",
+        "name": "Meal Monster",
+        "publisher": {"@id": "https://mealmonster.app/#org"}
+      },
+      {
+        "@type": "MobileApplication",
+        "name": "Meal Monster",
+        "operatingSystem": "iOS",
+        "applicationCategory": "HealthApplication",
+        "description": "An iPhone food tracker for adults. Log food with natural text, voice, a food photo, or a supported packaged-food barcode, get editable nutrition estimates, and track calories and macros against your goals over time.",
+        "url": "https://mealmonster.app/",
+        "installUrl": "https://apps.apple.com/app/id6787743894",
+        "image": "https://mealmonster.app/assets/icon.png",
+        "publisher": {"@id": "https://mealmonster.app/#org"}
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {"@type": "Question", "name": "What is Meal Monster?", "acceptedAnswer": {"@type": "Answer", "text": "Meal Monster is an iPhone food tracker for adults. You describe what you ate in plain words, by voice, with a food photo, or with a supported packaged-food barcode, and the app creates an editable estimate of calories, protein, carbohydrates and fat, then shows how your day adds up against your goals."}},
+          {"@type": "Question", "name": "How do I log a meal in Meal Monster?", "acceptedAnswer": {"@type": "Answer", "text": "Type or say a natural description of one food or a whole meal, such as \"chicken, rice and a salad\", take or choose a photo of the food, or scan a supported barcode. You can edit the food details, servings, calories and macros, and Undo is available."}},
+          {"@type": "Question", "name": "How accurate are the nutrition estimates?", "acceptedAnswer": {"@type": "Answer", "text": "They are estimates, not exact measurements. Photo estimates cannot guarantee every ingredient or portion, and barcode coverage varies. Every estimate is editable, and if the app cannot form a credible estimate it asks for clarification."}},
+          {"@type": "Question", "name": "Can Meal Monster help me gain weight, lose weight or maintain?", "acceptedAnswer": {"@type": "Answer", "text": "During setup you choose Lose weight, Gain weight, Maintain my weight, or Eat healthier. The app estimates starting calorie and macro targets you can adjust, and shows how your logged food adds up against them. Targets are estimates, not a meal plan, and results are not guaranteed."}},
+          {"@type": "Question", "name": "Does Meal Monster use AI, and is my data shared?", "acceptedAnswer": {"@type": "Answer", "text": "Meal text, voice and photos are sent to OpenAI to create the estimate only after you give affirmative AI data consent, which you can revoke. AI usage limits apply. See the privacy policy for details."}},
+          {"@type": "Question", "name": "Does Meal Monster connect to Apple Health?", "acceptedAnswer": {"@type": "Answer", "text": "Optionally. Meal Monster can read steps and workout or activity information from Apple Health. It does not write to Apple Health."}},
+          {"@type": "Question", "name": "What can friends see?", "acceptedAnswer": {"@type": "Answer", "text": "Only what you allow, per friend: today's consumed calories, your base daily goal, display name, equipped skin, and current logging streak. Friends cannot see meal details, food names, macros, weight, workouts, Apple Health data, phone number or email."}},
+          {"@type": "Question", "name": "Is Meal Monster free?", "acceptedAnswer": {"@type": "Answer", "text": "Food tracking is part of Meal Monster Pro, a subscription. A separate free Supporter mode lets a trusted person support a friend without personal food tracking. Current prices and any trial are shown in the App Store."}},
+          {"@type": "Question", "name": "Is Meal Monster medical or nutrition advice?", "acceptedAnswer": {"@type": "Answer", "text": "No. Meal Monster is a food tracker. It is not medical nutrition care, a diagnosis tool, or eating-disorder treatment, and it does not replace a qualified professional."}}
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
-  <main class="shell">
+  <main class="shell home">
     <nav class="nav" aria-label="Main navigation">
-      <a class="brand" href="/"><img src="/assets/icon.png" alt=""><span>Meal Monster</span></a>
-      <div class="nav-links"><a href="/support/">Support</a><a href="/privacy/">Privacy</a><a href="/consumer-health-data-privacy/">Health Data</a><a href="/terms/">Terms</a></div>
+      <a class="brand" href="/"><img src="/assets/icon.png" alt="Meal Monster app icon" width="46" height="46"><span>Meal Monster</span></a>
+      <div class="nav-links"><a href="#how">How it works</a><a href="#faq">FAQ</a><a href="/support/">Support</a></div>
     </nav>
-    <section class="hero">
-      <p class="eyebrow">Official website</p>
-      <h1>Meal Monster</h1>
-      <p class="lede">Support and account resources for the Meal Monster app.</p>
+
+    <header class="hero hero-split">
+      <div class="hero-copy">
+        <p class="eyebrow">AI food tracker for iPhone</p>
+        <h1>Log a meal in <span class="hl">one sentence.</span></h1>
+        <p class="lede">Describe what you ate the way you'd say it. Meal Monster turns it into an editable estimate of calories and macros, and shows how your day adds up against your goals.</p>
+        <div class="cta-row">
+          <a class="button store" href="https://apps.apple.com/app/id6787743894" rel="noopener">Download on the App Store</a>
+          <a class="text-link" href="#how">See how it works ›</a>
+        </div>
+        <p class="fine">iPhone only. Estimates are editable, never exact.</p>
+      </div>
+
+      <div class="demo" aria-hidden="true">
+        <div class="modes"><span class="mode on">Type</span><span class="mode">Say</span><span class="mode">Snap</span><span class="mode">Scan</span></div>
+        <div class="bubble"><span id="typed"></span><span class="caret"></span></div>
+        <div class="arrow-down"></div>
+        <div class="estimate">
+          <div class="est-head"><img src="/assets/icon.png" alt="" width="28" height="28"><span>Editable estimate</span></div>
+          <div class="meter"><span>Calories</span><i><b style="--w:78%"></b></i></div>
+          <div class="meter"><span>Protein</span><i><b style="--w:64%"></b></i></div>
+          <div class="meter"><span>Carbs</span><i><b style="--w:55%"></b></i></div>
+          <div class="meter"><span>Fat</span><i><b style="--w:38%"></b></i></div>
+        </div>
+        <p class="illus">Illustration, not a real result.</p>
+      </div>
+    </header>
+
+    <section id="how" class="block reveal" aria-labelledby="how-title">
+      <h2 id="how-title">How Meal Monster works</h2>
+      <ol class="steps">
+        <li><strong>Describe it.</strong><span>Type or say one food or a whole meal in plain words, like "chicken, rice and a salad". No searching a database for every ingredient.</span></li>
+        <li><strong>Check the estimate.</strong><span>Get calories, protein, carbs and fat. Edit the food, servings or numbers any time. Undo is there if you need it.</span></li>
+        <li><strong>See your day add up.</strong><span>Your daily totals show against your calorie and macro targets, with Day, Week, Month, six-month and Year views of what you log.</span></li>
+      </ol>
     </section>
-    <section class="panel" aria-labelledby="resources-title">
-      <h2 id="resources-title">How can we help?</h2>
-      <p>Choose a resource below. We will open the right page or start an email to the Meal Monster support team.</p>
-      <div class="actions">
-        <a class="action" href="/support/"><span><strong>Support</strong><span>Get help with the app or your account.</span></span><span class="arrow" aria-hidden="true">›</span></a>
-        <a class="action" href="/delete-account/"><span><strong>Delete account</strong><span>Learn how to permanently remove your account.</span></span><span class="arrow" aria-hidden="true">›</span></a>
-        <a class="action" href="/privacy/"><span><strong>Privacy policy</strong><span>Learn how Meal Monster handles personal information.</span></span><span class="arrow" aria-hidden="true">›</span></a>
-        <a class="action" href="/consumer-health-data-privacy/"><span><strong>Consumer health data privacy</strong><span>Review the health-data categories, recipients, and rights.</span></span><span class="arrow" aria-hidden="true">›</span></a>
-        <a class="action" href="/terms/"><span><strong>Terms of service</strong><span>Review the terms that govern use of Meal Monster.</span></span><span class="arrow" aria-hidden="true">›</span></a>
+
+    <section class="block reveal" aria-labelledby="ways-title">
+      <h2 id="ways-title">Four ways to log food</h2>
+      <div class="grid4">
+        <div class="tile"><b>Text</b><span>Describe one food or a full meal in your own words.</span></div>
+        <div class="tile"><b>Voice</b><span>Say what you ate. It's transcribed and logged like text.</span></div>
+        <div class="tile"><b>Photo</b><span>Snap or pick a photo of your food. It estimates what's visible, so check portions.</span></div>
+        <div class="tile"><b>Barcode</b><span>Scan supported packaged foods when product data is available. Coverage varies.</span></div>
       </div>
     </section>
-    <footer class="footer"><span>© 2026 Meal Monster</span><a href="mailto:support@mealmonster.app">support@mealmonster.app</a></footer>
+
+    <section class="block reveal" aria-labelledby="goals-title">
+      <h2 id="goals-title">Built around your goal</h2>
+      <p>Choose <strong>Lose weight</strong>, <strong>Gain weight</strong>, <strong>Maintain my weight</strong> or <strong>Eat healthier</strong>. Meal Monster estimates starting calorie and macro targets from your goal, body and activity, and you can adjust them anytime. Targets are estimates, not a meal plan or a medical prescription.</p>
+    </section>
+
+    <section class="block reveal" aria-labelledby="friends-title">
+      <h2 id="friends-title">Accountability without oversharing</h2>
+      <p>Invite a trusted person through Friends. You choose, per friend, whether they can see today's calories, your base daily goal, your streak and your equipped skin. They never see your meals, food names, macros, weight, workouts or Apple Health data. A Supporter can join free to cheer you on, with no food tracking of their own.</p>
+    </section>
+
+    <section class="block reveal" aria-labelledby="monster-title">
+      <h2 id="monster-title">A companion that makes it stick</h2>
+      <p>Meal Monster is the character that keeps you company while you log. Earn collectible skins by logging consistently, and set the reminders you actually want. The goal is fewer minutes in the app and steadier progress outside it.</p>
+    </section>
+
+    <section class="block reveal" aria-labelledby="privacy-title">
+      <h2 id="privacy-title">Privacy and AI, in plain words</h2>
+      <p>Your meal text, voice and photos go to OpenAI to create an estimate only after you give AI data consent, and you can turn it off. Apple Health is optional and read-only. Read the <a href="/privacy/">privacy policy</a> and the <a href="/consumer-health-data-privacy/">consumer health data policy</a>.</p>
+    </section>
+
+    <section id="faq" class="block reveal" aria-labelledby="faq-title">
+      <h2 id="faq-title">Questions</h2>
+      <details><summary>What is Meal Monster?</summary><p>An iPhone food tracker for adults. Describe what you ate in plain words, by voice, with a food photo, or with a supported barcode, and get an editable estimate of calories, protein, carbs and fat. Then see how your day adds up against your goals.</p></details>
+      <details><summary>How do I log a meal?</summary><p>Type or say it, like "chicken, rice and a salad", snap a photo, or scan a supported barcode. You can edit the food, servings, calories and macros, and Undo is available.</p></details>
+      <details><summary>How accurate are the estimates?</summary><p>They're estimates, not exact measurements. Photos can't guarantee every ingredient or portion, and barcode coverage varies. Everything is editable, and if the app can't make a credible estimate, it asks you to clarify.</p></details>
+      <details><summary>Can it help me gain weight, lose weight or maintain?</summary><p>You pick Lose weight, Gain weight, Maintain my weight or Eat healthier, and the app estimates targets you can adjust. It shows how your logged food adds up against them. It isn't a meal plan, and results aren't guaranteed.</p></details>
+      <details><summary>Does it use AI? Is my data shared?</summary><p>Meal text, voice and photos are sent to OpenAI only after you give AI data consent, which you can revoke. AI usage limits apply. Details are in the <a href="/privacy/">privacy policy</a>.</p></details>
+      <details><summary>Does it connect to Apple Health?</summary><p>Optionally. It can read steps and workout or activity information. It never writes to Apple Health.</p></details>
+      <details><summary>What can friends see?</summary><p>Only what you allow, per friend: today's calories, your base daily goal, display name, equipped skin and streak. Never your meals, food names, macros, weight, workouts or health data.</p></details>
+      <details><summary>Is it free?</summary><p>Food tracking is part of Meal Monster Pro, a subscription. Supporter mode is free. Current prices and any trial are shown in the App Store.</p></details>
+      <details><summary>Is this medical advice?</summary><p>No. Meal Monster is a food tracker, not medical nutrition care, a diagnosis tool or eating-disorder treatment, and it doesn't replace a qualified professional.</p></details>
+    </section>
+
+    <section class="block final reveal">
+      <h2>Make logging the easy part.</h2>
+      <a class="button store" href="https://apps.apple.com/app/id6787743894" rel="noopener">Download on the App Store</a>
+    </section>
+
+    <footer class="footer">
+      <span>© 2026 Meal Monster</span>
+      <span class="foot-links"><a href="/support/">Support</a><a href="/privacy/">Privacy</a><a href="/consumer-health-data-privacy/">Health Data</a><a href="/terms/">Terms</a><a href="/delete-account/">Delete account</a><a href="mailto:support@mealmonster.app">support@mealmonster.app</a></span>
+    </footer>
   </main>
+  <script src="/assets/home.js" defer></script>
 </body>
 </html>

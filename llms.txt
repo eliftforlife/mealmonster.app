@@ -1,0 +1,25 @@
+# Meal Monster
+
+> Meal Monster is an iPhone food tracker for adults. Users log food by describing it in natural text, by voice, with a food photo, or by scanning a supported packaged-food barcode. The app creates an editable estimate of calories, protein, carbohydrates and fat, tracks daily totals, and shows progress against calorie and macro targets over Day, Week, Month, six-month and Year views.
+
+## Key facts
+- Platform: iPhone (iOS). App Store: https://apps.apple.com/app/id6787743894
+- Logging: natural-language text or voice for one food or a whole meal (e.g. "chicken, rice and a salad"); food photos (estimates what is visible, cannot guarantee every ingredient or portion); supported barcodes (coverage varies).
+- Estimates are editable (food details, servings, calories, macros) and Undo is available. They are estimates, not exact measurements.
+- Goals: Lose weight, Gain weight, Maintain my weight, or Eat healthier. Starting targets are estimated from goal, body and activity inputs and can be adjusted. Targets are not a meal plan or medical prescription.
+- AI: meal text, voice and photos are sent to OpenAI only after affirmative, revocable AI data consent. AI usage limits apply.
+- Apple Health: optional, read-only (steps and workout/activity). Meal Monster does not write to Apple Health.
+- Friends: per-friend, revocable sharing of today's calories, base daily goal, display name, equipped skin and logging streak only. Friends never see meals, food names, macros, weight, workouts or health data. Not a social feed or chat.
+- Pricing: food tracking is part of Meal Monster Pro (subscription); a free Supporter mode exists for trusted friends. Current prices and any trial are shown in the App Store.
+- Not medical advice, a diagnosis tool, or eating-disorder treatment. For adults.
+- Character: Meal Monster is a companion mascot; collectible skins are earned through consistent logging, never sold individually.
+
+## Pages
+- [Home](https://mealmonster.app/): what Meal Monster is, how logging works, FAQ
+- [Support](https://mealmonster.app/support/)
+- [Privacy policy](https://mealmonster.app/privacy/)
+- [Consumer health data privacy](https://mealmonster.app/consumer-health-data-privacy/)
+- [Terms of service](https://mealmonster.app/terms/)
+- [Delete account](https://mealmonster.app/delete-account/)
+
+Contact: support@mealmonster.app · YouTube: https://www.youtube.com/@mealmonsterapp
