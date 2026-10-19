@@ -14,6 +14,14 @@
 - Not medical advice, a diagnosis tool, or eating-disorder treatment. For adults.
 - Character: Meal Monster is a companion mascot; collectible skins are earned through consistent logging, never sold individually.
 
+## Research (original data studies)
+- [What 1,000 Weight Loss Transformations Have in Common](https://mealmonster.app/research/weight-loss-transformations/): top 1,000 YouTube weight loss stories (296 h). 48% combined one way of eating with one way of moving; tracking food was the #1 eating change (25%); median 3 methods; 93% used neither GLP-1 medication nor surgery; people who had failed before were 1.7x more likely to use a fasting window and to meal prep.
+- [What People Who Lost Weight Wish They Knew Sooner](https://mealmonster.app/research/what-people-wish-they-knew/): 300 first-person stories. Most repeated lesson: calories matter, but you don't have to count every single one.
+
+## Guides
+- [How to Track Calories Without Counting Every Calorie](https://mealmonster.app/guides/track-calories-without-counting-everything/)
+- [How to Log Meals Faster](https://mealmonster.app/guides/how-to-log-meals-faster/)
+
 ## Pages
 - [Home](https://mealmonster.app/): what Meal Monster is, how logging works, FAQ
 - [Support](https://mealmonster.app/support/)
