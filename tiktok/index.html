@@ -14,28 +14,36 @@
     .go h1{margin:0;font-size:1.9rem}
     .go p{margin:0;max-width:30ch}
     .go .badge img{width:220px;height:auto}
-    .go .safari{font-weight:600;text-decoration:underline}
-    .go small{opacity:.7;max-width:32ch}
+    .tt{position:fixed;top:0;right:0;left:0;padding:10px 14px 18px;display:flex;justify-content:flex-end;align-items:flex-start;gap:10px;background:#111;color:#fff;z-index:5}
+    .tt p{margin:6px 0 0;font-size:1.15rem;font-weight:700;line-height:1.3;text-align:right}
+    .tt p b{color:#ffd23f}
+    .tt svg{flex:none;width:58px;height:58px;animation:nudge 1.1s ease-in-out infinite}
+    @keyframes nudge{50%{transform:translate(4px,-6px)}}
+    @media (prefers-reduced-motion:reduce){.tt svg{animation:none}}
+    .steps{font-size:1.05rem;max-width:28ch;line-height:1.5}
   </style>
 </head>
 <body>
+  <div class="tt" id="tt" hidden>
+    <p>To download, tap <b>⋯</b> up here,<br>then <b>Open in browser</b></p>
+    <svg viewBox="0 0 60 60" aria-hidden="true"><path d="M12 50 L46 16" stroke="#ffd23f" stroke-width="7" stroke-linecap="round"/><path d="M24 12 H48 V36" fill="none" stroke="#ffd23f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </div>
   <main class="go">
     <img class="icon" src="/assets/icon.png" alt="Meal Monster app icon">
     <h1>Meal Monster</h1>
     <p>Log food by just saying what you ate. Friends see your calories, never what you ate.</p>
     <a class="badge" id="get" href="https://apps.apple.com/app/apple-store/id6787743894?pt=128870776&amp;ct=tiktok-bio&amp;mt=8"><img src="https://toolbox.marketingtools.apple.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" width="250" height="83"></a>
-    <a class="safari" id="safari" href="x-safari-https://mealmonster.app/tiktok/?safari=1" hidden>Not working? Open in Safari</a>
-    <small>Button not opening? Tap ⋯ at the top right and choose Open in browser.</small>
+    <p class="steps" id="steps" hidden>TikTok can't open the App Store. Tap <b>⋯</b> at the top right, choose <b>Open in browser</b>, and the download button works there.</p>
   </main>
   <script>
     (function(){
       var store='https://apps.apple.com/app/apple-store/id6787743894?pt=128870776&ct=tiktok-bio&mt=8';
-      var inApp=/musical_ly|Bytedance|TikTok|Instagram|FBAN|FBAV/i.test(navigator.userAgent);
-      if(!inApp && /[?&]safari=1/.test(location.search)){ location.replace(store); return; }
-      if(inApp){
-        document.getElementById('get').href=store.replace('https://','itms-apps://');
-        document.getElementById('safari').hidden=false;
-      }
+      var tiktok=/musical_ly|Bytedance|TikTok/i.test(navigator.userAgent);
+      if(tiktok){
+        document.getElementById('get').hidden=true;
+        document.getElementById('tt').hidden=false;
+        document.getElementById('steps').hidden=false;
+      } else if(/[?&]safari=1/.test(location.search)) { location.replace(store); }
     })();
   </script>
 <!-- Cloudflare Web Analytics (cookieless) --><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "82c07278892b4b07b4ec6b9e1cdffcbe"}'></script>
