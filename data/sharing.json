@@ -1,0 +1,838 @@
+{
+  "schemaVersion": 1,
+  "version": "0.1.0",
+  "checkedDate": "2026-10-27",
+  "status": "source_review_not_installed_app_testing",
+  "publisher": "Meal Monster",
+  "commercialConflict": "Meal Monster publishes this resource and sells one of the listed apps.",
+  "audience": "Adults 18+ evaluating voluntary friend-sharing features",
+  "definitions": {
+    "calorieTotals": "Daily food-calorie totals",
+    "mealDiary": "Meal or diary sharing",
+    "mealsHidden": "Sharing with meal details hidden",
+    "weightPrivate": "Weight kept out of sharing",
+    "buddyNoOwnPlan": "Buddy needs no separate paid plan",
+    "friendCalorieWidget": "Friend’s food-calorie numbers in a widget"
+  },
+  "notes": [
+    "Yes and No describe the reviewed published scope, not a permission-enforcement test.",
+    "Unknown means not established in this review, not absent.",
+    "One subscription covering a pair is different from both people having free access.",
+    "A personal-calorie, workout, or status-only widget does not establish a widget showing a friend’s food-calorie numbers.",
+    "Body weight is distinct from weight-change achievements or numbers someone manually puts into a message.",
+    "The selection is purposive and not a complete market census."
+  ],
+  "stats": {
+    "apps": 10,
+    "fieldRecords": 60,
+    "fieldStates": {
+      "yes": 25,
+      "no": 7,
+      "unknown": 28,
+      "conflicting": 0
+    },
+    "sources": 21,
+    "usListingsFound": 7,
+    "observedSharingTests": 0
+  },
+  "sources": [
+    {
+      "id": "mm-home",
+      "publisher": "Meal Monster",
+      "url": "https://mealmonster.app/",
+      "title": "Meal Monster public feature description",
+      "kind": "publisher_description_or_help",
+      "checkedDate": "2026-10-27"
+    },
+    {
+      "id": "mm-privacy",
+      "publisher": "Meal Monster",
+      "url": "https://mealmonster.app/privacy/",
+      "title": "Meal Monster Friends privacy scope",
+      "kind": "publisher_description_or_help",
+      "checkedDate": "2026-10-27"
+    },
+    {
+      "id": "mfp-diary",
+      "publisher": "MyFitnessPal",
+      "url": "https://support.myfitnesspal.com/hc/en-us/articles/360032273872-How-to-make-your-diary-visible-to-others",
+      "title": "MyFitnessPal diary-sharing instructions",
+      "kind": "publisher_description_or_help",
+      "checkedDate": "2026-10-27"
+    },
+    {
+      "id": "mfp-weight",
+      "publisher": "MyFitnessPal",
+      "url": "https://support.myfitnesspal.com/hc/en-us/articles/360032274392-Can-other-members-see-my-weight-or-my-food-diary",
+      "title": "MyFitnessPal weight and diary visibility",
+      "kind": "publisher_description_or_help",
+      "checkedDate": "2026-10-27"
+    },
+    {
+      "id": "daypair-home",
+      "publisher": "Daypair",
+      "url": "https://daypair.app/",
+      "title": "Daypair public feature description",
+      "kind": "publisher_description_or_help",
+      "checkedDate": "2026-10-27"
+    },
+    {
+      "id": "daypair-privacy",
+      "publisher": "Daypair",
+      "url": "https://daypair.app/privacy",
+      "title": "Daypair privacy policy",
+      "kind": "publisher_description_or_help",
+      "checkedDate": "2026-10-27"
+    },
+    {
+      "id": "daypair-health",
+      "publisher": "Daypair",
+      "url": "https://daypair.app/health-data-privacy",
+      "title": "Daypair health-data sharing scope",
+      "kind": "publisher_description_or_help",
+      "checkedDate": "2026-10-27"
+    },
+    {
+      "id": "cibo-together",
+      "publisher": "Cibo",
+      "url": "https://cibo.health/together/",
+      "title": "Cibo Together visibility choices",
+      "kind": "publisher_description_or_help",
+      "checkedDate": "2026-10-27"
+    },
+    {
+      "id": "calpal-home",
+      "publisher": "CalPal",
+      "url": "https://usecalpal.com/",
+      "title": "CalPal partner features",
+      "kind": "publisher_description_or_help",
+      "checkedDate": "2026-10-27"
+    },
+    {
+      "id": "misu-home",
+      "publisher": "misu",
+      "url": "https://misu-app.com/",
+      "title": "misu sharing and pair subscription",
+      "kind": "publisher_description_or_help",
+      "checkedDate": "2026-10-27"
+    },
+    {
+      "id": "kalo-home",
+      "publisher": "Kalo",
+      "url": "https://hellokalo.com/",
+      "title": "Kalo current modes and access",
+      "kind": "publisher_description_or_help",
+      "checkedDate": "2026-10-27"
+    },
+    {
+      "id": "kalo-social-article",
+      "publisher": "Kalo",
+      "url": "https://hellokalo.com/blog/calorie-tracker-apps-with-friends",
+      "title": "Kalo prior social-app comparison",
+      "kind": "publisher_description_or_help",
+      "checkedDate": "2026-10-27"
+    },
+    {
+      "id": "tally-home",
+      "publisher": "Tally",
+      "url": "https://tallylifts.com/",
+      "title": "Tally friend visibility and access",
+      "kind": "publisher_description_or_help",
+      "checkedDate": "2026-10-27"
+    },
+    {
+      "id": "calori-friends",
+      "publisher": "Calori",
+      "url": "https://www.calori.com/features/friends-and-challenges",
+      "title": "Calori friend and challenge scope",
+      "kind": "publisher_description_or_help",
+      "checkedDate": "2026-10-27"
+    },
+    {
+      "id": "meal-monster-store",
+      "publisher": "Meal Monster: Food Tracker",
+      "title": "Meal Monster: Food Tracker: US Apple listing",
+      "url": "https://apps.apple.com/us/app/meal-monster-food-tracker/id6787743894",
+      "kind": "app_store_vendor_description",
+      "checkedDate": "2026-10-27",
+      "advertisedVersion": "1.0"
+    },
+    {
+      "id": "myfitnesspal-store",
+      "publisher": "MyFitnessPal: Calorie Counter",
+      "title": "MyFitnessPal: Calorie Counter: US Apple listing",
+      "url": "https://apps.apple.com/us/app/myfitnesspal-calorie-counter/id341232718",
+      "kind": "app_store_vendor_description",
+      "checkedDate": "2026-10-27",
+      "advertisedVersion": "26.42.0"
+    },
+    {
+      "id": "daypair-store",
+      "publisher": "Daypair",
+      "title": "Daypair: US Apple listing",
+      "url": "https://apps.apple.com/us/app/daypair/id6812152791",
+      "kind": "app_store_vendor_description",
+      "checkedDate": "2026-10-27",
+      "advertisedVersion": "1.0.4"
+    },
+    {
+      "id": "cibo-store",
+      "publisher": "Cibo: AI Macro Calorie Tracker",
+      "title": "Cibo: AI Macro Calorie Tracker: US Apple listing",
+      "url": "https://apps.apple.com/us/app/cibo-ai-macro-calorie-tracker/id6769799929",
+      "kind": "app_store_vendor_description",
+      "checkedDate": "2026-10-27",
+      "advertisedVersion": "1.2.1"
+    },
+    {
+      "id": "calpal-store",
+      "publisher": "CalPal Couples Calorie Tracker",
+      "title": "CalPal Couples Calorie Tracker: US Apple listing",
+      "url": "https://apps.apple.com/us/app/calpal-couples-calorie-tracker/id6764149233",
+      "kind": "app_store_vendor_description",
+      "checkedDate": "2026-10-27",
+      "advertisedVersion": "1.4.0"
+    },
+    {
+      "id": "misu-store",
+      "publisher": "misu - Couple Calorie Tracker",
+      "title": "misu - Couple Calorie Tracker: US Apple listing",
+      "url": "https://apps.apple.com/us/app/misu-couple-calorie-tracker/id6777520839",
+      "kind": "app_store_vendor_description",
+      "checkedDate": "2026-10-27",
+      "advertisedVersion": "1.1.8"
+    },
+    {
+      "id": "cal-sync-store",
+      "publisher": "Cal Sync - Calorie Counter",
+      "title": "Cal Sync - Calorie Counter: US Apple listing",
+      "url": "https://apps.apple.com/us/app/cal-sync-calorie-counter/id6745409561",
+      "kind": "app_store_vendor_description",
+      "checkedDate": "2026-10-27",
+      "advertisedVersion": "1.1.4"
+    }
+  ],
+  "apps": [
+    {
+      "slug": "meal-monster",
+      "name": "Meal Monster",
+      "publisherApp": true,
+      "role": "Food tracker with optional trusted-friend sharing",
+      "website": "https://mealmonster.app/",
+      "scope": "Per-friend calorie sharing; a free Supporter can follow a Tracker.",
+      "reviewedSources": [
+        "mm-home",
+        "mm-privacy",
+        "meal-monster-store"
+      ],
+      "advisories": [
+        "Food logging requires Pro. The free Supporter role does not include personal food tracking.",
+        "The reviewed policy documents a friend-calorie widget; shipping-version capacity has not been checked."
+      ],
+      "fields": {
+        "calorieTotals": {
+          "value": "yes",
+          "detail": "Consented daily calories and base goal.",
+          "sources": [
+            "mm-home",
+            "mm-privacy"
+          ]
+        },
+        "mealDiary": {
+          "value": "no",
+          "detail": "Friends do not receive meals or food names.",
+          "sources": [
+            "mm-privacy"
+          ]
+        },
+        "mealsHidden": {
+          "value": "yes",
+          "detail": "Calorie sharing excludes meal details.",
+          "sources": [
+            "mm-privacy"
+          ]
+        },
+        "weightPrivate": {
+          "value": "yes",
+          "detail": "Weight is excluded from Friends sharing.",
+          "sources": [
+            "mm-privacy"
+          ]
+        },
+        "buddyNoOwnPlan": {
+          "value": "yes",
+          "detail": "Free Supporter role; Tracker logging is paid.",
+          "sources": [
+            "mm-home"
+          ]
+        },
+        "friendCalorieWidget": {
+          "value": "yes",
+          "detail": "Authorized names and calorie totals in a widget.",
+          "sources": [
+            "mm-privacy"
+          ]
+        }
+      },
+      "usListing": {
+        "status": "found",
+        "url": "https://apps.apple.com/us/app/meal-monster-food-tracker/id6787743894",
+        "version": "1.0",
+        "currentVersionReleaseDate": "2026-10-19T04:45:05Z"
+      },
+      "observedSharingTests": 0
+    },
+    {
+      "slug": "myfitnesspal",
+      "name": "MyFitnessPal",
+      "publisherApp": false,
+      "role": "Food tracker with diary-sharing controls",
+      "website": "https://www.myfitnesspal.com/",
+      "scope": "Food and Exercise Diary visibility is configurable.",
+      "reviewedSources": [
+        "mfp-diary",
+        "mfp-weight",
+        "myfitnesspal-store"
+      ],
+      "advisories": [
+        "A shared diary is not evidence of a separate totals-only sharing mode.",
+        "The reviewed help pages do not establish which subscription, if any, the recipient needs."
+      ],
+      "fields": {
+        "calorieTotals": {
+          "value": "unknown",
+          "detail": "A distinct daily-totals sharing view was not established.",
+          "sources": []
+        },
+        "mealDiary": {
+          "value": "yes",
+          "detail": "Public, Friends Only, or locked-key diary options.",
+          "sources": [
+            "mfp-diary"
+          ]
+        },
+        "mealsHidden": {
+          "value": "unknown",
+          "detail": "A totals-only mode was not established.",
+          "sources": []
+        },
+        "weightPrivate": {
+          "value": "yes",
+          "detail": "Help explicitly keeps actual weight private.",
+          "sources": [
+            "mfp-weight"
+          ]
+        },
+        "buddyNoOwnPlan": {
+          "value": "unknown",
+          "detail": "Not established in the reviewed sources.",
+          "sources": []
+        },
+        "friendCalorieWidget": {
+          "value": "unknown",
+          "detail": "Not established in the reviewed sources.",
+          "sources": []
+        }
+      },
+      "usListing": {
+        "status": "found",
+        "url": "https://apps.apple.com/us/app/myfitnesspal-calorie-counter/id341232718",
+        "version": "26.42.0",
+        "currentVersionReleaseDate": "2026-10-20T18:27:19Z"
+      },
+      "observedSharingTests": 0
+    },
+    {
+      "slug": "daypair",
+      "name": "Daypair",
+      "publisherApp": false,
+      "role": "Accountability companion; not a food logger",
+      "website": "https://daypair.app/",
+      "scope": "Reads permitted daily totals from Apple Health or accepts a check-in.",
+      "reviewedSources": [
+        "daypair-home",
+        "daypair-privacy",
+        "daypair-health",
+        "daypair-store"
+      ],
+      "advisories": [
+        "A food logger must write the relevant nutrition data to Apple Health for automatic use; manual check-ins are separate.",
+        "The store advertises status-only widgets while the homepage labels that section “In the next update”. Confirm availability on the installed version.",
+        "Free food/step pacts and paid group hosting are different access rules."
+      ],
+      "fields": {
+        "calorieTotals": {
+          "value": "yes",
+          "detail": "Per-goal status, band, or opted-in exact totals.",
+          "sources": [
+            "daypair-store",
+            "daypair-health"
+          ]
+        },
+        "mealDiary": {
+          "value": "no",
+          "detail": "Meal names and food diaries are not shared.",
+          "sources": [
+            "daypair-store",
+            "daypair-privacy"
+          ]
+        },
+        "mealsHidden": {
+          "value": "yes",
+          "detail": "Shared totals are separate from meal records.",
+          "sources": [
+            "daypair-health"
+          ]
+        },
+        "weightPrivate": {
+          "value": "unknown",
+          "detail": "Body-weight sharing controls were not explicitly established.",
+          "sources": []
+        },
+        "buddyNoOwnPlan": {
+          "value": "yes",
+          "detail": "Food/step pair and joining a group are free.",
+          "sources": [
+            "daypair-store"
+          ]
+        },
+        "friendCalorieWidget": {
+          "value": "no",
+          "detail": "The advertised widget shows status, never numbers.",
+          "sources": [
+            "daypair-store"
+          ]
+        }
+      },
+      "usListing": {
+        "status": "found",
+        "url": "https://apps.apple.com/us/app/daypair/id6812152791",
+        "version": "1.0.4",
+        "currentVersionReleaseDate": "2026-10-23T13:29:32Z"
+      },
+      "observedSharingTests": 0
+    },
+    {
+      "slug": "cibo",
+      "name": "Cibo",
+      "publisherApp": false,
+      "role": "Food tracker with an optional private circle",
+      "website": "https://cibo.health/together/",
+      "scope": "Circles of up to five with person-by-person visibility choices.",
+      "reviewedSources": [
+        "cibo-together",
+        "cibo-store"
+      ],
+      "advisories": [
+        "The page distinguishes summary, meal, and photo visibility.",
+        "Free-to-start language does not establish the recipient’s exact feature access."
+      ],
+      "fields": {
+        "calorieTotals": {
+          "value": "unknown",
+          "detail": "A friend’s exact daily-total scope was not established.",
+          "sources": []
+        },
+        "mealDiary": {
+          "value": "yes",
+          "detail": "Meal/calorie and photo visibility are shown.",
+          "sources": [
+            "cibo-together"
+          ]
+        },
+        "mealsHidden": {
+          "value": "yes",
+          "detail": "Person-by-person summary/meal/photo choices.",
+          "sources": [
+            "cibo-together"
+          ]
+        },
+        "weightPrivate": {
+          "value": "unknown",
+          "detail": "Not established in the reviewed sources.",
+          "sources": []
+        },
+        "buddyNoOwnPlan": {
+          "value": "unknown",
+          "detail": "Not established in the reviewed sources.",
+          "sources": []
+        },
+        "friendCalorieWidget": {
+          "value": "unknown",
+          "detail": "Not established in the reviewed sources.",
+          "sources": []
+        }
+      },
+      "usListing": {
+        "status": "found",
+        "url": "https://apps.apple.com/us/app/cibo-ai-macro-calorie-tracker/id6769799929",
+        "version": "1.2.1",
+        "currentVersionReleaseDate": "2026-10-19T14:05:59Z"
+      },
+      "observedSharingTests": 0
+    },
+    {
+      "slug": "calpal",
+      "name": "CalPal",
+      "publisherApp": false,
+      "role": "Food tracker designed for a pair",
+      "website": "https://usecalpal.com/",
+      "scope": "Partner days, logged meals, and activity feed.",
+      "reviewedSources": [
+        "calpal-home",
+        "calpal-store"
+      ],
+      "advisories": [
+        "The homepage includes weight entries in its advertised partner feed; a weight opt-out was not established.",
+        "One subscription covers the pair; that does not mean both users are free."
+      ],
+      "fields": {
+        "calorieTotals": {
+          "value": "yes",
+          "detail": "Partner days show calories and macros.",
+          "sources": [
+            "calpal-home"
+          ]
+        },
+        "mealDiary": {
+          "value": "yes",
+          "detail": "Meals appear in the shared activity feed.",
+          "sources": [
+            "calpal-home"
+          ]
+        },
+        "mealsHidden": {
+          "value": "unknown",
+          "detail": "A meals-hidden sharing mode was not established.",
+          "sources": []
+        },
+        "weightPrivate": {
+          "value": "unknown",
+          "detail": "A private-weight option was not established.",
+          "sources": []
+        },
+        "buddyNoOwnPlan": {
+          "value": "yes",
+          "detail": "One subscription covers both accounts.",
+          "sources": [
+            "calpal-store"
+          ]
+        },
+        "friendCalorieWidget": {
+          "value": "unknown",
+          "detail": "Not established in the reviewed sources.",
+          "sources": []
+        }
+      },
+      "usListing": {
+        "status": "found",
+        "url": "https://apps.apple.com/us/app/calpal-couples-calorie-tracker/id6764149233",
+        "version": "1.4.0",
+        "currentVersionReleaseDate": "2026-07-21T19:04:55Z"
+      },
+      "observedSharingTests": 0
+    },
+    {
+      "slug": "misu",
+      "name": "misu",
+      "publisherApp": false,
+      "role": "Food tracker designed for one pairing",
+      "website": "https://misu-app.com/",
+      "scope": "Shared meals, reactions, streak, and a private thread.",
+      "reviewedSources": [
+        "misu-home",
+        "misu-store"
+      ],
+      "advisories": [
+        "The site says weight and personal goals stay private.",
+        "One paid plan covers the pair after the advertised trial; eligibility is not verified here."
+      ],
+      "fields": {
+        "calorieTotals": {
+          "value": "unknown",
+          "detail": "A separate shared daily-total view was not established.",
+          "sources": []
+        },
+        "mealDiary": {
+          "value": "yes",
+          "detail": "Meals are shared in a two-person history.",
+          "sources": [
+            "misu-home",
+            "misu-store"
+          ]
+        },
+        "mealsHidden": {
+          "value": "unknown",
+          "detail": "A totals-only sharing mode was not established.",
+          "sources": []
+        },
+        "weightPrivate": {
+          "value": "yes",
+          "detail": "Weight and personal goals stay private.",
+          "sources": [
+            "misu-home"
+          ]
+        },
+        "buddyNoOwnPlan": {
+          "value": "yes",
+          "detail": "One subscription covers both people.",
+          "sources": [
+            "misu-home",
+            "misu-store"
+          ]
+        },
+        "friendCalorieWidget": {
+          "value": "unknown",
+          "detail": "Not established in the reviewed sources.",
+          "sources": []
+        }
+      },
+      "usListing": {
+        "status": "found",
+        "url": "https://apps.apple.com/us/app/misu-couple-calorie-tracker/id6777520839",
+        "version": "1.1.8",
+        "currentVersionReleaseDate": "2026-09-29T16:57:02Z"
+      },
+      "observedSharingTests": 0
+    },
+    {
+      "slug": "kalo",
+      "name": "Kalo",
+      "publisherApp": false,
+      "role": "Food tracker with partner and friend modes",
+      "website": "https://hellokalo.com/",
+      "scope": "One starred partner and up to five friends in total.",
+      "reviewedSources": [
+        "kalo-home"
+      ],
+      "advisories": [
+        "Premium Couple covers the starred partner; Premium Solo covers one account.",
+        "The current homepage requires Premium for meal logging."
+      ],
+      "fields": {
+        "calorieTotals": {
+          "value": "unknown",
+          "detail": "Exact daily-total visibility was not established.",
+          "sources": []
+        },
+        "mealDiary": {
+          "value": "yes",
+          "detail": "Connected friends can see latest meals.",
+          "sources": [
+            "kalo-home"
+          ]
+        },
+        "mealsHidden": {
+          "value": "unknown",
+          "detail": "Not established in the reviewed sources.",
+          "sources": []
+        },
+        "weightPrivate": {
+          "value": "unknown",
+          "detail": "Not established in the reviewed sources.",
+          "sources": []
+        },
+        "buddyNoOwnPlan": {
+          "value": "yes",
+          "detail": "Premium Couple covers the starred partner.",
+          "sources": [
+            "kalo-home"
+          ]
+        },
+        "friendCalorieWidget": {
+          "value": "unknown",
+          "detail": "Not established in the reviewed sources.",
+          "sources": []
+        }
+      },
+      "usListing": {
+        "status": "not_reviewed",
+        "url": null,
+        "version": null,
+        "currentVersionReleaseDate": null
+      },
+      "observedSharingTests": 0
+    },
+    {
+      "slug": "tally",
+      "name": "Tally",
+      "publisherApp": false,
+      "role": "Food and lifting tracker with social workouts",
+      "website": "https://tallylifts.com/",
+      "scope": "Friends see posted workouts and strength progress, not nutrition totals.",
+      "reviewedSources": [
+        "tally-home"
+      ],
+      "advisories": [
+        "Personal-calorie and friend-workout widgets do not establish shared food-calorie numbers.",
+        "The site advertises free access in the US and Canada; a store lookup was not captured for this app."
+      ],
+      "fields": {
+        "calorieTotals": {
+          "value": "no",
+          "detail": "Daily calorie totals and targets stay private.",
+          "sources": [
+            "tally-home"
+          ]
+        },
+        "mealDiary": {
+          "value": "no",
+          "detail": "Meals are never posted to friends.",
+          "sources": [
+            "tally-home"
+          ]
+        },
+        "mealsHidden": {
+          "value": "yes",
+          "detail": "Social posts do not include meals.",
+          "sources": [
+            "tally-home"
+          ]
+        },
+        "weightPrivate": {
+          "value": "yes",
+          "detail": "Body weight and weigh-ins stay private.",
+          "sources": [
+            "tally-home"
+          ]
+        },
+        "buddyNoOwnPlan": {
+          "value": "yes",
+          "detail": "The site advertises all features as free.",
+          "sources": [
+            "tally-home"
+          ]
+        },
+        "friendCalorieWidget": {
+          "value": "no",
+          "detail": "Friend widgets concern workouts; totals stay private.",
+          "sources": [
+            "tally-home"
+          ]
+        }
+      },
+      "usListing": {
+        "status": "not_reviewed",
+        "url": null,
+        "version": null,
+        "currentVersionReleaseDate": null
+      },
+      "observedSharingTests": 0
+    },
+    {
+      "slug": "cal-sync",
+      "name": "Cal Sync",
+      "publisherApp": false,
+      "role": "Group calorie tracker",
+      "website": "https://www.calsyncapp.com/",
+      "scope": "Private groups up to fifty, combined progress, and leaderboards.",
+      "reviewedSources": [
+        "cal-sync-store"
+      ],
+      "advisories": [
+        "Combined group progress does not establish exactly which individual fields each member sees.",
+        "The listing places advanced group functionality in Premium; host-versus-member access was not established."
+      ],
+      "fields": {
+        "calorieTotals": {
+          "value": "unknown",
+          "detail": "The listing describes combined progress, not exact individual visibility.",
+          "sources": []
+        },
+        "mealDiary": {
+          "value": "unknown",
+          "detail": "Not established in the reviewed sources.",
+          "sources": []
+        },
+        "mealsHidden": {
+          "value": "unknown",
+          "detail": "Not established in the reviewed sources.",
+          "sources": []
+        },
+        "weightPrivate": {
+          "value": "unknown",
+          "detail": "Not established in the reviewed sources.",
+          "sources": []
+        },
+        "buddyNoOwnPlan": {
+          "value": "unknown",
+          "detail": "Not established in the reviewed sources.",
+          "sources": []
+        },
+        "friendCalorieWidget": {
+          "value": "unknown",
+          "detail": "Not established in the reviewed sources.",
+          "sources": []
+        }
+      },
+      "usListing": {
+        "status": "found",
+        "url": "https://apps.apple.com/us/app/cal-sync-calorie-counter/id6745409561",
+        "version": "1.1.4",
+        "currentVersionReleaseDate": "2025-09-20T04:53:05Z"
+      },
+      "observedSharingTests": 0
+    },
+    {
+      "slug": "calori",
+      "name": "Calori",
+      "publisherApp": false,
+      "role": "Food tracker with friend steps, streaks, and challenges",
+      "website": "https://www.calori.com/features/friends-and-challenges",
+      "scope": "Invite-only social progress; the friend view is separate from the diary.",
+      "reviewedSources": [
+        "calori-friends"
+      ],
+      "advisories": [
+        "Friend steps/streaks do not establish food-calorie total sharing.",
+        "The Friends feature is advertised as free; this is not a claim that every app feature is free."
+      ],
+      "fields": {
+        "calorieTotals": {
+          "value": "unknown",
+          "detail": "Food-calorie total sharing was not established.",
+          "sources": []
+        },
+        "mealDiary": {
+          "value": "no",
+          "detail": "The friend view never includes the diary.",
+          "sources": [
+            "calori-friends"
+          ]
+        },
+        "mealsHidden": {
+          "value": "yes",
+          "detail": "Friends see steps, streaks, and challenge progress.",
+          "sources": [
+            "calori-friends"
+          ]
+        },
+        "weightPrivate": {
+          "value": "unknown",
+          "detail": "Not established in the reviewed sources.",
+          "sources": []
+        },
+        "buddyNoOwnPlan": {
+          "value": "yes",
+          "detail": "Friends/challenges are included in every account.",
+          "sources": [
+            "calori-friends"
+          ]
+        },
+        "friendCalorieWidget": {
+          "value": "unknown",
+          "detail": "Not established in the reviewed sources.",
+          "sources": []
+        }
+      },
+      "usListing": {
+        "status": "not_reviewed",
+        "url": null,
+        "version": null,
+        "currentVersionReleaseDate": null
+      },
+      "observedSharingTests": 0
+    }
+  ],
+  "contentSha256": "8cdc716d579c06a93c16f1c8d7e51a1285bf323b4fa30b4341b3ce8ba03a57f4"
+}

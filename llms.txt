@@ -32,3 +32,5 @@ Contact: support@mealmonster.app · YouTube: https://www.youtube.com/@mealmonste
 
 - [Compare calorie trackers](https://mealmonster.app/compare/): dated first-party capabilities and listed US store prices for 18 apps. Not a performance ranking.
 - [Meal logging test corpus](https://mealmonster.app/research/logging-friction/): 630 synthetic inputs across 210 scenarios; comparative observations are pending.
+
+- [Friend-sharing finder](https://mealmonster.app/compare/sharing-with-friends/): 10 selected apps, 60 source-reviewed feature records. No installed-app sharing or permission tests.
