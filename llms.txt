@@ -32,3 +32,8 @@
 - [Delete account](https://mealmonster.app/delete-account/)
 
 Contact: support@mealmonster.app · YouTube: https://www.youtube.com/@mealmonsterapp
+
+## Calorie tracker comparison and test corpus
+
+- [Compare calorie trackers](https://mealmonster.app/compare/): dated first-party capabilities and listed US store prices for 18 apps. Not a performance ranking.
+- [Meal logging test corpus](https://mealmonster.app/research/logging-friction/): 630 synthetic inputs across 210 scenarios; comparative observations are pending.

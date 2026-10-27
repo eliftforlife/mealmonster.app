@@ -1,0 +1,2751 @@
+{
+  "schemaVersion": 1,
+  "checkedDate": "2026-10-26",
+  "metadataSnapshotDate": "2026-10-26",
+  "publisherDisclosure": "Meal Monster produces this resource and sells one of the listed apps. No hands-on comparative results have been recorded yet.",
+  "evidenceScope": "First-party advertised capabilities; US App Store; plan details may vary by region, version, and offer.",
+  "apps": [
+    {
+      "id": 6787743894,
+      "slug": "meal-monster",
+      "name": "Meal Monster",
+      "officialUrl": "https://mealmonster.app/",
+      "focus": "Conversational logging and optional friend accountability",
+      "summary": "An iPhone tracker with meal descriptions, voice, food photos, supported barcodes, and optional accountability with trusted friends.",
+      "strengthsToConsider": "Consider it if conversational meal logging and a companion with earned skins appeal to you. The separate Supporter mode is for supporting friends, not free personal food logging.",
+      "limitsToVerify": "Personal logging requires Pro. Independent correction-burden and timing results have not been collected. Apple Health access is read-only.",
+      "pricing": "Pro is required for personal food logging. Check current offers and trial eligibility in the App Store.",
+      "appStoreUrl": "https://apps.apple.com/us/app/id6787743894",
+      "appStoreName": "Meal Monster: Food Tracker",
+      "subtitle": "AI Meal Log & Progress",
+      "publicStoreOffers": [
+        {
+          "name": "Meal Monster Pro Monthly",
+          "price": "$9.99"
+        },
+        {
+          "name": "Meal Monster Pro Annual",
+          "price": "$59.99"
+        }
+      ],
+      "publicStoreOffersSource": "meal-monster-store-prices",
+      "appVersion": "1.0",
+      "downloadPrice": 0,
+      "downloadPriceLabel": "Free",
+      "currency": "USD",
+      "ratingsCount": 0,
+      "averageRating": 0,
+      "checkedDate": "2026-10-26",
+      "performanceMeasured": false,
+      "claims": {
+        "text": {
+          "value": "yes",
+          "plan": "subscription",
+          "detail": "The listing explicitly advertises typing full meals.",
+          "source": "meal-monster-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "voice": {
+          "value": "yes",
+          "plan": "subscription",
+          "detail": "The listing advertises speaking full meals.",
+          "source": "meal-monster-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "photo": {
+          "value": "yes",
+          "plan": "subscription",
+          "detail": "The listing advertises adding meals from a food photo.",
+          "source": "meal-monster-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "barcode": {
+          "value": "yes",
+          "plan": "subscription",
+          "detail": "The listing advertises packaged-food barcode logging; coverage varies.",
+          "source": "meal-monster-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "editable": {
+          "value": "yes",
+          "plan": "subscription",
+          "detail": "The listing says estimates can be reviewed and corrected.",
+          "source": "meal-monster-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "freeTracking": {
+          "value": "no",
+          "plan": "not_applicable",
+          "detail": "Personal food logging and Progress require Pro after any offered trial. Free Supporter mode does not include logging.",
+          "source": "meal-monster-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "export": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        },
+        "appleHealth": {
+          "value": "yes",
+          "plan": "not_verified",
+          "detail": "The official site describes optional read-only Apple Health access.",
+          "source": "mm-site",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        }
+      },
+      "sources": [
+        {
+          "id": "meal-monster-listing",
+          "url": "https://apps.apple.com/us/app/id6787743894",
+          "title": "Meal Monster US App Store description",
+          "kind": "app_store_vendor_description",
+          "retrievedAt": "2026-10-26T21:49:12.706Z",
+          "contentSha256": "e48119386ebf691fcfebf879b0bd564f46cc13b8eb400c620e0c5e3146f39b6d"
+        },
+        {
+          "id": "mm-site",
+          "url": "https://mealmonster.app/",
+          "title": "Meal Monster official product page",
+          "kind": "vendor_product",
+          "retrievedAt": "2026-10-26T00:00:00Z",
+          "retrievalPrecision": "date_only"
+        },
+        {
+          "id": "meal-monster-store-prices",
+          "url": "https://apps.apple.com/us/app/meal-monster-food-tracker/id6787743894",
+          "title": "Meal Monster public US store prices and subtitle",
+          "kind": "app_store_metadata",
+          "retrievedAt": "2026-10-26T22:10:25.499Z",
+          "contentSha256": "a18fad0e6d08bb41e8120f8b7d905ee1571b06235aeea018a0e2065ce616b673"
+        }
+      ]
+    },
+    {
+      "id": 341232718,
+      "slug": "myfitnesspal",
+      "name": "MyFitnessPal",
+      "officialUrl": "https://www.myfitnesspal.com/",
+      "focus": "Food database, nutrition tracking, and several logging methods",
+      "summary": "A food-database tracker with calorie and macro goals; Premium advertises barcode, meal-scan, and voice logging.",
+      "strengthsToConsider": "Consider its database workflow and integrations. Voice logging returns matched foods for review before saving.",
+      "limitsToVerify": "The cited US Premium documentation places barcode, Meal Scan, and Voice Logging behind Premium. Region, language, and offer eligibility matter.",
+      "pricing": "Premium and Premium+ are advertised. Current checkout prices and offers have not been verified.",
+      "appStoreUrl": "https://apps.apple.com/us/app/id341232718",
+      "appStoreName": "MyFitnessPal: Calorie Counter",
+      "subtitle": "AI Coach & Nutrition Tracker",
+      "publicStoreOffers": [
+        {
+          "name": "MyFitnessPal Monthly Premium",
+          "price": "$19.99"
+        },
+        {
+          "name": "MyFitnessPal Yearly Premium",
+          "price": "$79.99"
+        },
+        {
+          "name": "MyFitnessPal Monthly Premium",
+          "price": "$19.99"
+        },
+        {
+          "name": "MyFitnessPal Premium",
+          "price": "$9.99"
+        },
+        {
+          "name": "MyFitnessPal Monthly Premium",
+          "price": "$9.99"
+        },
+        {
+          "name": "MyFitnessPal Premium",
+          "price": "$49.99"
+        },
+        {
+          "name": "MyFitnessPal Yearly Premium",
+          "price": "$79.99"
+        },
+        {
+          "name": "MyFitnessPal Annual Premium",
+          "price": "$79.99"
+        },
+        {
+          "name": "MyFitnessPal Monthly Premium",
+          "price": "$19.99"
+        },
+        {
+          "name": "MyFitnessPal Yearly Premium",
+          "price": "$49.99"
+        }
+      ],
+      "publicStoreOffersSource": "myfitnesspal-store-prices",
+      "appVersion": "26.42.0",
+      "downloadPrice": 0,
+      "downloadPriceLabel": "Free",
+      "currency": "USD",
+      "ratingsCount": 2383913,
+      "averageRating": 4.71352,
+      "checkedDate": "2026-10-26",
+      "performanceMeasured": false,
+      "claims": {
+        "text": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        },
+        "voice": {
+          "value": "yes",
+          "plan": "subscription",
+          "detail": "Voice Logging is listed as a Premium feature.",
+          "source": "mfp-premium",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "photo": {
+          "value": "yes",
+          "plan": "subscription",
+          "detail": "Meal Scan is listed as a Premium feature.",
+          "source": "mfp-premium",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "barcode": {
+          "value": "yes",
+          "plan": "subscription",
+          "detail": "Barcode Scanner is listed as a Premium feature.",
+          "source": "mfp-premium",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "editable": {
+          "value": "yes",
+          "plan": "subscription",
+          "detail": "Voice instructions permit deleting items and editing quantities before logging.",
+          "source": "mfp-voice",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "freeTracking": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        },
+        "export": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        },
+        "appleHealth": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        }
+      },
+      "sources": [
+        {
+          "id": "myfitnesspal-listing",
+          "url": "https://apps.apple.com/us/app/id341232718",
+          "title": "MyFitnessPal US App Store description",
+          "kind": "app_store_vendor_description",
+          "retrievedAt": "2026-10-26T21:49:12.706Z",
+          "contentSha256": "cbad468bae3a54056f2f42aa21fda30cb9c32aaabd36995e0ecd573aa78544b3"
+        },
+        {
+          "id": "mfp-premium",
+          "url": "https://support.myfitnesspal.com/hc/en-us/articles/360032625951-MyFitnessPal-Premium-features",
+          "title": "MyFitnessPal Premium features",
+          "kind": "vendor_help",
+          "retrievedAt": "2026-10-26T00:00:00Z",
+          "retrievalPrecision": "date_only"
+        },
+        {
+          "id": "mfp-voice",
+          "url": "https://blog.myfitnesspal.com/voice-logging-myfitnesspal/",
+          "title": "MyFitnessPal voice logging instructions",
+          "kind": "vendor_help",
+          "retrievedAt": "2026-10-26T00:00:00Z",
+          "retrievalPrecision": "date_only"
+        },
+        {
+          "id": "myfitnesspal-store-prices",
+          "url": "https://apps.apple.com/us/app/myfitnesspal-calorie-counter/id341232718",
+          "title": "MyFitnessPal public US store prices and subtitle",
+          "kind": "app_store_metadata",
+          "retrievedAt": "2026-10-26T22:10:27.078Z",
+          "contentSha256": "8b23be76d4d7289cd509fe898ff5f09936220969cbe1a23a29fc77793fe4eb72"
+        }
+      ]
+    },
+    {
+      "id": 6480417616,
+      "slug": "cal-ai",
+      "name": "Cal AI",
+      "officialUrl": "https://www.calai.app/",
+      "focus": "AI food-photo logging",
+      "summary": "A photo-oriented calorie tracker whose official site also advertises meal descriptions, barcode scanning, and result corrections.",
+      "strengthsToConsider": "Consider its photo workflow and typed Describe option for complex foods. The official guide also documents a Fix Results correction control.",
+      "limitsToVerify": "The store description explicitly requires a subscription for food-scanning analysis. Plan access for the other methods and arbitrary voice descriptions still need verification. PDF export is documented; CSV export is not established.",
+      "pricing": "Food-scanning analysis results require a subscription; current offer prices are unverified.",
+      "appStoreUrl": "https://apps.apple.com/us/app/id6480417616",
+      "appStoreName": "Cal AI - Calorie Tracker",
+      "subtitle": "Food & Macro Counter",
+      "publicStoreOffers": [
+        {
+          "name": "Unlimited",
+          "price": "$29.99"
+        },
+        {
+          "name": "Unlimited Plan",
+          "price": "$19.99"
+        },
+        {
+          "name": "Unlimited",
+          "price": "$9.99"
+        },
+        {
+          "name": "Unlimited",
+          "price": "$19.99"
+        },
+        {
+          "name": "Streak Restore",
+          "price": "$0.99"
+        },
+        {
+          "name": "Unlimited",
+          "price": "$19.99"
+        },
+        {
+          "name": "Unlimited",
+          "price": "$2.99"
+        },
+        {
+          "name": "Unlimited",
+          "price": "$29.99"
+        },
+        {
+          "name": "Unlimited",
+          "price": "$29.99"
+        },
+        {
+          "name": "Unlimited",
+          "price": "$5.99"
+        }
+      ],
+      "publicStoreOffersSource": "cal-ai-store-prices",
+      "appVersion": "26.42.0",
+      "downloadPrice": 0,
+      "downloadPriceLabel": "Free",
+      "currency": "USD",
+      "ratingsCount": 372623,
+      "averageRating": 4.80346,
+      "checkedDate": "2026-10-26",
+      "performanceMeasured": false,
+      "claims": {
+        "text": {
+          "value": "yes",
+          "plan": "not_verified",
+          "detail": "The official Describe guide explicitly permits typing what was eaten.",
+          "source": "cal-ai-describe",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "voice": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        },
+        "photo": {
+          "value": "yes",
+          "plan": "subscription",
+          "detail": "Food-photo analysis is advertised with an explicit subscription requirement.",
+          "source": "cal-ai-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "barcode": {
+          "value": "yes",
+          "plan": "not_verified",
+          "detail": "The official product page and FAQ advertise barcode scanning.",
+          "source": "cal-ai-product",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "editable": {
+          "value": "yes",
+          "plan": "not_verified",
+          "detail": "The official guide describes Fix Results to explain and repair an inaccurate result.",
+          "source": "cal-ai-describe",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "freeTracking": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        },
+        "export": {
+          "value": "yes",
+          "plan": "not_verified",
+          "detail": "The FAQ documents PDF export; raw-food CSV portability is not established.",
+          "source": "cal-ai-faq",
+          "formats": [
+            "pdf"
+          ],
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "appleHealth": {
+          "value": "yes",
+          "plan": "not_verified",
+          "detail": "The FAQ documents connecting Apple Health for steps.",
+          "source": "cal-ai-faq",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        }
+      },
+      "sources": [
+        {
+          "id": "cal-ai-listing",
+          "url": "https://apps.apple.com/us/app/id6480417616",
+          "title": "Cal AI US App Store description",
+          "kind": "app_store_vendor_description",
+          "retrievedAt": "2026-10-26T21:49:12.706Z",
+          "contentSha256": "dba92a51b9827439f7f552d6800119c2470cafe2ea91fedc64cb84dd99130e00"
+        },
+        {
+          "id": "cal-ai-product",
+          "url": "https://www.calai.app/",
+          "title": "Cal AI official logging methods",
+          "kind": "vendor_product",
+          "retrievedAt": "2026-10-26T00:00:00Z",
+          "retrievalPrecision": "date_only"
+        },
+        {
+          "id": "cal-ai-describe",
+          "url": "https://www.calai.app/blog/best-free-calorie-and-macro-tracker/",
+          "title": "Cal AI description input and Fix Results explanation",
+          "kind": "vendor_help",
+          "retrievedAt": "2026-10-26T00:00:00Z",
+          "retrievalPrecision": "date_only"
+        },
+        {
+          "id": "cal-ai-faq",
+          "url": "https://www.calai.app/faq",
+          "title": "Cal AI FAQ for barcodes, PDF export, and Health sync",
+          "kind": "vendor_help",
+          "retrievedAt": "2026-10-26T00:00:00Z",
+          "retrievalPrecision": "date_only"
+        },
+        {
+          "id": "cal-ai-store-prices",
+          "url": "https://apps.apple.com/us/app/cal-ai-calorie-tracker/id6480417616",
+          "title": "Cal AI public US store prices and subtitle",
+          "kind": "app_store_metadata",
+          "retrievedAt": "2026-10-26T22:10:29.237Z",
+          "contentSha256": "43e778dce7a3125aab28c234af034b078cf02b8a785a1298d46dcc0fb648ce11"
+        }
+      ]
+    },
+    {
+      "id": 1145935738,
+      "slug": "cronometer",
+      "name": "Cronometer",
+      "officialUrl": "https://cronometer.com/",
+      "focus": "Detailed nutrient tracking",
+      "summary": "A tracker emphasizing detailed macro and micronutrient data, a food database, and free barcode scanning.",
+      "strengthsToConsider": "Consider it when detailed nutrients matter. Gold supports typed or spoken descriptions and matched-food editing.",
+      "limitsToVerify": "Photo and voice logging are advertised as Gold features. A typed description is processed through its Voice Logging workflow.",
+      "pricing": "Gold is the premium tier; current subscription offers have not been verified.",
+      "appStoreUrl": "https://apps.apple.com/us/app/id1145935738",
+      "appStoreName": "Cronometer: Calorie Counter",
+      "subtitle": "Nutrition, macro, diet tracker",
+      "publicStoreOffers": [
+        {
+          "name": "Gold Monthly",
+          "price": "$10.99"
+        },
+        {
+          "name": "Gold Annual",
+          "price": "$59.99"
+        },
+        {
+          "name": "Gold Monthly",
+          "price": "$10.99"
+        },
+        {
+          "name": "Gold Annual",
+          "price": "$59.99"
+        },
+        {
+          "name": "Gold Subscription",
+          "price": "$10.99"
+        },
+        {
+          "name": "Gold Annual",
+          "price": "$59.99"
+        },
+        {
+          "name": "Gold Annual",
+          "price": "$59.99"
+        },
+        {
+          "name": "Gold Annual",
+          "price": "$59.99"
+        },
+        {
+          "name": "Gold Monthly",
+          "price": "$10.99"
+        },
+        {
+          "name": "Cronometer Gold",
+          "price": "$10.99"
+        }
+      ],
+      "publicStoreOffersSource": "cronometer-store-prices",
+      "appVersion": "4.60.1",
+      "downloadPrice": 0,
+      "downloadPriceLabel": "Free",
+      "currency": "USD",
+      "ratingsCount": 99933,
+      "averageRating": 4.77273,
+      "checkedDate": "2026-10-26",
+      "performanceMeasured": false,
+      "claims": {
+        "text": {
+          "value": "yes",
+          "plan": "subscription",
+          "detail": "Gold Voice Logging accepts typed descriptions as well as dictated ones.",
+          "source": "crono-voice",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "voice": {
+          "value": "yes",
+          "plan": "subscription",
+          "detail": "AI Voice Logging is offered to Gold users.",
+          "source": "crono-voice",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "photo": {
+          "value": "yes",
+          "plan": "subscription",
+          "detail": "Photo Logging is listed under Gold.",
+          "source": "cronometer-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "barcode": {
+          "value": "yes",
+          "plan": "free",
+          "detail": "The store listing explicitly advertises free barcode scanning.",
+          "source": "cronometer-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "editable": {
+          "value": "yes",
+          "plan": "subscription",
+          "detail": "Matched amounts, serving sizes, foods, additions, and deletions can be changed.",
+          "source": "crono-voice",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "freeTracking": {
+          "value": "yes",
+          "plan": "free",
+          "detail": "Basic accounts provide food tracking without a time limit.",
+          "source": "crono-basic",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "export": {
+          "value": "yes",
+          "plan": "free",
+          "detail": "Basic accounts can export raw data; exact format needs verification.",
+          "source": "crono-basic",
+          "formats": [
+            "raw_unspecified"
+          ],
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "appleHealth": {
+          "value": "yes",
+          "plan": "not_verified",
+          "detail": "The listing advertises Apple Health integration.",
+          "source": "cronometer-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        }
+      },
+      "sources": [
+        {
+          "id": "cronometer-listing",
+          "url": "https://apps.apple.com/us/app/id1145935738",
+          "title": "Cronometer US App Store description",
+          "kind": "app_store_vendor_description",
+          "retrievedAt": "2026-10-26T21:49:12.706Z",
+          "contentSha256": "89376a660cfcc43fb74fc1eff0cd5a9a2d79237a84fd7aaec28958dc63179d9c"
+        },
+        {
+          "id": "crono-voice",
+          "url": "https://support.cronometer.com/hc/en-us/articles/47549391461780-Mobile-Voice-Logging",
+          "title": "Cronometer voice and typed-description logging",
+          "kind": "vendor_help",
+          "retrievedAt": "2026-10-26T00:00:00Z",
+          "retrievalPrecision": "date_only"
+        },
+        {
+          "id": "crono-basic",
+          "url": "https://support.cronometer.com/hc/en-us/articles/360028026971-Subscription-Types",
+          "title": "Cronometer Basic and paid subscription features",
+          "kind": "vendor_help",
+          "retrievedAt": "2026-10-26T00:00:00Z",
+          "retrievalPrecision": "date_only"
+        },
+        {
+          "id": "cronometer-store-prices",
+          "url": "https://apps.apple.com/us/app/cronometer-calorie-counter/id1145935738",
+          "title": "Cronometer public US store prices and subtitle",
+          "kind": "app_store_metadata",
+          "retrievedAt": "2026-10-26T22:10:30.738Z",
+          "contentSha256": "de8afd5db66b9ee4ce45dc84de134dcd7f12eec830c455b2b02d802e55048d3c"
+        }
+      ]
+    },
+    {
+      "id": 297368629,
+      "slug": "lose-it",
+      "name": "Lose It!",
+      "officialUrl": "https://www.loseit.com/",
+      "focus": "Calorie budgets and food logging",
+      "summary": "A calorie-budget and food-diary app with free basic tracking and Premium photo, voice, and barcode tools.",
+      "strengthsToConsider": "Consider its calorie-budget workflow and free basic diary. The listing describes community features as well.",
+      "limitsToVerify": "Its US listing places photo, AI voice, and barcode scanning in Premium. Exact availability should be checked on the installed version.",
+      "pricing": "Free Basic and Premium are advertised. Current Premium checkout prices are unverified.",
+      "appStoreUrl": "https://apps.apple.com/us/app/id297368629",
+      "appStoreName": "Lose It! – Calorie Counter",
+      "subtitle": "Food Tracker for Weight Loss",
+      "publicStoreOffers": [
+        {
+          "name": "Lose It! Premium Features",
+          "price": "$39.99"
+        },
+        {
+          "name": "Lose It! Premium",
+          "price": "$19.99"
+        },
+        {
+          "name": "Lose It! Premium",
+          "price": "$29.99"
+        },
+        {
+          "name": "Lose It! Premium",
+          "price": "$39.99"
+        },
+        {
+          "name": "Lose It! Premium",
+          "price": "$11.99"
+        },
+        {
+          "name": "Lose It! Premium",
+          "price": "$9.99"
+        },
+        {
+          "name": "Lose It! Premium Lifetime",
+          "price": "$59.99"
+        },
+        {
+          "name": "Lose It! Premium",
+          "price": "$79.99"
+        },
+        {
+          "name": "Lose It! Premium",
+          "price": "$23.99"
+        },
+        {
+          "name": "Lose It! Premium Lifetime",
+          "price": "$49.99"
+        }
+      ],
+      "publicStoreOffersSource": "lose-it-store-prices",
+      "appVersion": "18.5.801",
+      "downloadPrice": 0,
+      "downloadPriceLabel": "Free",
+      "currency": "USD",
+      "ratingsCount": 782444,
+      "averageRating": 4.76711,
+      "checkedDate": "2026-10-26",
+      "performanceMeasured": false,
+      "claims": {
+        "text": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        },
+        "voice": {
+          "value": "yes",
+          "plan": "subscription",
+          "detail": "AI Voice is in the Premium feature list.",
+          "source": "lose-it-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "photo": {
+          "value": "yes",
+          "plan": "subscription",
+          "detail": "Photo Meal Logging is in the Premium feature list.",
+          "source": "lose-it-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "barcode": {
+          "value": "yes",
+          "plan": "subscription",
+          "detail": "Barcode Scanner is in the Premium feature list.",
+          "source": "lose-it-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "editable": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        },
+        "freeTracking": {
+          "value": "yes",
+          "plan": "free",
+          "detail": "The listing explicitly includes calorie tracking in Free Basic.",
+          "source": "lose-it-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "export": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        },
+        "appleHealth": {
+          "value": "yes",
+          "plan": "subscription",
+          "detail": "The Premium integrations list includes Healthkit.",
+          "source": "lose-it-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        }
+      },
+      "sources": [
+        {
+          "id": "lose-it-listing",
+          "url": "https://apps.apple.com/us/app/id297368629",
+          "title": "Lose It! US App Store description",
+          "kind": "app_store_vendor_description",
+          "retrievedAt": "2026-10-26T21:49:12.706Z",
+          "contentSha256": "dea7acfac2186e9e13a8073e93bb31a4bc09e7266fa527fbc63b0bb537977c93"
+        },
+        {
+          "id": "lose-it-store-prices",
+          "url": "https://apps.apple.com/us/app/lose-it-calorie-counter/id297368629",
+          "title": "Lose It! public US store prices and subtitle",
+          "kind": "app_store_metadata",
+          "retrievedAt": "2026-10-26T22:10:32.280Z",
+          "contentSha256": "d1eac8f43b5a44bc10c186c5dac7f74d3593d28a5396fd34e72b1f8ccb0e5727"
+        }
+      ]
+    },
+    {
+      "id": 1553503471,
+      "slug": "macrofactor",
+      "name": "MacroFactor",
+      "officialUrl": "https://macrofactorapp.com/",
+      "focus": "Macro tracking and adaptive targets",
+      "summary": "A paid macro tracker with adaptive targets, verified food search, barcode tools, and AI logging options.",
+      "strengthsToConsider": "Consider it if adaptive targets are central to your tracking. Its AI Describe documentation permits reviewing and editing selected foods and quantities.",
+      "limitsToVerify": "There is no permanent free subscription tier. Speed superiority claims on the vendor site are vendor claims, not results from this project.",
+      "pricing": "The US store description lists $11.99/month, $47.99/6 months, or $71.99/year, checked October 26, 2026. Verify checkout and trial eligibility.",
+      "appStoreUrl": "https://apps.apple.com/us/app/id1553503471",
+      "appStoreName": "MacroFactor - Macro Tracker",
+      "subtitle": "Calorie Counter & Food Log",
+      "publicStoreOffers": [
+        {
+          "name": "Monthly Subscription",
+          "price": "$11.99"
+        },
+        {
+          "name": "Annual Subscription",
+          "price": "$71.99"
+        },
+        {
+          "name": "Monthly Subscription",
+          "price": "$11.99"
+        },
+        {
+          "name": "Annual Subscription",
+          "price": "$71.99"
+        },
+        {
+          "name": "Semiannual Subscription",
+          "price": "$47.99"
+        },
+        {
+          "name": "Semiannual Subscription",
+          "price": "$47.99"
+        },
+        {
+          "name": "Monthly Subscription",
+          "price": "$11.99"
+        },
+        {
+          "name": "Monthly Subscription",
+          "price": "$9.99"
+        },
+        {
+          "name": "Annual Subscription Bundle",
+          "price": "$89.99"
+        },
+        {
+          "name": "Annual Subscription",
+          "price": "$59.99"
+        }
+      ],
+      "publicStoreOffersSource": "macrofactor-store-prices",
+      "appVersion": "5.8.9",
+      "downloadPrice": 0,
+      "downloadPriceLabel": "Free",
+      "currency": "USD",
+      "ratingsCount": 23533,
+      "averageRating": 4.83627,
+      "checkedDate": "2026-10-26",
+      "performanceMeasured": false,
+      "claims": {
+        "text": {
+          "value": "yes",
+          "plan": "subscription",
+          "detail": "AI Describe converts a meal description to foods for review.",
+          "source": "mf-describe",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "voice": {
+          "value": "yes",
+          "plan": "subscription",
+          "detail": "The official feature list advertises speech-to-text food logging.",
+          "source": "mf-product",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "photo": {
+          "value": "yes",
+          "plan": "subscription",
+          "detail": "The official feature list advertises AI photo food logging.",
+          "source": "mf-product",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "barcode": {
+          "value": "yes",
+          "plan": "subscription",
+          "detail": "Barcode scanning is in the store feature list.",
+          "source": "macrofactor-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "editable": {
+          "value": "yes",
+          "plan": "subscription",
+          "detail": "AI Describe guidance explicitly permits editing foods and quantities.",
+          "source": "mf-describe",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "freeTracking": {
+          "value": "no",
+          "plan": "not_applicable",
+          "detail": "The store description explicitly says no free subscription tier is offered.",
+          "source": "macrofactor-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "export": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        },
+        "appleHealth": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        }
+      },
+      "sources": [
+        {
+          "id": "macrofactor-listing",
+          "url": "https://apps.apple.com/us/app/id1553503471",
+          "title": "MacroFactor US App Store description",
+          "kind": "app_store_vendor_description",
+          "retrievedAt": "2026-10-26T21:49:12.706Z",
+          "contentSha256": "fb3f6768245dcbd25b0ae39fb5fc2c56f51dc39ea85bfb132350e304e3d2f49c"
+        },
+        {
+          "id": "mf-describe",
+          "url": "https://help.macrofactorapp.com/en/articles/200-what-should-i-do-when-i-cant-accurately-log-a-meal",
+          "title": "MacroFactor AI Describe and editing",
+          "kind": "vendor_help",
+          "retrievedAt": "2026-10-26T00:00:00Z",
+          "retrievalPrecision": "date_only"
+        },
+        {
+          "id": "mf-product",
+          "url": "https://macrofactorapp.com/macrofactor/",
+          "title": "MacroFactor official feature list",
+          "kind": "vendor_product",
+          "retrievedAt": "2026-10-26T00:00:00Z",
+          "retrievalPrecision": "date_only"
+        },
+        {
+          "id": "macrofactor-store-prices",
+          "url": "https://apps.apple.com/us/app/macrofactor-macro-tracker/id1553503471",
+          "title": "MacroFactor public US store prices and subtitle",
+          "kind": "app_store_metadata",
+          "retrievedAt": "2026-10-26T22:10:34.097Z",
+          "contentSha256": "f95f151d55b744254d54d4c5b271fa3deab3b8d7c9fba03456ba3d19c4b8b53a"
+        }
+      ]
+    },
+    {
+      "id": 287529757,
+      "slug": "mynetdiary",
+      "name": "MyNetDiary",
+      "officialUrl": "https://www.mynetdiary.com/",
+      "focus": "Food diary and multiple logging tools",
+      "summary": "A food diary advertising free barcode scanning and basic voice logging, with additional Premium and Premium+ tools.",
+      "strengthsToConsider": "Consider its free food diary and barcode scanning. The vendor also publishes its own logging-effort comparisons.",
+      "limitsToVerify": "The listing mentions free voice logging and separate Premium+ AI voice logging. Treat those as different tools until tested; natural multi-food voice access is not established by the free-voice line alone.",
+      "pricing": "Free, Premium, and Premium+ features are advertised. Current offers are unverified.",
+      "appStoreUrl": "https://apps.apple.com/us/app/id287529757",
+      "appStoreName": "Calorie Counter - MyNetDiary",
+      "subtitle": "Food Nutrition Macro Tracker",
+      "publicStoreOffers": [
+        {
+          "name": "MyNetDiary Premium",
+          "price": "$8.99"
+        },
+        {
+          "name": "MyNetDiary Premium",
+          "price": "$59.99"
+        },
+        {
+          "name": "MyNetDiary Premium",
+          "price": "$59.99"
+        },
+        {
+          "name": "MyNetDiary Premium",
+          "price": "$59.99"
+        },
+        {
+          "name": "MyNetDiary Premium",
+          "price": "$59.99"
+        },
+        {
+          "name": "MyNetDiary Premium",
+          "price": "$39.99"
+        },
+        {
+          "name": "MyNetDiary Premium",
+          "price": "$29.99"
+        },
+        {
+          "name": "Premium Plus",
+          "price": "$14.99"
+        },
+        {
+          "name": "MyNetDiary Premium",
+          "price": "$8.99"
+        },
+        {
+          "name": "MyNetDiary Premium",
+          "price": "$8.99"
+        }
+      ],
+      "publicStoreOffersSource": "mynetdiary-store-prices",
+      "appVersion": "10.39",
+      "downloadPrice": 0,
+      "downloadPriceLabel": "Free",
+      "currency": "USD",
+      "ratingsCount": 170299,
+      "averageRating": 4.80754,
+      "checkedDate": "2026-10-26",
+      "performanceMeasured": false,
+      "claims": {
+        "text": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        },
+        "voice": {
+          "value": "yes",
+          "plan": "mixed",
+          "detail": "Basic voice is listed as free; AI voice meal descriptions are listed under Premium+. Exact workflow needs hands-on verification.",
+          "source": "mynetdiary-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "photo": {
+          "value": "yes",
+          "plan": "subscription",
+          "detail": "Meal Scan is listed under Premium.",
+          "source": "mynetdiary-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "barcode": {
+          "value": "yes",
+          "plan": "free",
+          "detail": "Free barcode scanning is explicitly advertised.",
+          "source": "mynetdiary-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "editable": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        },
+        "freeTracking": {
+          "value": "yes",
+          "plan": "free",
+          "detail": "The listing advertises a free food diary with no required account.",
+          "source": "mynetdiary-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "export": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        },
+        "appleHealth": {
+          "value": "yes",
+          "plan": "free",
+          "detail": "Apple Health reads and writes are advertised in the free list.",
+          "source": "mynetdiary-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        }
+      },
+      "sources": [
+        {
+          "id": "mynetdiary-listing",
+          "url": "https://apps.apple.com/us/app/id287529757",
+          "title": "MyNetDiary US App Store description",
+          "kind": "app_store_vendor_description",
+          "retrievedAt": "2026-10-26T21:49:12.706Z",
+          "contentSha256": "721520c19c5fc8032c172b1487d70a624aea645bf0bbe2637deecb45a0d41d3b"
+        },
+        {
+          "id": "mynetdiary-store-prices",
+          "url": "https://apps.apple.com/us/app/calorie-counter-mynetdiary/id287529757",
+          "title": "MyNetDiary public US store prices and subtitle",
+          "kind": "app_store_metadata",
+          "retrievedAt": "2026-10-26T22:10:36.357Z",
+          "contentSha256": "8f565e7abc3b79e96e0df9fe25585aca51d72d9b14451b2281c31be957739f00"
+        }
+      ]
+    },
+    {
+      "id": 946099227,
+      "slug": "yazio",
+      "name": "Yazio",
+      "officialUrl": "https://www.yazio.com/",
+      "focus": "Calorie tracking, barcode scanning, and optional Pro tools",
+      "summary": "A calorie diary with a food database, barcode scanning, fasting tools, and a paid Pro tier.",
+      "strengthsToConsider": "Consider its diary and habit tools. The listing advertises free calorie tracking and a barcode scanner.",
+      "limitsToVerify": "The help center places AI photo logging in Pro and allows ingredient/quantity editing. Whole-meal text and voice are still unverified.",
+      "pricing": "Free tracking and Pro are advertised; current Pro offers are unverified.",
+      "appStoreUrl": "https://apps.apple.com/us/app/id946099227",
+      "appStoreName": "AI Calorie Tracker by Yazio",
+      "subtitle": "Weight Loss Food Diary",
+      "publicStoreOffers": [
+        {
+          "name": "12 Months",
+          "price": "$23.90"
+        },
+        {
+          "name": "YAZIO PRO",
+          "price": "$32.99"
+        },
+        {
+          "name": "12 Months",
+          "price": "$47.90"
+        },
+        {
+          "name": "YAZIO PRO",
+          "price": "$29.99"
+        },
+        {
+          "name": "3 Months",
+          "price": "$23.99"
+        },
+        {
+          "name": "12 months",
+          "price": "$23.90"
+        },
+        {
+          "name": "YAZIO PRO",
+          "price": "$11.90"
+        },
+        {
+          "name": "Semi-Annual",
+          "price": "$34.99"
+        },
+        {
+          "name": "3 Months",
+          "price": "$23.99"
+        },
+        {
+          "name": "12 Months",
+          "price": "$47.90"
+        }
+      ],
+      "publicStoreOffersSource": "yazio-store-prices",
+      "appVersion": "26.42.0",
+      "downloadPrice": 0,
+      "downloadPriceLabel": "Free",
+      "currency": "USD",
+      "ratingsCount": 51454,
+      "averageRating": 4.69596,
+      "checkedDate": "2026-10-26",
+      "performanceMeasured": false,
+      "claims": {
+        "text": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        },
+        "voice": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        },
+        "photo": {
+          "value": "yes",
+          "plan": "subscription",
+          "detail": "The help center says AI meal-photo recognition is now part of Pro.",
+          "source": "yazio-photo",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "barcode": {
+          "value": "yes",
+          "plan": "not_verified",
+          "detail": "Barcode scanning is explicitly listed; plan details are not established here.",
+          "source": "yazio-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "editable": {
+          "value": "yes",
+          "plan": "subscription",
+          "detail": "AI-detected ingredients, names, and portions can be edited.",
+          "source": "yazio-photo",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "freeTracking": {
+          "value": "yes",
+          "plan": "free",
+          "detail": "Free calorie tracking is explicitly advertised.",
+          "source": "yazio-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "export": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        },
+        "appleHealth": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        }
+      },
+      "sources": [
+        {
+          "id": "yazio-listing",
+          "url": "https://apps.apple.com/us/app/id946099227",
+          "title": "Yazio US App Store description",
+          "kind": "app_store_vendor_description",
+          "retrievedAt": "2026-10-26T21:49:12.706Z",
+          "contentSha256": "d0d9d5043ff1c710330ce3e29a36329e77d9f7623e45b784deecd9b2d8fa4c66"
+        },
+        {
+          "id": "yazio-photo",
+          "url": "https://help.yazio.com/hc/en-us/articles/39137901903889-What-is-the-AI-Calorie-Tracking-Feature-and-how-does-it-work",
+          "title": "Yazio AI photo logging, Pro access, and editing",
+          "kind": "vendor_help",
+          "retrievedAt": "2026-10-26T00:00:00Z",
+          "retrievalPrecision": "date_only"
+        },
+        {
+          "id": "yazio-store-prices",
+          "url": "https://apps.apple.com/us/app/ai-calorie-tracker-by-yazio/id946099227",
+          "title": "Yazio public US store prices and subtitle",
+          "kind": "app_store_metadata",
+          "retrievedAt": "2026-10-26T22:10:38.375Z",
+          "contentSha256": "404cb63cfbf3aa7f8f1564507cb19087fb9c417e6b35fc45bbec2ec18fcfe610"
+        }
+      ]
+    },
+    {
+      "id": 347184248,
+      "slug": "fatsecret",
+      "name": "fatsecret",
+      "officialUrl": "https://www.fatsecret.com/",
+      "focus": "Calorie counting and food diary",
+      "summary": "A calorie diary with barcode scanning, food-image recognition, community tools, and optional Premium features.",
+      "strengthsToConsider": "Consider its free calorie diary and Apple Health integration.",
+      "limitsToVerify": "Image recognition is advertised, but the exact meal-estimation and review workflow has not been tested. Natural-language voice and text remain unverified.",
+      "pricing": "Optional Premium subscriptions are advertised; current offers are unverified.",
+      "appStoreUrl": "https://apps.apple.com/us/app/id347184248",
+      "appStoreName": "Calorie Counter by fatsecret",
+      "subtitle": "Diet & Weight Loss Tracker",
+      "publicStoreOffers": [
+        {
+          "name": "Monthly Subscription",
+          "price": "$14.99"
+        },
+        {
+          "name": "Quarterly Subscription",
+          "price": "$28.99"
+        },
+        {
+          "name": "Annual Subscription",
+          "price": "$59.99"
+        },
+        {
+          "name": "Annual Subscription",
+          "price": "$38.99"
+        },
+        {
+          "name": "Quarterly Subscription",
+          "price": "$19.99"
+        },
+        {
+          "name": "Annual Subscription",
+          "price": "$38.99"
+        },
+        {
+          "name": "Monthly Subscription",
+          "price": "$10.49"
+        },
+        {
+          "name": "Quarterly Subscription",
+          "price": "$20.00"
+        },
+        {
+          "name": "Monthly Subscription",
+          "price": "$10.49"
+        }
+      ],
+      "publicStoreOffersSource": "fatsecret-store-prices",
+      "appVersion": "11.9",
+      "downloadPrice": 0,
+      "downloadPriceLabel": "Free",
+      "currency": "USD",
+      "ratingsCount": 15398,
+      "averageRating": 4.72334,
+      "checkedDate": "2026-10-26",
+      "performanceMeasured": false,
+      "claims": {
+        "text": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        },
+        "voice": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        },
+        "photo": {
+          "value": "yes",
+          "plan": "not_verified",
+          "detail": "The listing advertises image recognition of foods and meals.",
+          "source": "fatsecret-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "barcode": {
+          "value": "yes",
+          "plan": "not_verified",
+          "detail": "Barcode scanner is in the general feature list.",
+          "source": "fatsecret-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "editable": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        },
+        "freeTracking": {
+          "value": "yes",
+          "plan": "free",
+          "detail": "The listing explicitly advertises a free calorie counter and diary.",
+          "source": "fatsecret-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "export": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        },
+        "appleHealth": {
+          "value": "yes",
+          "plan": "not_verified",
+          "detail": "Health app food, activity, and weight integration is described.",
+          "source": "fatsecret-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        }
+      },
+      "sources": [
+        {
+          "id": "fatsecret-listing",
+          "url": "https://apps.apple.com/us/app/id347184248",
+          "title": "fatsecret US App Store description",
+          "kind": "app_store_vendor_description",
+          "retrievedAt": "2026-10-26T21:49:12.706Z",
+          "contentSha256": "0f68ba509d02da854b7162f5df83290f1044165d2ecc2d576fe06379740c8ba1"
+        },
+        {
+          "id": "fatsecret-store-prices",
+          "url": "https://apps.apple.com/us/app/calorie-counter-by-fatsecret/id347184248",
+          "title": "fatsecret public US store prices and subtitle",
+          "kind": "app_store_metadata",
+          "retrievedAt": "2026-10-26T22:10:40.456Z",
+          "contentSha256": "1138cb7e319bb3e0fc23bbde0779fb172b8439f7c219f3c34ab89dbc0561491d"
+        }
+      ]
+    },
+    {
+      "id": 1064020872,
+      "slug": "foodvisor",
+      "name": "Foodvisor",
+      "officialUrl": "https://www.foodvisor.io/",
+      "focus": "Food-photo logging and nutrition programs",
+      "summary": "A photo-oriented tracker that also advertises spoken meal logging, barcode scanning, and food search.",
+      "strengthsToConsider": "Consider its combination of logging tools and nutrition programs.",
+      "limitsToVerify": "Typing a few words is described as smart food search; that does not by itself prove whole-meal natural-language parsing. Exact free and paid logging access needs testing.",
+      "pricing": "Premium is advertised; current prices and free logging boundaries are unverified.",
+      "appStoreUrl": "https://apps.apple.com/us/app/id1064020872",
+      "appStoreName": "Foodvisor - AI Calorie Counter",
+      "subtitle": "Diet Tracker for Weight Loss",
+      "publicStoreOffers": [
+        {
+          "name": "Foodvisor Premium",
+          "price": "$23.99"
+        },
+        {
+          "name": "1 month of Foodvisor",
+          "price": "$14.99"
+        },
+        {
+          "name": "Foodvisor Premium",
+          "price": "$83.99"
+        },
+        {
+          "name": "Foodvisor Premium trial",
+          "price": "$59.99"
+        },
+        {
+          "name": "1 month of Foodvisor",
+          "price": "$39.99"
+        },
+        {
+          "name": "Foodvisor Premium Trial",
+          "price": "$71.99"
+        },
+        {
+          "name": "Premium Bundle",
+          "price": "$29.99"
+        },
+        {
+          "name": "3 months of Foodvisor",
+          "price": "$89.99"
+        },
+        {
+          "name": "1 month of Foodvisor",
+          "price": "$29.99"
+        },
+        {
+          "name": "3 months of Foodvisor",
+          "price": "$59.99"
+        }
+      ],
+      "publicStoreOffersSource": "foodvisor-store-prices",
+      "appVersion": "9.26.0",
+      "downloadPrice": 0,
+      "downloadPriceLabel": "Free",
+      "currency": "USD",
+      "ratingsCount": 18153,
+      "averageRating": 4.59527,
+      "checkedDate": "2026-10-26",
+      "performanceMeasured": false,
+      "claims": {
+        "text": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        },
+        "voice": {
+          "value": "yes",
+          "plan": "not_verified",
+          "detail": "The listing says spoken input is understood and logged.",
+          "source": "foodvisor-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "photo": {
+          "value": "yes",
+          "plan": "not_verified",
+          "detail": "Food-photo AI logging is advertised.",
+          "source": "foodvisor-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "barcode": {
+          "value": "yes",
+          "plan": "not_verified",
+          "detail": "Barcode scanning is advertised.",
+          "source": "foodvisor-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "editable": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        },
+        "freeTracking": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        },
+        "export": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        },
+        "appleHealth": {
+          "value": "yes",
+          "plan": "not_verified",
+          "detail": "Apple Health sync is advertised.",
+          "source": "foodvisor-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        }
+      },
+      "sources": [
+        {
+          "id": "foodvisor-listing",
+          "url": "https://apps.apple.com/us/app/id1064020872",
+          "title": "Foodvisor US App Store description",
+          "kind": "app_store_vendor_description",
+          "retrievedAt": "2026-10-26T21:49:12.706Z",
+          "contentSha256": "785b424dea27ffffd42a6fea4193550f8f8b997b1e8749c418dbc662212d4879"
+        },
+        {
+          "id": "foodvisor-store-prices",
+          "url": "https://apps.apple.com/us/app/foodvisor-ai-calorie-counter/id1064020872",
+          "title": "Foodvisor public US store prices and subtitle",
+          "kind": "app_store_metadata",
+          "retrievedAt": "2026-10-26T22:10:42.351Z",
+          "contentSha256": "0f28190e8c829669aca16b7cfdc6ebd9e23c48ce97c6036eeecefa752d7f68a8"
+        }
+      ]
+    },
+    {
+      "id": 1574239307,
+      "slug": "snapcalorie",
+      "name": "SnapCalorie",
+      "officialUrl": "https://www.snapcalorie.com/",
+      "focus": "Photo and voice nutrition estimates",
+      "summary": "A tracker advertising food-photo and dictated voice-note estimates, editable predictions, and Apple Health integration.",
+      "strengthsToConsider": "Consider its photo-and-voice workflow and support for adjusting predictions.",
+      "limitsToVerify": "A nutrition-label scanner is not the same as a barcode scanner. Vendor accuracy and precision claims are not independently verified by this project.",
+      "pricing": "Current offers and free logging boundaries have not been verified.",
+      "appStoreUrl": "https://apps.apple.com/us/app/id1574239307",
+      "appStoreName": "SnapCalorie AI Calorie Counter",
+      "subtitle": "Photo Diary & Macro Tracker",
+      "publicStoreOffers": [
+        {
+          "name": "SnapCalorie Premium",
+          "price": "$79.99"
+        },
+        {
+          "name": "SnapCalorie Premium",
+          "price": "$15.99"
+        },
+        {
+          "name": "SnapCalorie Premium (Annual)",
+          "price": "$149.00"
+        },
+        {
+          "name": "SnapCalorie Premium (Monthly)",
+          "price": "$19.99"
+        },
+        {
+          "name": "SnapCalorie Premium",
+          "price": "$19.99"
+        },
+        {
+          "name": "SnapCalorie Premium",
+          "price": "$49.99"
+        },
+        {
+          "name": "SnapCalorie Premium",
+          "price": "$9.99"
+        },
+        {
+          "name": "SnapCalorie Premium",
+          "price": "$99.99"
+        },
+        {
+          "name": "SnapCalorie Premium",
+          "price": "$39.99"
+        },
+        {
+          "name": "SnapCalorie Premium",
+          "price": "$59.99"
+        }
+      ],
+      "publicStoreOffersSource": "snapcalorie-store-prices",
+      "appVersion": "141.0.4",
+      "downloadPrice": 0,
+      "downloadPriceLabel": "Free",
+      "currency": "USD",
+      "ratingsCount": 6912,
+      "averageRating": 4.73379,
+      "checkedDate": "2026-10-26",
+      "performanceMeasured": false,
+      "claims": {
+        "text": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        },
+        "voice": {
+          "value": "yes",
+          "plan": "not_verified",
+          "detail": "The listing advertises dictated voice-note food logging.",
+          "source": "snapcalorie-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "photo": {
+          "value": "yes",
+          "plan": "not_verified",
+          "detail": "Food-photo estimates are advertised.",
+          "source": "snapcalorie-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "barcode": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        },
+        "editable": {
+          "value": "yes",
+          "plan": "not_verified",
+          "detail": "The listing says predictions can be edited afterward.",
+          "source": "snapcalorie-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "freeTracking": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        },
+        "export": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        },
+        "appleHealth": {
+          "value": "yes",
+          "plan": "not_verified",
+          "detail": "HealthKit integration is explicitly listed.",
+          "source": "snapcalorie-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        }
+      },
+      "sources": [
+        {
+          "id": "snapcalorie-listing",
+          "url": "https://apps.apple.com/us/app/id1574239307",
+          "title": "SnapCalorie US App Store description",
+          "kind": "app_store_vendor_description",
+          "retrievedAt": "2026-10-26T21:49:12.706Z",
+          "contentSha256": "d9cd3b260d8c998b488fa5deff5e72c95b1ef2a0dd1f9f5828fc5eebdbd711fc"
+        },
+        {
+          "id": "snapcalorie-store-prices",
+          "url": "https://apps.apple.com/us/app/snapcalorie-ai-calorie-counter/id1574239307",
+          "title": "SnapCalorie public US store prices and subtitle",
+          "kind": "app_store_metadata",
+          "retrievedAt": "2026-10-26T22:10:44.427Z",
+          "contentSha256": "cba4b6919da0e41eadd114a6914633494b9b480584318717b9692624598eeed5"
+        }
+      ]
+    },
+    {
+      "id": 6479529917,
+      "slug": "bitepal",
+      "name": "BitePal",
+      "officialUrl": "https://bitepal.app/",
+      "focus": "Food logging with a companion",
+      "summary": "A food-photo tracker with a raccoon companion, outfits, and progress features.",
+      "strengthsToConsider": "Consider it if a companion and collectible appearance are important to you.",
+      "limitsToVerify": "The reviewed listing establishes photo logging. Natural-language text, voice, barcode, and export are not established by the reviewed description.",
+      "pricing": "Current offers and personal logging access have not been verified.",
+      "appStoreUrl": "https://apps.apple.com/us/app/id6479529917",
+      "appStoreName": "BitePal: Food Calorie Tracker",
+      "subtitle": "AI Scan Meals & Easy Tracking",
+      "publicStoreOffers": [
+        {
+          "name": "Weekly Subscription",
+          "price": "$3.99"
+        },
+        {
+          "name": "Annual Subscription",
+          "price": "$35.99"
+        },
+        {
+          "name": "Annual Subscription",
+          "price": "$35.99"
+        },
+        {
+          "name": "Annual Subscription",
+          "price": "$59.99"
+        },
+        {
+          "name": "Weekly Subscription",
+          "price": "$4.99"
+        },
+        {
+          "name": "BitePal Yearly 23.99",
+          "price": "$23.99"
+        },
+        {
+          "name": "Weekly Subscription",
+          "price": "$5.99"
+        },
+        {
+          "name": "Annual Subscription",
+          "price": "$19.99"
+        },
+        {
+          "name": "BitePal 400 Bitecoins Pack",
+          "price": "$0.99"
+        },
+        {
+          "name": "BitePal 2200 Bitecoins Pack",
+          "price": "$4.99"
+        }
+      ],
+      "publicStoreOffersSource": "bitepal-store-prices",
+      "appVersion": "2.37.0",
+      "downloadPrice": 0,
+      "downloadPriceLabel": "Free",
+      "currency": "USD",
+      "ratingsCount": 56726,
+      "averageRating": 4.66228,
+      "checkedDate": "2026-10-26",
+      "performanceMeasured": false,
+      "claims": {
+        "text": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        },
+        "voice": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        },
+        "photo": {
+          "value": "yes",
+          "plan": "not_verified",
+          "detail": "The listing advertises scanning meals from a photo.",
+          "source": "bitepal-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "barcode": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        },
+        "editable": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        },
+        "freeTracking": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        },
+        "export": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        },
+        "appleHealth": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        }
+      },
+      "sources": [
+        {
+          "id": "bitepal-listing",
+          "url": "https://apps.apple.com/us/app/id6479529917",
+          "title": "BitePal US App Store description",
+          "kind": "app_store_vendor_description",
+          "retrievedAt": "2026-10-26T21:49:12.706Z",
+          "contentSha256": "2b4d8698b7133f59418ac844e449022702a9b0605faf2217d759c4db683804df"
+        },
+        {
+          "id": "bitepal-store-prices",
+          "url": "https://apps.apple.com/us/app/bitepal-food-calorie-tracker/id6479529917",
+          "title": "BitePal public US store prices and subtitle",
+          "kind": "app_store_metadata",
+          "retrievedAt": "2026-10-26T22:10:46.427Z",
+          "contentSha256": "9b92a412af80e74671e24db2d548928e99ff8c12af17e3c6339b540cc44d01cd"
+        }
+      ]
+    },
+    {
+      "id": 286906691,
+      "slug": "lifesum",
+      "name": "Lifesum",
+      "officialUrl": "https://lifesum.com/",
+      "focus": "Food tracking and nutrition plans",
+      "summary": "A tracker advertising food photos, spoken descriptions, typed text, barcodes, and nutrition plans.",
+      "strengthsToConsider": "Consider it if several input methods and nutrition-plan tools matter to you.",
+      "limitsToVerify": "The store description confirms limited free features but does not establish which AI inputs are included for free.",
+      "pricing": "Limited free features plus monthly, quarterly, and annual Premium subscriptions are advertised. Exact current offers are unverified.",
+      "appStoreUrl": "https://apps.apple.com/us/app/id286906691",
+      "appStoreName": "Lifesum: AI Calorie Counter",
+      "subtitle": "Food Diary & Macro Tracker App",
+      "publicStoreOffers": [
+        {
+          "name": "Lifesum Premium 1 year",
+          "price": "$119.99"
+        },
+        {
+          "name": "Lifesum Premium 3 Months",
+          "price": "$39.99"
+        },
+        {
+          "name": "Lifesum Premium 3 Months",
+          "price": "$39.99"
+        },
+        {
+          "name": "Lifesum Premium 1 year",
+          "price": "$99.99"
+        },
+        {
+          "name": "Lifesum Premium 3 Months",
+          "price": "$29.99"
+        },
+        {
+          "name": "Lifesum Premium",
+          "price": "$44.99"
+        },
+        {
+          "name": "Lifesum Premium 6 Months",
+          "price": "$69.99"
+        },
+        {
+          "name": "Lifesum Premium",
+          "price": "$21.99"
+        },
+        {
+          "name": "Lifesum Premium 1 year",
+          "price": "$99.99"
+        },
+        {
+          "name": "Lifesum Premium",
+          "price": "$29.99"
+        }
+      ],
+      "publicStoreOffersSource": "lifesum-store-prices",
+      "appVersion": "24.0.0",
+      "downloadPrice": 0,
+      "downloadPriceLabel": "Free",
+      "currency": "USD",
+      "ratingsCount": 150947,
+      "averageRating": 4.64614,
+      "checkedDate": "2026-10-26",
+      "performanceMeasured": false,
+      "claims": {
+        "text": {
+          "value": "yes",
+          "plan": "not_verified",
+          "detail": "The listing explicitly describes typing text as an input option.",
+          "source": "lifesum-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "voice": {
+          "value": "yes",
+          "plan": "not_verified",
+          "detail": "Spoken input is advertised.",
+          "source": "lifesum-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "photo": {
+          "value": "yes",
+          "plan": "not_verified",
+          "detail": "Photo input is advertised.",
+          "source": "lifesum-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "barcode": {
+          "value": "yes",
+          "plan": "not_verified",
+          "detail": "Barcode input is advertised.",
+          "source": "lifesum-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "editable": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        },
+        "freeTracking": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        },
+        "export": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        },
+        "appleHealth": {
+          "value": "yes",
+          "plan": "not_verified",
+          "detail": "The listing describes importing and exporting through Apple Health.",
+          "source": "lifesum-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        }
+      },
+      "sources": [
+        {
+          "id": "lifesum-listing",
+          "url": "https://apps.apple.com/us/app/id286906691",
+          "title": "Lifesum US App Store description",
+          "kind": "app_store_vendor_description",
+          "retrievedAt": "2026-10-26T21:49:12.706Z",
+          "contentSha256": "ed0a377cf19d8359f12d5eac47aec5878c203de6d31c23781b8a864485001457"
+        },
+        {
+          "id": "lifesum-store-prices",
+          "url": "https://apps.apple.com/us/app/lifesum-ai-calorie-counter/id286906691",
+          "title": "Lifesum public US store prices and subtitle",
+          "kind": "app_store_metadata",
+          "retrievedAt": "2026-10-26T22:10:48.356Z",
+          "contentSha256": "7a8cb93047ddf2239b24efcd53a8015db0c27a64ab52d2e3f33c3d5ce5636043"
+        }
+      ]
+    },
+    {
+      "id": 1253012487,
+      "slug": "macrosfirst",
+      "name": "MacrosFirst",
+      "officialUrl": "https://www.macrosfirst.com/",
+      "focus": "Macro-focused food logging",
+      "summary": "A macro-focused diary with barcode and label scanning; Premium advertises AI text, voice, and photo search.",
+      "strengthsToConsider": "Consider its macro-target tools and Premium spreadsheet export.",
+      "limitsToVerify": "Its AI input methods and export are listed in Premium. A nutrition-label scan is distinct from a photo of a complete meal.",
+      "pricing": "Free use and optional Premium subscriptions are advertised; current offers are unverified.",
+      "appStoreUrl": "https://apps.apple.com/us/app/id1253012487",
+      "appStoreName": "MacrosFirst - Macro Tracker",
+      "subtitle": "Calorie Counter, Nutrition Log",
+      "publicStoreOffers": [
+        {
+          "name": "MacrosFirst Premium",
+          "price": "$11.99"
+        },
+        {
+          "name": "MacrosFirst Premium",
+          "price": "$71.99"
+        },
+        {
+          "name": "MacrosFirst Premium",
+          "price": "$11.99"
+        },
+        {
+          "name": "MacrosFirst Premium",
+          "price": "$79.99"
+        },
+        {
+          "name": "MacrosFirst Premium",
+          "price": "$41.99"
+        },
+        {
+          "name": "MacrosFirst Premium",
+          "price": "$11.99"
+        },
+        {
+          "name": "MacrosFirst Premium",
+          "price": "$71.99"
+        },
+        {
+          "name": "MacrosFirst Premium",
+          "price": "$11.99"
+        },
+        {
+          "name": "MacrosFirst Premium",
+          "price": "$79.99"
+        }
+      ],
+      "publicStoreOffersSource": "macrosfirst-store-prices",
+      "appVersion": "2.1.822",
+      "downloadPrice": 0,
+      "downloadPriceLabel": "Free",
+      "currency": "USD",
+      "ratingsCount": 23282,
+      "averageRating": 4.862,
+      "checkedDate": "2026-10-26",
+      "performanceMeasured": false,
+      "claims": {
+        "text": {
+          "value": "yes",
+          "plan": "subscription",
+          "detail": "Premium Smarter Food Search accepts a described meal by text.",
+          "source": "macrosfirst-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "voice": {
+          "value": "yes",
+          "plan": "subscription",
+          "detail": "Premium Smarter Food Search accepts voice.",
+          "source": "macrosfirst-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "photo": {
+          "value": "yes",
+          "plan": "subscription",
+          "detail": "Premium Smarter Food Search accepts a plate photo.",
+          "source": "macrosfirst-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "barcode": {
+          "value": "yes",
+          "plan": "not_verified",
+          "detail": "Barcode scanning is advertised in the general feature list.",
+          "source": "macrosfirst-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "editable": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        },
+        "freeTracking": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        },
+        "export": {
+          "value": "yes",
+          "plan": "subscription",
+          "detail": "Premium export to Excel or sync to Google Sheets is advertised.",
+          "source": "macrosfirst-listing",
+          "formats": [
+            "xlsx",
+            "google_sheets"
+          ],
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "appleHealth": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        }
+      },
+      "sources": [
+        {
+          "id": "macrosfirst-listing",
+          "url": "https://apps.apple.com/us/app/id1253012487",
+          "title": "MacrosFirst US App Store description",
+          "kind": "app_store_vendor_description",
+          "retrievedAt": "2026-10-26T21:49:12.706Z",
+          "contentSha256": "55df4988c88382cc7dbb4046e8ef8623a6c94fc8aae9bbb0f13c828b8ce6d5e9"
+        },
+        {
+          "id": "macrosfirst-store-prices",
+          "url": "https://apps.apple.com/us/app/macrosfirst-macro-tracker/id1253012487",
+          "title": "MacrosFirst public US store prices and subtitle",
+          "kind": "app_store_metadata",
+          "retrievedAt": "2026-10-26T22:10:50.403Z",
+          "contentSha256": "3dff28d64a998bd5bf6f40bf06a3e1a91b7f615737e1e2b94b12c24dcaabadbc"
+        }
+      ]
+    },
+    {
+      "id": 1011095795,
+      "slug": "fitatu",
+      "name": "Fitatu",
+      "officialUrl": "https://www.fitatu.com/",
+      "focus": "Calorie tracking with AI tools",
+      "summary": "A calorie counter advertising AI text, voice, and photo estimates, barcode scanning, and spreadsheet export.",
+      "strengthsToConsider": "Consider its range of AI input methods and explicit serving/ingredient editing.",
+      "limitsToVerify": "The listing advertises tools but does not establish their current free/paid boundaries in the US.",
+      "pricing": "Current plan boundaries and offers have not been verified.",
+      "appStoreUrl": "https://apps.apple.com/us/app/id1011095795",
+      "appStoreName": "Fitatu AI Calorie Counter",
+      "subtitle": "Food Tracker & AI scanner",
+      "publicStoreOffers": [
+        {
+          "name": "Fitatu Premium+AI",
+          "price": "$14.99"
+        },
+        {
+          "name": "Fitatu Premium+AI",
+          "price": "$47.90"
+        },
+        {
+          "name": "Fitatu Premium",
+          "price": "$9.49"
+        },
+        {
+          "name": "Fitatu Premium",
+          "price": "$8.99"
+        },
+        {
+          "name": "Fitatu Premium",
+          "price": "$8.99"
+        },
+        {
+          "name": "Fitatu Premium",
+          "price": "$9.49"
+        },
+        {
+          "name": "Fitatu Premium",
+          "price": "$24.99"
+        },
+        {
+          "name": "Fitatu Premium",
+          "price": "$24.99"
+        },
+        {
+          "name": "Fitatu Premium",
+          "price": "$34.99"
+        },
+        {
+          "name": "Fitatu Premium",
+          "price": "$33.99"
+        }
+      ],
+      "publicStoreOffersSource": "fitatu-store-prices",
+      "appVersion": "4.17.3",
+      "downloadPrice": 0,
+      "downloadPriceLabel": "Free",
+      "currency": "USD",
+      "ratingsCount": 309,
+      "averageRating": 4.79288,
+      "checkedDate": "2026-10-26",
+      "performanceMeasured": false,
+      "claims": {
+        "text": {
+          "value": "yes",
+          "plan": "not_verified",
+          "detail": "Text calorie estimation is explicitly advertised.",
+          "source": "fitatu-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "voice": {
+          "value": "yes",
+          "plan": "not_verified",
+          "detail": "AI voice search estimates listed foods and portions.",
+          "source": "fitatu-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "photo": {
+          "value": "yes",
+          "plan": "not_verified",
+          "detail": "Photo calorie estimation is explicitly advertised.",
+          "source": "fitatu-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "barcode": {
+          "value": "yes",
+          "plan": "not_verified",
+          "detail": "Barcode scanning is advertised.",
+          "source": "fitatu-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "editable": {
+          "value": "yes",
+          "plan": "not_verified",
+          "detail": "The listing explicitly permits changing ingredients and weights.",
+          "source": "fitatu-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "freeTracking": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        },
+        "export": {
+          "value": "yes",
+          "plan": "not_verified",
+          "detail": "XLS and CSV export is advertised.",
+          "source": "fitatu-listing",
+          "formats": [
+            "xls",
+            "csv"
+          ],
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "appleHealth": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        }
+      },
+      "sources": [
+        {
+          "id": "fitatu-listing",
+          "url": "https://apps.apple.com/us/app/id1011095795",
+          "title": "Fitatu US App Store description",
+          "kind": "app_store_vendor_description",
+          "retrievedAt": "2026-10-26T21:49:12.706Z",
+          "contentSha256": "249eaabaf4581a1471c445f9067926edbc9b2af5ad010bbbc0a04f6d2ef14085"
+        },
+        {
+          "id": "fitatu-store-prices",
+          "url": "https://apps.apple.com/us/app/fitatu-ai-calorie-counter/id1011095795",
+          "title": "Fitatu public US store prices and subtitle",
+          "kind": "app_store_metadata",
+          "retrievedAt": "2026-10-26T22:10:52.388Z",
+          "contentSha256": "d3f780086d6edb55915eee5a4127dd3bc674a70896cd1e9129713e6cad050ea2"
+        }
+      ]
+    },
+    {
+      "id": 6462694790,
+      "slug": "parrotpal",
+      "name": "ParrotPal",
+      "officialUrl": "https://www.parrotpal.com/",
+      "focus": "Conversational meal logging",
+      "summary": "A conversational tracker advertising typed and spoken food logging, barcode scanning, and Apple Health step tracking.",
+      "strengthsToConsider": "Consider it for a voice/text-oriented logging workflow.",
+      "limitsToVerify": "A seven-day trial and renewing subscription options are described; current eligibility and prices need checkout verification. Food-photo logging is unverified.",
+      "pricing": "The listing describes a seven-day trial followed by weekly, monthly, or annual subscriptions. Verify eligibility and current offers.",
+      "appStoreUrl": "https://apps.apple.com/us/app/id6462694790",
+      "appStoreName": "ParrotPal: Calorie Tracker",
+      "subtitle": "Lose weight with easy food log",
+      "publicStoreOffers": [
+        {
+          "name": "Annual Subscription",
+          "price": "$39.99"
+        },
+        {
+          "name": "Monthly Price Plan",
+          "price": "$9.99"
+        },
+        {
+          "name": "Annual – 50% Off",
+          "price": "$19.99"
+        },
+        {
+          "name": "Yearly Price Plan",
+          "price": "$49.99"
+        },
+        {
+          "name": "Annual – 50% Off",
+          "price": "$19.99"
+        },
+        {
+          "name": "Weekly Price Plan",
+          "price": "$3.99"
+        },
+        {
+          "name": "Weekly NT",
+          "price": "$1.99"
+        },
+        {
+          "name": "Yearly Subscription",
+          "price": "$59.99"
+        },
+        {
+          "name": "Monthly Price Plan",
+          "price": "$9.99"
+        },
+        {
+          "name": "Special offer: 50% discount",
+          "price": "$19.99"
+        }
+      ],
+      "publicStoreOffersSource": "parrotpal-store-prices",
+      "appVersion": "4.3.6",
+      "downloadPrice": 0,
+      "downloadPriceLabel": "Free",
+      "currency": "USD",
+      "ratingsCount": 3787,
+      "averageRating": 4.73779,
+      "checkedDate": "2026-10-26",
+      "performanceMeasured": false,
+      "claims": {
+        "text": {
+          "value": "yes",
+          "plan": "subscription",
+          "detail": "The listing explicitly advertises text meal logging.",
+          "source": "parrotpal-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "voice": {
+          "value": "yes",
+          "plan": "subscription",
+          "detail": "The listing explicitly advertises voice meal logging.",
+          "source": "parrotpal-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "photo": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        },
+        "barcode": {
+          "value": "yes",
+          "plan": "subscription",
+          "detail": "Barcode scanning is explicitly advertised.",
+          "source": "parrotpal-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "editable": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        },
+        "freeTracking": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        },
+        "export": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        },
+        "appleHealth": {
+          "value": "yes",
+          "plan": "subscription",
+          "detail": "HealthKit step tracking is advertised.",
+          "source": "parrotpal-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        }
+      },
+      "sources": [
+        {
+          "id": "parrotpal-listing",
+          "url": "https://apps.apple.com/us/app/id6462694790",
+          "title": "ParrotPal US App Store description",
+          "kind": "app_store_vendor_description",
+          "retrievedAt": "2026-10-26T21:49:12.706Z",
+          "contentSha256": "9bbc6f8216966e6422a3048041c0aab170c7c64f3eccdb349df1c255677050f3"
+        },
+        {
+          "id": "parrotpal-store-prices",
+          "url": "https://apps.apple.com/us/app/parrotpal-calorie-tracker/id6462694790",
+          "title": "ParrotPal public US store prices and subtitle",
+          "kind": "app_store_metadata",
+          "retrievedAt": "2026-10-26T22:10:54.471Z",
+          "contentSha256": "011a94f49024723f4e46e8346b516f2a9fa81c635a0d83c3462dc06229a7cb11"
+        }
+      ]
+    },
+    {
+      "id": 1479461686,
+      "slug": "foodnoms",
+      "name": "Foodnoms",
+      "officialUrl": "https://foodnoms.com/",
+      "focus": "Nutrition logging for Apple devices",
+      "summary": "An Apple-device tracker with free basic tracking and barcode scanning, plus paid AI photo and text logging.",
+      "strengthsToConsider": "Consider free CSV export and Apple Health export, as well as optional Foodnoms+ AI input.",
+      "limitsToVerify": "Siri and voice actions are advertised separately from AI photo/text. Exact natural-language voice behavior and plan access need testing.",
+      "pricing": "Free and Foodnoms+ are advertised; current subscription offers are unverified.",
+      "appStoreUrl": "https://apps.apple.com/us/app/id1479461686",
+      "appStoreName": "Foodnoms: Nutrition Tracker",
+      "subtitle": "Log Food and Track Your Macros",
+      "publicStoreOffers": [
+        {
+          "name": "Foodnoms+ Annual",
+          "price": "$39.99"
+        },
+        {
+          "name": "Foodnoms+ Annual (Family)",
+          "price": "$69.99"
+        },
+        {
+          "name": "Foodnoms+ Monthly",
+          "price": "$5.99"
+        },
+        {
+          "name": "Foodnoms+ Monthly (Family)",
+          "price": "$9.99"
+        },
+        {
+          "name": "Foodnoms+ Annual",
+          "price": "$49.99"
+        },
+        {
+          "name": "Foodnoms+ Monthly",
+          "price": "$9.99"
+        },
+        {
+          "name": "Foodnoms+ Annual (Family)",
+          "price": "$89.99"
+        },
+        {
+          "name": "Foodnoms+ Monthly (Family)",
+          "price": "$14.99"
+        }
+      ],
+      "publicStoreOffersSource": "foodnoms-store-prices",
+      "appVersion": "2026.18",
+      "downloadPrice": 0,
+      "downloadPriceLabel": "Free",
+      "currency": "USD",
+      "ratingsCount": 7850,
+      "averageRating": 4.73707,
+      "checkedDate": "2026-10-26",
+      "performanceMeasured": false,
+      "claims": {
+        "text": {
+          "value": "yes",
+          "plan": "subscription",
+          "detail": "Foodnoms+ explicitly includes AI text meal logging.",
+          "source": "foodnoms-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "voice": {
+          "value": "yes",
+          "plan": "not_verified",
+          "detail": "Voice, Siri, and Shortcuts logging are advertised; natural-language scope is unverified.",
+          "source": "foodnoms-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "photo": {
+          "value": "yes",
+          "plan": "subscription",
+          "detail": "Foodnoms+ explicitly includes AI photo logging.",
+          "source": "foodnoms-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "barcode": {
+          "value": "yes",
+          "plan": "free",
+          "detail": "Barcode scanning is in the free feature list.",
+          "source": "foodnoms-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "editable": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        },
+        "freeTracking": {
+          "value": "yes",
+          "plan": "free",
+          "detail": "Unlimited food tracking is listed under Free.",
+          "source": "foodnoms-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "export": {
+          "value": "yes",
+          "plan": "free",
+          "detail": "CSV export is listed under Free.",
+          "source": "foodnoms-listing",
+          "formats": [
+            "csv"
+          ],
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "appleHealth": {
+          "value": "yes",
+          "plan": "mixed",
+          "detail": "Export is listed as free; import is listed under Foodnoms+.",
+          "source": "foodnoms-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        }
+      },
+      "sources": [
+        {
+          "id": "foodnoms-listing",
+          "url": "https://apps.apple.com/us/app/id1479461686",
+          "title": "Foodnoms US App Store description",
+          "kind": "app_store_vendor_description",
+          "retrievedAt": "2026-10-26T21:49:12.706Z",
+          "contentSha256": "5871a04a368374c262c729941165addaea9dee9101158ecbf12a2e193e320775"
+        },
+        {
+          "id": "foodnoms-store-prices",
+          "url": "https://apps.apple.com/us/app/foodnoms-nutrition-tracker/id1479461686",
+          "title": "Foodnoms public US store prices and subtitle",
+          "kind": "app_store_metadata",
+          "retrievedAt": "2026-10-26T22:10:56.339Z",
+          "contentSha256": "bb2e7c800bbc1a49be77a06257fa9c5c80da14ecead786c0c8a8f30f9cbefa00"
+        }
+      ]
+    },
+    {
+      "id": 475249619,
+      "slug": "my-macros-plus",
+      "name": "My Macros+",
+      "officialUrl": "https://getmymacros.com/",
+      "focus": "Macro logging and food diary",
+      "summary": "A macro diary advertising food search, barcode and label scanning, food-photo AI, and optional Pro analytics.",
+      "strengthsToConsider": "Consider its custom serving sizes, offline foods, and Pro CSV export.",
+      "limitsToVerify": "Siri/Shortcuts is advertised, but arbitrary spoken-meal parsing is unverified. Public speed claims are vendor claims, not this project’s measurements.",
+      "pricing": "Optional Pro and Macro Coach subscriptions are described. Download price and current offers must be checked separately.",
+      "appStoreUrl": "https://apps.apple.com/us/app/id475249619",
+      "appStoreName": "My Macros+ | Macro Tracker",
+      "subtitle": "Calorie Counter & Food Log",
+      "publicStoreOffers": [
+        {
+          "name": "My Macros+ Pro Subscription",
+          "price": "$1.99"
+        },
+        {
+          "name": "My Macros+ Pro Subscription",
+          "price": "$19.99"
+        },
+        {
+          "name": "My Macros+ Pro Subscription",
+          "price": "$2.99"
+        },
+        {
+          "name": "Macro Coach",
+          "price": "$9.99"
+        },
+        {
+          "name": "My Macros+ Pro Monthly",
+          "price": "$3.99"
+        },
+        {
+          "name": "My Macros+ Pro Subscription",
+          "price": "$29.99"
+        },
+        {
+          "name": "My Macros+ Pro Annual",
+          "price": "$34.99"
+        },
+        {
+          "name": "Macro Coach",
+          "price": "$9.99"
+        },
+        {
+          "name": "My Macros+ Pro Annual",
+          "price": "$29.99"
+        },
+        {
+          "name": "My Macros+ Pro Annual",
+          "price": "$34.99"
+        }
+      ],
+      "publicStoreOffersSource": "my-macros-plus-store-prices",
+      "appVersion": "2026.21",
+      "downloadPrice": 0,
+      "downloadPriceLabel": "Free",
+      "currency": "USD",
+      "ratingsCount": 33797,
+      "averageRating": 4.67802,
+      "checkedDate": "2026-10-26",
+      "performanceMeasured": false,
+      "claims": {
+        "text": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        },
+        "voice": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        },
+        "photo": {
+          "value": "yes",
+          "plan": "not_verified",
+          "detail": "AI photo scanning is advertised; distinguish meal photos from label scans during testing.",
+          "source": "my-macros-plus-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "barcode": {
+          "value": "yes",
+          "plan": "not_verified",
+          "detail": "Barcode scanning is explicitly advertised.",
+          "source": "my-macros-plus-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "editable": {
+          "value": "yes",
+          "plan": "not_verified",
+          "detail": "The listing allows editing any food serving size.",
+          "source": "my-macros-plus-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "freeTracking": {
+          "value": "unknown",
+          "plan": "not_verified",
+          "detail": "Not established by the reviewed first-party material. This does not mean the feature is absent.",
+          "source": null,
+          "evidenceType": "unverified",
+          "checkedDate": "2026-10-26"
+        },
+        "export": {
+          "value": "yes",
+          "plan": "subscription",
+          "detail": "Spreadsheet CSV export is listed in Pro.",
+          "source": "my-macros-plus-listing",
+          "formats": [
+            "csv"
+          ],
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        },
+        "appleHealth": {
+          "value": "yes",
+          "plan": "not_verified",
+          "detail": "Two-way Apple Health sync is advertised.",
+          "source": "my-macros-plus-listing",
+          "evidenceType": "advertised_not_tested",
+          "checkedDate": "2026-10-26"
+        }
+      },
+      "sources": [
+        {
+          "id": "my-macros-plus-listing",
+          "url": "https://apps.apple.com/us/app/id475249619",
+          "title": "My Macros+ US App Store description",
+          "kind": "app_store_vendor_description",
+          "retrievedAt": "2026-10-26T21:49:12.706Z",
+          "contentSha256": "2ef2d5346f48cf7245410109f631ccd7550c06b11ae6b5052b5ad6ea69b7ea96"
+        },
+        {
+          "id": "my-macros-plus-store-prices",
+          "url": "https://apps.apple.com/us/app/my-macros-macro-tracker/id475249619",
+          "title": "My Macros+ public US store prices and subtitle",
+          "kind": "app_store_metadata",
+          "retrievedAt": "2026-10-26T22:10:58.605Z",
+          "contentSha256": "55cb1485eda9c81f9969be3ec3e46652d216718c843d2f76744632352336af71"
+        }
+      ]
+    }
+  ]
+}

@@ -142,3 +142,7 @@ details p { margin: 10px 0 0; color: var(--ink2); line-height: 1.6; font-weight:
 .sc-txt b { font-size: 16px; font-weight: 900; line-height: 1.15; }
 .sc-txt span { font-size: 13px; font-weight: 700; color: var(--ink2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 @media (max-width: 400px) { .appstore.sm { height: 36px; } }
+@media (max-width: 560px) {
+  .top { flex-wrap: wrap; gap: 12px; }
+  .topnav { margin-left: auto; }
+}
