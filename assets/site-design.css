@@ -192,7 +192,8 @@ td .small { font-size:12px; font-weight:400; }
   .site-mobile-menu summary { display:flex; align-items:center; gap:12px; padding:10px 8px; list-style:none; font-family:var(--site-body); font-size:13px; font-weight:500; cursor:pointer; }
   .site-mobile-menu summary::-webkit-details-marker { display:none; }
   .site-mobile-menu summary::after { display:none; }
-  .site-mobile-menu summary span { font-size:17px; }
+  .site-mobile-menu summary span { font-size:0; width:7px; height:7px; border-right:2px solid currentColor; border-bottom:2px solid currentColor; transform:translateY(-2px) rotate(45deg); transition:transform .2s; }
+  .site-mobile-menu[open] summary span { transform:translateY(2px) rotate(-135deg); }
   .site-mobile-menu nav { position:absolute; right:16px; top:62px; width:min(280px,100vw - 32px); padding:14px; display:flex; flex-direction:column; gap:4px; background:#fff; border:1px solid var(--line); border-radius:12px; box-shadow:0 12px 32px rgba(36,48,68,.12); }
   .site-mobile-menu nav>a:not(.site-store) { padding:12px; text-decoration:none; font-size:14px; font-weight:500; }
   .site-mobile-menu .site-store { margin:10px 12px; align-self:start; }
