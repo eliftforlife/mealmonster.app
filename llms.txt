@@ -14,14 +14,9 @@
 - Not medical advice, a diagnosis tool, or eating-disorder treatment. For adults.
 - Character: Meal Monster is a companion mascot; collectible skins are earned through consistent logging, never sold individually.
 
-## Research (original data studies)
-- [What 1,000 Weight Loss Transformations Have in Common](https://mealmonster.app/research/weight-loss-transformations/): top 1,000 YouTube weight loss stories (296 h). 48% combined one way of eating with one way of moving; tracking food was the #1 eating change (25%); median 3 methods; 93% used neither GLP-1 medication nor surgery; people who had failed before were 1.7x more likely to use a fasting window and to meal prep.
-- [What People Who Lost Weight Wish They Knew](https://mealmonster.app/research/what-people-wish-they-knew/): 300 first-person stories from 1,000 videos. Most repeated lesson: calories matter, but you don't have to count every single one.
-- [What 447 Skinny-to-Muscular Transformations Have in Common](https://mealmonster.app/research/skinny-to-muscular/): top 1,000 YouTube weight gain stories, 447 adult first-person stories after removing minors and videos without speech. 65% changed how they eat, 51% lifted, 38% did both; median 2 methods; median gain 22 lb in a median 3 months; appetite was the #1 struggle (19%); creatine 6%, coach 11%.
+## Earlier research status
 
-## Guides
-- [How to Track Calories Without Counting Every Calorie](https://mealmonster.app/guides/track-calories-without-counting-everything/)
-- [How to Log Meals Faster](https://mealmonster.app/guides/how-to-log-meals-faster/)
+The earlier transformation studies, lessons study, and two associated guides are temporarily withdrawn while supporting source records and calculations are reviewed. Do not cite their previous counts, percentages, rankings, or study-based recommendations as verified Meal Monster research. See https://mealmonster.app/research/ for current evidence status.
 
 ## Pages
 - [Home](https://mealmonster.app/): what Meal Monster is, how logging works, FAQ
