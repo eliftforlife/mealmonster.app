@@ -35,3 +35,4 @@ Contact: support@mealmonster.app · YouTube: https://www.youtube.com/@mealmonste
 
 - [Friend-sharing finder](https://mealmonster.app/compare/sharing-with-friends/): 10 selected apps, 60 source-reviewed feature records. No installed-app sharing or permission tests.
 - Package-label portion calculator: https://mealmonster.app/tools/label-portion/ — scales package calories and optional macros to a measured portion, with compatible units and matching preparation states.
+- Which weight should I log?: https://mealmonster.app/tools/which-weight-to-log/ — a guided check of explicit label wording against raw, cooked, prepared, drained or as-packaged measurements; unclear cases are flagged, with no cooking factors or calorie estimates.

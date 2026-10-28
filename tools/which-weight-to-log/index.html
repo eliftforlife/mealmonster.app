@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://mealmonster.app/tools/which-weight-to-log/">
+  <meta name="description" content="Should you log food raw, cooked or drained? Match the words on your food label to when you weighed it with this free, simple helper.">
+  <meta property="og:title" content="Which weight should I log? · Meal Monster">
+  <meta property="og:description" content="Raw, cooked or drained? A few simple choices help you match your food to its label.">
+  <meta property="og:image" content="https://mealmonster.app/assets/og.png">
+  <title>Which Weight Should I Log? Raw, Cooked or Drained · Meal Monster</title>
+  <link rel="icon" href="/assets/icon.png">
+  <link rel="stylesheet" href="/assets/site-design.css?v=6">
+  <link rel="stylesheet" href="/assets/weight-guide.css">
+  <script type="module" src="/assets/weight-guide.js"></script>
+</head>
+<body class="weight-page" data-site-design="1">
+  <a class="site-skip" href="#weight-tool">Skip to helper</a>
+  <header class="site-header"><div class="site-header-inner"><a class="site-brand" href="/"><img src="/assets/icon.png" width="34" height="34" alt=""><span>Meal Monster</span></a><nav class="weight-nav" aria-label="Main"><a href="/tools/label-portion/">Calorie tool</a><a href="https://apps.apple.com/app/apple-store/id6787743894?pt=128870776&amp;ct=website&amp;mt=8" class="get-app" rel="noopener">Get the iPhone app ↗</a></nav></div></header>
+  <main class="weight-shell">
+    <section class="weight-hero" aria-labelledby="page-title"><div><p class="eyebrow">A FREE MEAL MONSTER TOOL</p><h1 id="page-title">Which weight<br>should I log?</h1><p class="weight-intro">Raw, cooked or drained?<br>Match the food you weighed to the words on its label.</p><p class="weight-benefits">Free · No sign-up · No numbers to enter</p></div><img src="/assets/img/monster-neutral.webp" width="126" height="126" alt=""></section>
+    <section id="weight-tool" class="weight-panel" aria-label="Find the matching food weight">
+      <noscript><p>This helper needs JavaScript. The basic rule: use the same food state as the label—raw with raw, cooked with a matching cooked amount, and drained with drained. If the label is unclear, check with the maker. See the sources below.</p></noscript>
+      <div id="guide-interactive" hidden>
+        <ol class="weight-progress" aria-label="Your progress"><li data-progress="0" aria-current="step"><span>1</span> Label</li><li data-progress="1"><span>2</span> Weight</li><li data-progress="2"><span>3</span> Changes</li></ol>
+        <div id="weight-questions" role="form" aria-label="Label and weighing choices">
+          <fieldset id="label-step"><legend tabindex="-1">What words are on your label?</legend><p class="question-help">Look beside “Serving size” and above the nutrition numbers. Pick the words for the column you want to use.</p><div class="weight-options" id="label-options"></div>
+            <div class="prepared-checks" id="prepared-checks" hidden><p><strong>One quick check</strong></p><p>Check only what you can confirm. It’s okay to leave these blank.</p><label><input type="checkbox" id="cookedAmount"> The label gives an amount of finished food, like “1 cup prepared”.</label><label id="recipe-check-label" hidden><input type="checkbox" id="followedRecipe"> I used the ingredients and amounts in the directions.</label><p class="check-note">A gram number for dry mix is not a cooked gram amount.</p></div>
+          </fieldset>
+          <fieldset id="weight-step" hidden><legend tabindex="-1">When did you weigh your food?</legend><p class="question-help">Choose the amount you actually measured.</p><div class="weight-options" id="weighed-options"></div></fieldset>
+          <fieldset id="changes-step" hidden><legend tabindex="-1">Did anything else change?</legend><p class="question-help" id="changes-help">Think about added food, or skin, bones or fat you removed.</p><div class="weight-options" id="changes-options"></div></fieldset>
+          <div class="weight-controls"><button type="button" id="guide-back" class="secondary-action" hidden>← Back</button><button type="button" id="guide-next" class="main-action" disabled>Next →</button></div>
+        </div>
+        <section id="weight-answer" aria-labelledby="answer-title" hidden><p class="answer-kicker" id="answer-kicker"></p><h2 id="answer-title" tabindex="-1"></h2><p id="answer-body"></p><ol class="answer-steps" id="answer-steps"></ol><details class="answer-choices"><summary>Your choices</summary><dl id="answer-summary"></dl></details><div class="answer-next" id="portion-next" hidden><p>Now use the matching label to work out your calories.</p><a class="main-action" href="/tools/label-portion/">Work out my portion →</a></div><p class="answer-source-title">Why this answer?</p><ul class="answer-sources" id="answer-sources"></ul><button type="button" class="secondary-action" id="edit-answers">← Change my answers</button><p class="scope-note">This checks the choices you make. It does not read your package, choose a database entry or calculate calories.</p></section>
+        <button type="button" id="guide-reset" class="reset-action" hidden>Start over</button>
+      </div>
+    </section>
+    <section class="weight-examples" aria-label="Label examples"><h2>What does this look like?</h2><details><summary>Dry pasta</summary><p>Barilla describes its dry pasta serving as uncooked. If you use that serving’s numbers, pair them with uncooked pasta—not the heavier pasta after boiling. Check your own product’s label. <a href="https://www.barilla.com/en-us/help-with/storage-reheat-and-product-faqs/general-product-faqs" rel="noopener">Barilla’s guidance ↗</a></p></details><details><summary>Canned tuna</summary><p>StarKist’s 5-ounce Chunk Light Tuna in Water label gives a drained serving. That weight describes the tuna after draining, rather than the full can with liquid. Package sizes differ, so use your own label. <a href="https://starkist.com/product/chunk-light-tuna-in-water-can/" rel="noopener">See the maker’s label ↗</a></p></details><details><summary>Frozen or ready-cooked food</summary><p>Frozen does not tell you whether food is raw or cooked. “As packaged” means the food in the state you bought it. Follow the package wording and directions; do not choose a raw entry just because it was frozen.</p></details></section>
+    <details class="weight-sources"><summary>Sources and limits</summary><p>A guide to U.S. label wording for adults 18+. Labels, recipes and package sizes vary. We do not guess a cooking conversion, identify an unlabeled food, or replace instructions from its maker. If your package is from another country, verify its wording with the maker.</p><ul><li><a href="https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-A/section-101.9" rel="noopener">U.S. food-label rules</a>: food as purchased, drained solids and prepared columns.</li><li><a href="https://fdc.nal.usda.gov/Foundation_Foods_Documentation/" rel="noopener">USDA Foundation Foods documentation</a>: edible portions and material not eaten.</li><li>Manufacturer examples: <a href="https://www.barilla.com/en-us/help-with/storage-reheat-and-product-faqs/general-product-faqs" rel="noopener">Barilla</a> and <a href="https://starkist.com/product/chunk-light-tuna-in-water-can/" rel="noopener">StarKist</a>. Examples apply to the described products, rather than every pasta or can.</li></ul><p>Sources checked October 28, 2026. Your choices stay in this page and clear when it reloads.</p></details>
+    <section class="weight-app"><img src="/assets/icon.png" width="42" height="42" alt=""><div><h2>Keep your meals in one place.</h2><p>Type what you ate in Meal Monster to get a calorie estimate on iPhone.</p><a href="https://apps.apple.com/app/apple-store/id6787743894?pt=128870776&amp;ct=website&amp;mt=8" rel="noopener">Explore Meal Monster ↗</a><small>Personal food tracking in the app requires a subscription.</small></div></section>
+  </main>
+  <footer class="weight-footer"><a href="/">Meal Monster</a><nav aria-label="Footer"><a href="/compare/">Compare apps</a><a href="/support/">Support</a><a href="/privacy/">Privacy</a></nav><p>Label-reading help · for adults 18+</p></footer>
+</body>
+</html>
