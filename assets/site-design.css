@@ -1,4 +1,5 @@
 /* Shared website design, after page styles. Rounded brand headings, calm UI. */
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400..700&family=Inter:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap");
 :root {
   --ink:#243044; --ink2:#5e697a; --slate:#405d82; --slate-dark:#294464;
   --sky:#dce7f2; --sky2:#edf3fa; --line:#e2e7ed; --canvas:#f6f8fb;
@@ -320,3 +321,101 @@ td .small { font-size:12px; font-weight:400; }
   .selected-compare .claim { font-size:10px; }
   .site-table-hint { display:block; font-size:12px!important; margin:18px 0 -12px; }
 }
+
+
+/* ===== Book theme (10-27): every page matches the homepage. Black header + footer, paper pages, Bodoni titles,
+   Newsreader for reading, Inter for UI; sharp hairline cards, black buttons, sky blue only as an accent. ===== */
+:root {
+  --ink:#1d1e21; --ink2:#5b5f67; --slate:#1d1e21; --slate-dark:#000; --sky:#a9c7e0; --sky2:#f3f1ec;
+  --line:#e3e0d9; --canvas:#fbfaf7; --surface:#fff; --ink-secondary:#5b5f67; --research-surface:#f6f4ef; --research-muted:#f3f1ec;
+  --site-heading:"Bodoni Moda","Didot","Bodoni 72",Georgia,serif; --site-body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --site-read:"Newsreader","Iowan Old Style",Georgia,serif;
+}
+html, body[data-site-design] { background:var(--canvas); }
+body[data-site-design] { color:var(--ink); }
+body[data-site-design] h1 { font-family:var(--site-heading); font-weight:500; font-variation-settings:"opsz" 28; letter-spacing:-.005em; line-height:1.08; color:var(--ink); text-wrap:balance; }
+body[data-site-design] h2, body[data-site-design] h3 { font-family:var(--site-heading); font-weight:500; font-variation-settings:"opsz" 20; letter-spacing:0; color:var(--ink); text-wrap:balance; }
+body[data-site-design] a { color:var(--ink); text-decoration-color:var(--sky); text-decoration-thickness:2px; text-underline-offset:3px; }
+body[data-site-design] :focus-visible { outline:2px solid var(--sky); outline-offset:3px; }
+body[data-site-design] .kicker, body[data-site-design] .eyebrow, body[data-site-design] .site-eyebrow, body[data-site-design] .preview { font-family:var(--site-body); font-size:11px; font-weight:600; letter-spacing:.18em; text-transform:uppercase; color:var(--ink2); }
+
+/* header: same black bar as the homepage */
+body[data-site-design] .site-header { background:rgba(10,10,11,.92); -webkit-backdrop-filter:blur(14px); backdrop-filter:blur(14px); border-bottom:0; }
+body[data-site-design] .site-brand { color:#fff; font-family:var(--site-heading); font-weight:700; font-variation-settings:"opsz" 11; font-size:20px; letter-spacing:.14em; text-transform:uppercase; text-decoration:none; }
+body[data-site-design] .site-brand img { display:none; }
+body[data-site-design] .site-desktop-nav>a:not(.site-store) { font-family:var(--site-body); font-size:14px; font-weight:600; letter-spacing:.02em; color:#e4e6e9; text-decoration:none; }
+body[data-site-design] .site-desktop-nav>a:not(.site-store):hover { color:#fff; }
+body[data-site-design] .site-desktop-nav a[aria-current] { color:#fff; box-shadow:inset 0 -2px 0 var(--sky); }
+body[data-site-design] .site-mobile-menu summary { color:#fff; font-family:var(--site-body); font-weight:600; }
+body[data-site-design] .site-mobile-menu nav { background:#141518; border:1px solid rgba(255,255,255,.1); border-radius:4px; box-shadow:0 20px 40px rgba(0,0,0,.4); }
+body[data-site-design] .site-mobile-menu nav>a:not(.site-store) { color:#e4e6e9; font-weight:600; text-decoration:none; }
+body[data-site-design] .site-mobile-menu nav a[aria-current] { color:#fff; box-shadow:inset 2px 0 0 var(--sky); }
+
+/* footer: black, quiet */
+body[data-site-design] .site-footer { background:#0a0a0b; border-top:0; color:#8b8f96; }
+body[data-site-design] .site-footer .site-brand { font-size:17px; }
+body[data-site-design] .site-footer p, body[data-site-design] .site-footer-notes p, body[data-site-design] .site-footer-notes small { color:#8b8f96; }
+body[data-site-design] .site-footer a { color:#c9ccd1; text-decoration:none; }
+body[data-site-design] .site-footer a:hover { color:#fff; }
+body[data-site-design] .site-footer nav>span { color:#fff; font-size:11px; font-weight:600; letter-spacing:.18em; text-transform:uppercase; }
+body[data-site-design] .site-footer-notes { border-top-color:rgba(255,255,255,.12); }
+
+/* reading text: book serif */
+body[data-site-design] .reading p, body[data-site-design] .reading li, body[data-site-design] .article p, body[data-site-design] .article li,
+body[data-site-design] .content-card p, body[data-site-design] .content-card li, body[data-site-design] .intro, body[data-site-design] .finder-hero .intro {
+  font-family:var(--site-read); font-size:18px; line-height:1.68; color:var(--ink); }
+body[data-site-design] .reading h2, body[data-site-design] .article h2, body[data-site-design] .content-card h2 { margin-top:44px; padding-top:18px; border-top:1px solid var(--line); }
+body[data-site-design] .crumbs, body[data-site-design] .byline { font-family:var(--site-body); color:var(--ink2); }
+body[data-site-design] .reading blockquote { background:transparent; border-left:2px solid var(--ink); font-family:var(--site-read); font-style:italic; }
+body[data-site-design] .disclosure { background:var(--sky2); border:0; border-left:2px solid var(--ink); border-radius:0; font-family:var(--site-body); }
+body[data-site-design] .disclosure strong { color:var(--ink); }
+body[data-site-design] .stat-panel { background:#0a0a0b; border-radius:4px; }
+
+/* legal + support pages: an open book page, not a card */
+body[data-site-design] .content-card { background:transparent; border:0; box-shadow:none; border-radius:0; padding:8px 0 0; }
+body[data-site-design] .content-card h1 { padding-bottom:22px; margin-bottom:28px; border-bottom:1px solid var(--line); }
+
+/* cards, panels, tables: sharp hairlines, no shadows */
+body[data-site-design] .finder-panel, body[data-site-design] .app-card, body[data-site-design] .card, body[data-site-design] .case-card,
+body[data-site-design] .table-scroll, body[data-site-design] .other-apps, body[data-site-design] .method-disclosure, body[data-site-design] .filters,
+body[data-site-design] .recorder-grid fieldset { border:1px solid var(--line); border-radius:4px; box-shadow:none; background:#fff; }
+body[data-site-design] .selected-compare { border-radius:4px; background:var(--research-surface); border:1px solid var(--line); }
+body[data-site-design] .compare-tray { border-radius:4px; border-color:var(--ink); box-shadow:0 16px 40px rgba(0,0,0,.18); }
+body[data-site-design] .app-card h2 a, body[data-site-design] .app-card h3 a { text-decoration:none; }
+body[data-site-design] .app-card h2 a:hover, body[data-site-design] .app-card h3 a:hover { text-decoration:underline; text-decoration-color:var(--sky); }
+body[data-site-design] .site-app-mark { background:#0a0a0b; border:0; border-radius:2px; color:#fff; font-family:var(--site-heading); font-weight:600; font-variation-settings:"opsz" 11; letter-spacing:.04em; }
+body[data-site-design] .card b { font-family:var(--site-heading); font-weight:500; }
+body[data-site-design] thead th { background:var(--sky2); color:var(--ink); font-family:var(--site-body); font-size:11px; letter-spacing:.12em; text-transform:uppercase; }
+body[data-site-design] .claim { border-radius:2px; font-family:var(--site-body); font-weight:600; }
+body[data-site-design] .claim-yes { background:#e8f0f7; color:#1f3a55; }
+body[data-site-design] .claim-unknown { background:transparent; color:var(--ink2); box-shadow:inset 0 0 0 1px var(--line); }
+body[data-site-design] .claim-no { background:var(--sky2); color:#8a8d93; }
+
+/* controls: black and square */
+body[data-site-design] .primary, body[data-site-design] .button { background:#0a0a0b; border-color:#0a0a0b; color:#fff; border-radius:2px; font-family:var(--site-body); font-weight:600; letter-spacing:.02em; text-decoration:none; }
+body[data-site-design] .primary:hover, body[data-site-design] .button:hover { background:#2a2b2f; }
+body[data-site-design] .secondary { background:#fff; border-color:var(--ink); color:var(--ink); border-radius:2px; }
+body[data-site-design] .method-choice { border-radius:2px; border-color:var(--line); background:#fff; color:var(--ink); }
+body[data-site-design] .method-choice[aria-pressed=true] { background:#0a0a0b; border-color:#0a0a0b; color:#fff; }
+body[data-site-design] .compare-switch { background:transparent; border-bottom:1px solid var(--line); border-radius:0; padding:0; gap:20px; }
+body[data-site-design] .compare-switch a { background:transparent; border-radius:0; box-shadow:none; padding:12px 0; color:var(--ink2); text-decoration:none; }
+body[data-site-design] .compare-switch a[aria-current] { background:transparent; color:var(--ink); box-shadow:inset 0 -2px 0 var(--ink); }
+body[data-site-design] .goal-choice { border-radius:2px; border-color:var(--line); background:#fff; }
+body[data-site-design] .goal-choice:has(input:checked) { background:#fff; border-color:var(--ink); box-shadow:inset 0 0 0 1px var(--ink); }
+body[data-site-design] .pick { border-radius:2px; border-color:var(--line); }
+body[data-site-design] .selection-chip { border-radius:2px; }
+body[data-site-design] input[type=search], body[data-site-design] input[type=text], body[data-site-design] select, body[data-site-design] textarea { border-radius:2px; border-color:#cfcbc2; }
+body[data-site-design] input[type=checkbox], body[data-site-design] input[type=radio] { accent-color:#0a0a0b; }
+
+@media (max-width:700px) {
+  body[data-site-design] .site-brand { font-size:15px; letter-spacing:.08em; }
+  body[data-site-design] .site-footer .site-brand { font-size:15px; }
+  body[data-site-design] .reading p, body[data-site-design] .reading li, body[data-site-design] .article p, body[data-site-design] .article li,
+  body[data-site-design] .content-card p, body[data-site-design] .content-card li, body[data-site-design] .intro, body[data-site-design] .finder-hero .intro { font-size:17px; }
+  body[data-site-design] .content-card { padding:4px 0 0; }
+  body[data-site-design] .compare-switch { gap:16px; }
+}
+/* labels, bylines and small notes stay in the UI sans even inside reading text */
+body[data-site-design] :is(main, .content-card, .article, .reading) :is(.kicker, .eyebrow, .site-eyebrow, .preview) { font-family:var(--site-body); font-size:11px; font-weight:600; letter-spacing:.18em; text-transform:uppercase; color:var(--ink2); }
+body[data-site-design] :is(main, .content-card, .article, .reading) :is(.byline, .crumbs, .small, .source-note) { font-family:var(--site-body); }
+html:has(body[data-site-design]) { background:#0a0a0b; }
