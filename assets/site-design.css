@@ -1,5 +1,5 @@
 /* Shared website design, after page styles. Rounded brand headings, calm UI. */
-@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400..700&family=Inter:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Inter:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap");
 :root {
   --ink:#243044; --ink2:#5e697a; --slate:#405d82; --slate-dark:#294464;
   --sky:#dce7f2; --sky2:#edf3fa; --line:#e2e7ed; --canvas:#f6f8fb;
@@ -323,25 +323,25 @@ td .small { font-size:12px; font-weight:400; }
 }
 
 
-/* ===== Book theme (10-27): every page matches the homepage. Black header + footer, paper pages, Bodoni titles,
+/* ===== Book theme (10-27): every page matches the homepage. Black header + footer, paper pages, Fraunces titles (Bodoni until 10-27: too thin to read),
    Newsreader for reading, Inter for UI; sharp hairline cards, black buttons, sky blue only as an accent. ===== */
 :root {
   --ink:#1d1e21; --ink2:#5b5f67; --slate:#1d1e21; --slate-dark:#000; --sky:#a9c7e0; --sky2:#f3f1ec;
   --line:#e3e0d9; --canvas:#fbfaf7; --surface:#fff; --ink-secondary:#5b5f67; --research-surface:#f6f4ef; --research-muted:#f3f1ec;
-  --site-heading:"Bodoni Moda","Didot","Bodoni 72",Georgia,serif; --site-body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --site-heading:"Fraunces",Georgia,serif; --site-body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
   --site-read:"Newsreader","Iowan Old Style",Georgia,serif;
 }
 html, body[data-site-design] { background:var(--canvas); }
 body[data-site-design] { color:var(--ink); }
-body[data-site-design] h1 { font-family:var(--site-heading); font-weight:500; font-variation-settings:"opsz" 28; letter-spacing:-.005em; line-height:1.08; color:var(--ink); text-wrap:balance; }
-body[data-site-design] h2, body[data-site-design] h3 { font-family:var(--site-heading); font-weight:500; font-variation-settings:"opsz" 20; letter-spacing:0; color:var(--ink); text-wrap:balance; }
+body[data-site-design] h1 { font-family:var(--site-heading); font-weight:500; letter-spacing:-.005em; line-height:1.08; color:var(--ink); text-wrap:balance; }
+body[data-site-design] h2, body[data-site-design] h3 { font-family:var(--site-heading); font-weight:500; letter-spacing:0; color:var(--ink); text-wrap:balance; }
 body[data-site-design] a { color:var(--ink); text-decoration-color:var(--sky); text-decoration-thickness:2px; text-underline-offset:3px; }
 body[data-site-design] :focus-visible { outline:2px solid var(--sky); outline-offset:3px; }
 body[data-site-design] .kicker, body[data-site-design] .eyebrow, body[data-site-design] .site-eyebrow, body[data-site-design] .preview { font-family:var(--site-body); font-size:11px; font-weight:600; letter-spacing:.18em; text-transform:uppercase; color:var(--ink2); }
 
 /* header: same black bar as the homepage */
 body[data-site-design] .site-header { background:rgba(10,10,11,.92); -webkit-backdrop-filter:blur(14px); backdrop-filter:blur(14px); border-bottom:0; }
-body[data-site-design] .site-brand { color:#fff; font-family:var(--site-heading); font-weight:700; font-variation-settings:"opsz" 11; font-size:20px; letter-spacing:.14em; text-transform:uppercase; text-decoration:none; }
+body[data-site-design] .site-brand { color:#fff; font-family:var(--site-heading); font-weight:600; font-size:20px; letter-spacing:.14em; text-transform:uppercase; text-decoration:none; }
 body[data-site-design] .site-brand img { display:none; }
 body[data-site-design] .site-desktop-nav>a:not(.site-store) { font-family:var(--site-body); font-size:14px; font-weight:600; letter-spacing:.02em; color:#e4e6e9; text-decoration:none; }
 body[data-site-design] .site-desktop-nav>a:not(.site-store):hover { color:#fff; }
@@ -383,7 +383,7 @@ body[data-site-design] .selected-compare { border-radius:4px; background:var(--r
 body[data-site-design] .compare-tray { border-radius:4px; border-color:var(--ink); box-shadow:0 16px 40px rgba(0,0,0,.18); }
 body[data-site-design] .app-card h2 a, body[data-site-design] .app-card h3 a { text-decoration:none; }
 body[data-site-design] .app-card h2 a:hover, body[data-site-design] .app-card h3 a:hover { text-decoration:underline; text-decoration-color:var(--sky); }
-body[data-site-design] .site-app-mark { background:#0a0a0b; border:0; border-radius:2px; color:#fff; font-family:var(--site-heading); font-weight:600; font-variation-settings:"opsz" 11; letter-spacing:.04em; }
+body[data-site-design] .site-app-mark { background:#0a0a0b; border:0; border-radius:2px; color:#fff; font-family:var(--site-heading); font-weight:600; letter-spacing:.04em; }
 body[data-site-design] .card b { font-family:var(--site-heading); font-weight:500; }
 body[data-site-design] thead th { background:var(--sky2); color:var(--ink); font-family:var(--site-body); font-size:11px; letter-spacing:.12em; text-transform:uppercase; }
 body[data-site-design] .claim { border-radius:2px; font-family:var(--site-body); font-weight:600; }
