@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://mealmonster.app/tools/label-portion/">
+  <meta name="description" content="How many calories did you eat? Copy the calories and serving size from your food label, then enter how much you ate. Free and simple.">
+  <meta name="theme-color" content="#0a0a0b">
+  <meta property="og:title" content="How many calories did you eat? · Meal Monster">
+  <meta property="og:description" content="The label says one amount. You ate another. Find your calories in two easy steps.">
+  <meta property="og:image" content="https://mealmonster.app/assets/og.png">
+  <title>How Many Calories Did I Eat? · Meal Monster</title>
+  <link rel="icon" href="/assets/icon.png">
+  <link rel="stylesheet" href="/assets/site-design.css?v=6">
+  <link rel="stylesheet" href="/assets/portion-calculator.css">
+  <script type="module" src="/assets/portion-calculator.js"></script>
+</head>
+<body class="portion-page" data-site-design="1">
+  <a class="site-skip" href="#main">Skip to calculator</a>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-brand" href="/"><img src="/assets/icon.png" width="34" height="34" alt=""><span>Meal Monster</span></a>
+      <nav class="portion-nav" aria-label="Main"><a href="/compare/">Compare apps</a><a href="https://apps.apple.com/app/apple-store/id6787743894?pt=128870776&amp;ct=website&amp;mt=8" class="app-link" rel="noopener">Get the iPhone app <span aria-hidden="true">↗</span></a></nav>
+    </div>
+  </header>
+  <main id="main" class="portion-shell">
+    <section class="portion-hero" aria-labelledby="page-title">
+      <div><p class="tool-eyebrow"><span aria-hidden="true">✦</span> A FREE MEAL MONSTER TOOL</p>
+        <h1 id="page-title">How many calories<br>did you eat?</h1>
+        <p class="hero-description">Copy two numbers from your food package.<br>Then tell us how much you ate.</p>
+        <p class="local-note"><span aria-hidden="true">✓</span> Free to use <span aria-hidden="true">·</span> No sign-up</p>
+      </div>
+      <div class="hero-mascot" aria-hidden="true"><span class="mascot-orbit"></span><img src="/assets/img/monster-neutral.webp" width="190" height="190" alt=""><span class="mascot-note">Let’s check the label.</span></div>
+    </section>
+    <div class="calculator-layout">
+      <section class="input-panel" aria-labelledby="input-title">
+        <div class="panel-heading"><h2 id="input-title">Let’s work it out.</h2></div>
+        <div class="example-row"><button type="button" data-example="cookies" aria-pressed="true">Cookie example</button><button type="button" data-example="turkey" aria-pressed="false">Turkey example</button></div>
+        <div id="portion-form" role="form" aria-label="Package label and portion">
+          <fieldset class="simple-step">
+            <legend><span class="step-number">1</span> Look at your food label</legend>
+            <p class="step-help">Find the lines called <strong>Calories</strong> and <strong>Serving size</strong>.</p>
+            <div class="label-sentence">
+              <div class="sentence-line calorie-line"><label for="calories">The label says</label><span class="sentence-answer"><input id="calories" name="calories" placeholder="140" inputmode="decimal" autocomplete="off" aria-label="Calories on the label" aria-describedby="calories-error"><span>calories</span></span></div>
+              <span class="field-error" id="calories-error"></span>
+              <div class="sentence-line amount-line"><label for="servingAmount">for</label><input id="servingAmount" name="servingAmount" placeholder="2" inputmode="decimal" autocomplete="off" aria-label="Amount beside Serving size" aria-describedby="servingAmount-error"><label class="sr-only" for="servingUnit">Unit on the label</label><select id="servingUnit" name="servingUnit"><option value="item" selected>pieces</option><option value="g">grams (g)</option><option value="oz">ounces (oz)</option><option value="lb">pounds (lb)</option><option value="kg">kilograms (kg)</option><option value="ml">milliliters (mL)</option><option value="l">liters (L)</option><option value="serving">servings</option></select></div>
+              <span class="field-error" id="servingAmount-error"></span>
+            </div>
+            <details class="optional-details" id="more-details"><summary>Add a name, protein, carbs or fat <span>(optional)</span></summary>
+              <div class="field food-field"><label for="foodName">Food name</label><input id="foodName" name="foodName" maxlength="80" autocomplete="off" placeholder="e.g., yogurt"></div>
+              <p class="field-hint">Copy these from the same label. Leave any you don’t know blank.</p>
+              <div class="field-grid nutrient-fields">
+                <div class="field"><label for="protein">Protein (grams)</label><input id="protein" name="protein" placeholder="Leave blank" inputmode="decimal" autocomplete="off" aria-describedby="protein-error"><span class="field-error" id="protein-error"></span></div>
+                <div class="field"><label for="carbs">Carbs (grams)</label><input id="carbs" name="carbs" placeholder="Leave blank" inputmode="decimal" autocomplete="off" aria-describedby="carbs-error"><span class="field-error" id="carbs-error"></span></div>
+                <div class="field"><label for="fat">Fat (grams)</label><input id="fat" name="fat" placeholder="Leave blank" inputmode="decimal" autocomplete="off" aria-describedby="fat-error"><span class="field-error" id="fat-error"></span></div>
+              </div>
+            </details>
+          </fieldset>
+          <fieldset class="simple-step">
+            <legend><span class="step-number">2</span> Tell us how much you ate</legend>
+            <div class="sentence-line amount-line eaten-sentence"><label for="portionAmount">I ate</label><input id="portionAmount" name="portionAmount" placeholder="3" inputmode="decimal" autocomplete="off" aria-label="Amount I ate" aria-describedby="portionAmount-error portion-help"><label class="sr-only" for="portionUnit">Unit for the amount I ate</label><select id="portionUnit" name="portionUnit" aria-describedby="portionUnit-error"><option value="item">pieces</option></select></div>
+            <span class="field-error" id="portionAmount-error"></span><span class="field-error" id="portionUnit-error"></span>
+            <p class="field-hint" id="portion-help">Half a piece? You can type 0.5 or 1/2.</p>
+            <div class="cooking-check">
+              <p class="cooking-title" id="cooking-title">Did you cook this food?</p>
+              <div class="cooking-choices" role="group" aria-labelledby="cooking-title">
+                <label><input id="cooking-no" name="cookingChoice" type="radio" value="no" aria-describedby="cookingChoice-error"> No, I ate it as packaged</label>
+                <label><input id="cooking-yes" name="cookingChoice" type="radio" value="yes" aria-describedby="cookingChoice-error"> Yes</label>
+              </div>
+              <span class="field-error" id="cookingChoice-error"></span>
+              <p class="field-hint" id="no-cook-note" hidden>Use the label numbers for food as it comes in the package.</p>
+              <div id="cooking-fields" hidden>
+                <p class="field-hint">Cooking changes weight. Tell us which numbers you used.</p>
+                <div class="field-grid">
+                  <div class="field"><label for="labelBasis">My label is for food…</label><select id="labelBasis" name="labelBasis" aria-describedby="labelBasis-error"><option value="unknown" selected>Choose one</option><option value="raw">Before cooking</option><option value="prepared">After cooking</option></select><span class="field-error" id="labelBasis-error"></span></div>
+                  <div class="field"><label for="portionBasis">I weighed my food…</label><select id="portionBasis" name="portionBasis" aria-describedby="portionBasis-error"><option value="unknown" selected>Choose one</option><option value="raw">Before cooking</option><option value="prepared">After cooking</option></select><span class="field-error" id="portionBasis-error"></span></div>
+                </div>
+                <p class="field-hint">For a before-cooking label, use a before-cooking weight.</p>
+              </div>
+            </div>
+          </fieldset>
+          <button class="calculate-button" id="calculate" type="button" disabled>Show my calories <span aria-hidden="true">→</span></button>
+          <button class="start-over" type="button" id="clear">Start over</button>
+        </div>
+      </section>
+      <aside class="result-column">
+        <section class="result-panel" aria-labelledby="result-heading">
+          <p class="result-kicker" id="result-heading">YOUR ANSWER</p>
+          <div id="result-content" aria-live="polite" aria-atomic="true" hidden>
+            <h2 id="result-food" hidden></h2>
+            <p class="answer-intro">The amount you ate has about</p>
+            <p class="calorie-total"><span id="result-calories"></span> <span>calories</span></p>
+            <p class="portion-context">For <strong id="result-portion"></strong>.</p>
+            <div class="macro-row" id="macro-results" hidden><div><span>Protein</span><strong id="result-protein"></strong></div><div><span>Carbs</span><strong id="result-carbs"></strong></div><div><span>Fat</span><strong id="result-fat"></strong></div></div>
+            <details class="math-detail"><summary>How did we work that out?</summary><p id="result-servings"></p><p id="result-equation"></p><small id="result-basis"></small></details>
+          </div>
+          <div class="empty-result" id="empty-result"><span aria-hidden="true">↗</span><h2>Your answer will show here.</h2><p id="result-message">Fill in the two steps, then tap “Show my calories.”</p></div>
+          <div class="result-actions" id="result-actions" hidden><button type="button" id="copy-result" disabled>Copy my answer</button><button type="button" id="download-card" disabled>Save as a picture <span aria-hidden="true">↓</span></button></div>
+          <p class="action-status" id="action-status" role="status"></p>
+          <textarea id="copy-fallback" aria-label="Result text to copy" readonly hidden></textarea>
+          <p class="result-footnote">An estimate using the numbers you type. Added oil or fat you drain off can change the answer.</p>
+          <noscript><p>Turn on JavaScript to use this calculator. It divides the amount you ate by the label amount, then multiplies by the label’s calories.</p></noscript>
+        </section>
+        <section class="app-prompt" aria-labelledby="app-prompt-title"><img src="/assets/icon.png" width="40" height="40" alt=""><div><h2 id="app-prompt-title">Keep your meals in one place.</h2><p>Type what you ate in Meal Monster to get a calorie estimate on iPhone.</p><a href="https://apps.apple.com/app/apple-store/id6787743894?pt=128870776&amp;ct=website&amp;mt=8" rel="noopener">Explore Meal Monster <span aria-hidden="true">↗</span></a><small>The app’s personal food tracking requires a subscription.</small></div></section>
+      </aside>
+    </div>
+    <details class="tool-notes"><summary>More help and sources</summary><div class="note-grid"><article><h3>What is a serving size?</h3><p>It’s the amount beside “Serving size” on the package. The calories on the label are for that amount.</p></article><article><h3>Why does cooking matter?</h3><p>Food can gain or lose water when cooked. Use a label that matches how you measured your food.</p></article><article><h3>Is the answer exact?</h3><p>No. Labels use rounded numbers. Use your own package label, and include any oil or other food you added.</p></article></div>
+      <p class="source-note">Read the <a href="https://www.fda.gov/food/nutrition-facts-label/how-understand-and-use-nutrition-facts-label" rel="noopener">FDA guide to food labels</a>. The cookie example uses made-up numbers to show how this works. The turkey example uses the <a href="https://www.butterball.com/products/ground-turkey/all-natural-85-15" rel="noopener">Butterball 85/15 ground turkey label</a>: 230 calories per 4 ounces; checked October 28, 2026. Calculations stay in this browser. They aren’t saved or sent to a food service.</p>
+    </details>
+  </main>
+  <footer class="tool-footer site-footer"><a class="site-brand" href="/"><img src="/assets/icon.png" width="26" height="26" alt="">Meal Monster</a><nav aria-label="Footer"><a href="/compare/">Compare apps</a><a href="/support/">Support</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></nav><p>Label-based estimates · for adults 18+</p></footer>
+</body>
+</html>

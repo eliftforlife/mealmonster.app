@@ -1,0 +1,217 @@
+.portion-page { margin:0; line-height:1.5; }
+.portion-page * { box-sizing:border-box; }
+.portion-nav { display:flex; gap:26px; align-items:center; font-size:13px; font-weight:600; }
+.portion-nav a { text-decoration:none; }
+.portion-nav .app-link { padding:10px 16px; color:var(--slate-dark); background:var(--sky2); border-radius:10px; }
+.portion-shell { max-width:1160px; margin:0 auto; padding:42px 24px 64px; }
+.portion-hero { display:flex; align-items:center; justify-content:space-between; max-width:1030px; margin:0 auto 36px; }
+.tool-eyebrow { margin:0 0 14px; font-size:11px; letter-spacing:.09em; color:var(--slate); font-weight:700; }
+.tool-eyebrow span { margin-right:6px; font-size:16px; }
+.portion-hero h1 { margin:0 0 18px; font-size:clamp(35px,4.8vw,54px); line-height:1.08; letter-spacing:-.04em; }
+.hero-description { margin:0; font-size:17px; line-height:1.6; color:var(--ink2); }
+.local-note { display:flex; align-items:center; gap:10px; margin:19px 0 0; font-size:12px; color:var(--ink2); }
+.local-note>span:first-child { width:19px; height:19px; border-radius:50%; background:var(--sky); color:var(--slate-dark); text-align:center; }
+.hero-mascot { position:relative; display:grid; place-items:center; width:250px; height:240px; margin-right:45px; flex-shrink:0; }
+.hero-mascot img { position:relative; z-index:1; width:182px; height:182px; object-fit:contain; margin-bottom:12px; }
+.mascot-orbit { position:absolute; width:210px; height:210px; border-radius:50%; background:var(--sky2); border:1px solid var(--sky); }
+.mascot-note { z-index:2; position:absolute; bottom:7px; background:var(--surface); border:1px solid var(--line); padding:9px 16px; border-radius:11px; color:var(--slate-dark); font-size:12px; font-weight:600; transform:rotate(-3deg); }
+.calculator-layout { display:grid; grid-template-columns:1.05fr 1fr; gap:26px; align-items:start; }
+.input-panel { padding:28px; border:1px solid var(--line); border-radius:20px; background:var(--surface); }
+.panel-heading { display:flex; gap:10px; align-items:center; justify-content:space-between; margin-bottom:18px; }
+.panel-heading h2 { font-size:21px; line-height:1.25; margin:0; }
+.example-row { display:flex; flex-wrap:wrap; align-items:center; gap:7px; padding-bottom:21px; border-bottom:1px solid var(--line); margin-bottom:20px; }
+.example-row>span { font-size:11px; color:var(--ink2); margin-right:2px; }
+.example-row button { border:1px solid var(--line); background:var(--surface); border-radius:7px; font-size:11px; padding:7px 9px; color:var(--ink2); cursor:pointer; min-height:34px; }
+.example-row button[aria-pressed="true"] { color:var(--slate-dark); background:var(--sky2); border-color:var(--sky); }
+.example-row #clear { margin-left:auto; border-color:transparent; text-decoration:underline; text-underline-offset:3px; }
+.field-grid { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+.field { display:flex; flex-direction:column; min-width:0; }
+.field label { font-size:12px; font-weight:600; color:var(--ink); margin-bottom:7px; display:flex; align-items:center; gap:6px; }
+.field input,.field select { width:100%; min-width:0; min-height:46px; padding:10px 12px; background:var(--canvas); border:1px solid var(--line); border-radius:9px; color:var(--ink); font-size:16px; line-height:1.3; }
+.field input:hover,.field select:hover { border-color:var(--slate); }
+.field input[aria-invalid="true"],.field select[aria-invalid="true"] { border:2px solid var(--slate); background:var(--sky2); }
+.optional,.unit-tag { color:var(--ink2); font-weight:400; font-size:10px; }
+.food-field { margin-bottom:24px; }
+.portion-page fieldset { border:0; padding:0; margin:0 0 24px; min-width:0; }
+.portion-page legend { display:flex; gap:9px; align-items:center; font-size:14px; font-weight:700; color:var(--ink); padding:0; margin-bottom:15px; }
+.step-number { display:inline-grid; place-items:center; width:23px; height:23px; font-size:11px; font-weight:700; color:var(--slate-dark); background:var(--sky2); border-radius:7px; }
+.nutrient-fields { margin-top:15px; row-gap:13px; }
+.field-hint { margin:9px 0 0; font-size:11px; line-height:1.6; }
+.field-error { font-size:11px; line-height:1.5; color:var(--slate-dark); padding-top:5px; }
+.field-error:empty { display:none; }
+.portion-page .basis-fieldset { padding-top:19px; border-top:1px solid var(--line); }
+.basis-fieldset select { font-size:12px; padding-left:9px; }
+.calculate-button { display:flex; justify-content:space-between; align-items:center; border:0; background:var(--slate); color:var(--surface); width:100%; padding:14px 17px; min-height:48px; border-radius:10px; font-weight:600; cursor:pointer; }
+.calculate-button:hover { background:var(--slate-dark); }
+.start-over { display:block; margin:12px auto 0; background:transparent; border:0; padding:8px 13px; font-size:12px; color:var(--ink2); cursor:pointer; text-decoration:underline; text-underline-offset:3px; }
+.result-column { position:sticky; top:97px; }
+.result-panel { border:1px solid var(--sky); padding:30px; border-radius:20px; background:linear-gradient(150deg,var(--sky2),var(--surface) 68%); }
+.result-panel { scroll-margin-top:90px; }
+.result-kicker { font-size:10px; color:var(--slate); letter-spacing:.1em; font-weight:700; margin:0 0 17px; }
+.result-panel h2 { margin:0 0 9px; font-size:23px; line-height:1.25; overflow-wrap:anywhere; }
+.portion-context { display:flex; flex-wrap:wrap; align-items:center; gap:11px; margin:0; font-size:14px; }
+.basis-badge { background:var(--surface); border:1px solid var(--sky); padding:3px 7px; border-radius:5px; font-size:10px; color:var(--slate-dark); }
+.calorie-total { margin:22px 0 0; font-family:var(--site-heading); font-size:21px; line-height:1.15; color:var(--ink); }
+.calorie-total>span:first-child { font-weight:900; font-size:76px; letter-spacing:-.055em; }
+.calorie-total>span:last-child { margin-left:8px; color:var(--ink2); font-size:18px; font-weight:600; }
+.serving-equivalent { margin:7px 0 23px; font-size:13px; }
+.macro-row { display:grid; grid-template-columns:repeat(3,1fr); border-top:1px solid var(--line); border-bottom:1px solid var(--line); padding:18px 0; margin-bottom:20px; }
+.macro-row>div { display:flex; flex-direction:column; gap:4px; padding-left:18px; border-left:1px solid var(--line); }
+.macro-row>div:first-child { padding-left:0; border-left:0; }
+.macro-row span { color:var(--ink2); font-size:11px; }
+.macro-row strong { font-size:20px; color:var(--ink); font-weight:700; }
+.math-detail { padding:16px; background:var(--surface); border:1px solid var(--line); border-radius:10px; }
+.math-detail>span { font-size:9px; color:var(--slate); letter-spacing:.08em; font-weight:700; }
+.math-detail p { margin:7px 0 5px; font-size:13px; font-weight:600; color:var(--ink); overflow-wrap:anywhere; }
+.math-detail small { font-size:10px; color:var(--ink2); }
+.result-actions { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:20px; }
+.result-actions button { min-height:44px; padding:10px; border:1px solid var(--slate); border-radius:9px; color:var(--slate-dark); background:var(--surface); font-size:12px; font-weight:600; cursor:pointer; }
+.result-actions button:first-child { color:var(--surface); background:var(--slate); }
+.result-actions button:hover { box-shadow:0 0 0 1px var(--slate); }
+.result-actions button:disabled { opacity:.45; cursor:not-allowed; box-shadow:none; }
+.action-status { min-height:18px; margin:8px 0 0; font-size:11px; color:var(--slate-dark); }
+.result-footnote { margin:8px 0 0; font-size:10px; line-height:1.7; }
+#copy-fallback { width:100%; min-height:160px; padding:12px; margin-top:10px; border:1px solid var(--line); border-radius:9px; background:var(--surface); font-size:12px; color:var(--ink); resize:vertical; }
+.empty-result { padding:36px 0; min-height:310px; }
+.empty-result>span { display:inline-grid; place-items:center; width:45px; height:45px; border:1px solid var(--sky); background:var(--surface); border-radius:12px; color:var(--slate); margin-bottom:17px; font-size:22px; }
+.empty-result p { max-width:330px; font-size:14px; line-height:1.7; }
+.app-prompt { display:flex; gap:14px; padding:23px 8px; align-items:start; }
+.app-prompt img { width:39px; height:39px; border-radius:11px; margin-top:3px; }
+.app-prompt h2 { font-size:15px; margin:0 0 6px; }
+.app-prompt p { font-size:12px; line-height:1.6; margin:0 0 10px; }
+.app-prompt a { font-size:12px; font-weight:600; text-decoration:none; }
+.app-prompt small { display:block; font-size:10px; color:var(--ink2); margin-top:8px; }
+.tool-notes { padding-top:46px; }
+.tool-notes>h2 { margin:0 0 24px; font-size:25px; }
+.note-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:35px; }
+.note-grid article>span { font-size:11px; color:var(--slate); font-weight:700; }
+.note-grid h3 { font-size:15px; margin:7px 0 10px; }
+.note-grid p { margin:0; font-size:12px; line-height:1.8; }
+.tool-notes .source-note { margin:28px 0 0; border-top:1px solid var(--line); padding:22px 0 0; font-size:10px; line-height:1.8; color:var(--ink2); }
+.tool-footer { max-width:1112px; margin:auto; padding:26px 0 30px; border-top:1px solid var(--line); display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:20px; }
+.tool-footer .site-brand { font-size:15px; }
+.tool-footer .site-brand img { width:26px; height:26px; border-radius:8px; }
+.tool-footer nav { display:flex; flex-wrap:wrap; gap:20px; font-size:11px; }
+.tool-footer nav a { color:var(--ink2); text-decoration:none; }
+.tool-footer>p { flex-basis:100%; font-size:10px; margin:0; }
+@media(max-width:850px) {
+  .hero-mascot { margin-right:0; width:190px; }
+  .calculator-layout { gap:18px; grid-template-columns:1.12fr 1fr; }
+  .input-panel,.result-panel { padding:22px; }
+  .calorie-total>span:first-child { font-size:66px; }
+  .macro-row strong { font-size:17px; }
+  .tool-footer { margin:0 24px; }
+}
+@media(max-width:680px) {
+  .site-header-inner { padding:14px 18px; gap:12px; }
+  .site-brand { font-size:16px; gap:8px; }
+  .site-brand img { width:30px; height:30px; }
+  .portion-nav { gap:8px; font-size:11px; }
+  .portion-nav>a:first-child { display:none; }
+  .portion-nav .app-link { padding:9px 11px; }
+  .portion-shell { padding:30px 16px 36px; }
+  .portion-hero { margin-bottom:27px; }
+  .portion-hero h1 { font-size:38px; max-width:340px; margin-bottom:14px; }
+  .hero-description { font-size:15px; }
+  .hero-mascot { display:none; }
+  .tool-eyebrow { font-size:10px; margin-bottom:13px; }
+  .local-note { font-size:10px; gap:7px; flex-wrap:wrap; margin-top:15px; }
+  .calculator-layout { grid-template-columns:1fr; gap:20px; }
+  .input-panel,.result-panel { padding:22px; border-radius:17px; }
+  .panel-heading h2 { font-size:20px; }
+  .example-row { gap:6px; }
+  .example-row>span { flex-basis:100%; margin-bottom:2px; }
+  .example-row button { min-height:38px; }
+  .result-column { position:static; }
+  .calorie-total>span:first-child { font-size:72px; }
+  .macro-row strong { font-size:clamp(16px,5vw,21px); white-space:nowrap; }
+  .result-panel h2 { font-size:23px; }
+  .note-grid { grid-template-columns:1fr; gap:23px; }
+  .tool-notes { padding-top:25px; }
+  .tool-notes>h2 { font-size:23px; }
+  .tool-footer { margin:0 22px; }
+}
+@media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+
+/* Match the current public paper/Fraunces theme without editing shared CSS. */
+.portion-page .site-header .portion-nav>a:not(.app-link) { color:var(--surface); }
+.portion-page .input-panel,.portion-page .result-panel,.portion-page .math-detail { border-radius:4px; }
+.portion-page :is(input,select,button,.app-link,.basis-badge,.step-number) { border-radius:3px; }
+.portion-page .calorie-total { font-family:var(--site-body); }
+.portion-page .tool-footer { max-width:none; margin:0; padding:28px max(24px,calc((100vw - 1112px)/2)); border:0; }
+
+/* Two plain sentences are the main path. Extra numbers stay optional. */
+.sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+.portion-hero h1 { font-size:clamp(34px,4.2vw,49px); }
+.hero-mascot { height:200px; }
+.hero-mascot img { width:148px; height:148px; }
+.mascot-orbit { width:175px; height:175px; }
+.portion-page .simple-step { margin-bottom:27px; }
+.simple-step legend { font-size:18px; margin-bottom:10px; }
+.step-help { font-size:14px; line-height:1.6; margin:0 0 15px; }
+.step-help strong { color:var(--ink); font-weight:600; }
+.label-sentence { background:var(--canvas); padding:14px; border:1px solid var(--line); border-radius:3px; }
+.sentence-line { display:flex; align-items:center; gap:9px; min-width:0; color:var(--ink); font-size:17px; }
+.sentence-line+.sentence-line { margin-top:11px; }
+.sentence-line label { flex-shrink:0; }
+.sentence-answer { display:inline-flex; align-items:center; gap:9px; }
+.sentence-line input,.sentence-line select { min-height:48px; padding:10px; border:1px solid var(--line); background:var(--surface); color:var(--ink); font-size:17px; min-width:0; }
+.sentence-line input { width:80px; flex:0 0 80px; text-align:center; font-weight:600; }
+.sentence-line input::placeholder { font-weight:400; color:var(--ink2); opacity:1; }
+.sentence-line select { flex:1; width:auto; font-size:15px; }
+.amount-line input { width:68px; flex-basis:68px; }
+.amount-line select { max-width:190px; }
+.calorie-line { flex-wrap:wrap; }
+.calorie-line+.field-error+.amount-line { margin-top:13px; }
+.sentence-line [aria-invalid="true"] { border:2px solid var(--slate); }
+.optional-details { margin-top:15px; padding-top:13px; border-top:1px solid var(--line); }
+.optional-details>summary,.math-detail>summary,.tool-notes>summary { font-family:var(--site-body); font-size:13px; font-weight:600; color:var(--ink); cursor:pointer; }
+.optional-details>summary span { color:var(--ink2); font-weight:400; }
+.optional-details .food-field { margin-top:16px; margin-bottom:10px; }
+.optional-details .nutrient-fields { grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; }
+.optional-details .field label { font-size:11px; }
+.optional-details .field input { padding:10px 8px; }
+.eaten-sentence { padding:10px 0 3px; }
+.cooking-check { border-top:1px solid var(--line); margin-top:20px; padding-top:16px; }
+.cooking-title { margin:0 0 12px; color:var(--ink); font-size:13px; font-weight:600; }
+.cooking-check .field-grid { grid-template-columns:1fr; gap:13px; }
+.cooking-check .field label { font-size:12px; }
+.cooking-check select { font-size:14px; }
+.cooking-check .field-hint { font-size:12px; }
+.cooking-choices { display:flex; gap:9px; flex-wrap:wrap; }
+.cooking-choices label { display:flex; gap:8px; align-items:center; min-height:44px; border:1px solid var(--line); padding:9px 11px; font-size:12px; color:var(--ink); cursor:pointer; background:var(--surface); }
+.cooking-choices label:has(input:checked) { border-color:var(--ink); background:var(--sky2); }
+.cooking-choices input { margin:0; width:16px; height:16px; accent-color:var(--ink); }
+#cooking-fields .field-grid { margin-top:15px; }
+.answer-intro { font-size:15px; margin:0 0 7px; }
+.portion-page .calorie-total { margin:0 0 14px; display:flex; flex-wrap:wrap; align-items:baseline; gap:9px; }
+.calorie-total>span:first-child { font-size:72px; }
+.calorie-total>span:last-child { margin-left:0; font-size:23px; }
+.result-panel #result-food { font-size:18px; margin-bottom:19px; }
+.result-panel .portion-context { display:block; font-size:15px; margin:0 0 25px; }
+.result-panel .portion-context strong { font-weight:600; }
+.result-panel .macro-row { margin-top:23px; }
+.math-detail { margin-top:20px; }
+.math-detail p { font-size:13px; font-weight:400; line-height:1.6; margin-top:13px; }
+.math-detail small { display:block; margin-top:12px; font-size:11px; line-height:1.6; }
+.empty-result { min-height:185px; padding:26px 0; }
+.empty-result h2 { font-size:24px; }
+.tool-notes { border-top:1px solid var(--line); padding-top:22px; margin-top:26px; }
+.tool-notes>summary { font-size:14px; }
+.tool-notes .note-grid { margin-top:23px; }
+@media(max-width:680px) {
+  .portion-hero h1 { font-size:35px; }
+  .panel-heading { align-items:flex-start; flex-wrap:wrap; gap:9px; }
+  .sentence-line { font-size:16px; gap:7px; }
+  .label-sentence { padding:12px; }
+  .sentence-line input { width:73px; flex-basis:73px; }
+  .amount-line input { width:58px; flex-basis:58px; }
+  .sentence-line select { font-size:14px; padding-left:7px; padding-right:4px; }
+  .calorie-line { gap:8px; }
+  .calorie-line>label { flex-basis:100%; }
+  .optional-details .nutrient-fields { grid-template-columns:1fr; }
+  .optional-details .field label { font-size:12px; }
+  .result-panel .calorie-total>span:first-child { font-size:64px; }
+  .result-panel .calorie-total>span:last-child { font-size:21px; }
+  .result-panel #result-food { font-size:18px; }
+}

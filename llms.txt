@@ -34,3 +34,4 @@ Contact: support@mealmonster.app · YouTube: https://www.youtube.com/@mealmonste
 - [Meal logging test corpus](https://mealmonster.app/research/logging-friction/): 630 synthetic inputs across 210 scenarios; comparative observations are pending.
 
 - [Friend-sharing finder](https://mealmonster.app/compare/sharing-with-friends/): 10 selected apps, 60 source-reviewed feature records. No installed-app sharing or permission tests.
+- Package-label portion calculator: https://mealmonster.app/tools/label-portion/ — scales package calories and optional macros to a measured portion, with compatible units and matching preparation states.
