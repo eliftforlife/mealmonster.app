@@ -419,3 +419,65 @@ body[data-site-design] input[type=checkbox], body[data-site-design] input[type=r
 body[data-site-design] :is(main, .content-card, .article, .reading) :is(.kicker, .eyebrow, .site-eyebrow, .preview) { font-family:var(--site-body); font-size:11px; font-weight:600; letter-spacing:.18em; text-transform:uppercase; color:var(--ink2); }
 body[data-site-design] :is(main, .content-card, .article, .reading) :is(.byline, .crumbs, .small, .source-note) { font-family:var(--site-body); }
 html:has(body[data-site-design]) { background:#0a0a0b; }
+
+/* ===== Less text (10-27): chips instead of badge rows, info popovers instead of fine print ===== */
+body[data-site-design] .site-get { color:#fff!important; font-family:var(--site-body); font-size:14px; font-weight:700; letter-spacing:.02em; text-decoration:none; padding:4px 0 3px; border-bottom:2px solid var(--sky); }
+body[data-site-design] .site-mobile-menu .site-get { align-self:start; margin:8px 12px; }
+body[data-site-design] .finder-page { position:relative; }
+
+/* info icon: tap the i, a small note opens under the line */
+body[data-site-design] details.info { display:inline; }
+body[data-site-design] details.info>summary { display:inline-flex; align-items:center; justify-content:center; width:18px; height:18px; margin-left:6px; vertical-align:-3px; border:1px solid var(--ink2); border-radius:50%; color:var(--ink2); font:italic 600 12px/1 var(--site-read); cursor:pointer; list-style:none; }
+body[data-site-design] details.info>summary::-webkit-details-marker { display:none; }
+body[data-site-design] details.info>summary::after { content:none; }
+body[data-site-design] details.info[open]>summary { background:var(--ink); border-color:var(--ink); color:#fff; }
+body[data-site-design] .info-pop { position:absolute; left:0; right:0; z-index:30; margin-top:10px; padding:16px 18px; background:#fff; border:1px solid var(--ink); border-radius:2px; box-shadow:0 18px 40px rgba(0,0,0,.12); }
+body[data-site-design] .info-pop p { margin:0 0 8px; font:400 14px/1.6 var(--site-body)!important; color:var(--ink)!important; }
+body[data-site-design] .info-pop p:last-child { margin:0; }
+body[data-site-design] .info-pop .claim { margin-right:4px; }
+body[data-site-design] .fine-line { margin:6px 0 0; font:400 13px/1.6 var(--site-body); color:var(--ink2); }
+body[data-site-design] .filter-tools details.info>summary { margin-left:-6px; }
+
+/* feature chips on the finder cards (the hidden text stays for screen readers) */
+body[data-site-design] .finder-page .app-card .method-list { display:flex; flex-wrap:wrap; gap:6px; margin:16px 0 4px; padding:0; border:0; }
+body[data-site-design] .finder-page .app-card .method-list>div { display:inline-flex; min-height:0; padding:5px 10px; border:1px solid var(--line); border-radius:2px; background:#fff; }
+body[data-site-design] .finder-page .app-card .method-list dt { margin:0; font:600 12px/1.3 var(--site-body); color:var(--ink2); }
+body[data-site-design] .finder-page .app-card .method-list dd { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; margin:0; }
+body[data-site-design] .finder-page .app-card .method-list>div:has(.claim-yes) { background:#e8f0f7; border-color:#e8f0f7; }
+body[data-site-design] .finder-page .app-card .method-list>div:has(.claim-yes) dt { color:#1f3a55; }
+body[data-site-design] .finder-page .app-card .method-list>div:has(.claim-yes) dt::before { content:"✓ "; }
+body[data-site-design] .finder-page .app-card .method-list>div:has(.claim-no) dt { color:#9a9da3; text-decoration:line-through; }
+body[data-site-design] .claim-no { text-decoration:line-through; }
+body[data-site-design] .finder-page .app-card .app-description { display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; min-height:0; }
+body[data-site-design] .finder-page .app-card .card-details summary { color:var(--ink2); }
+
+/* bottom of the finder */
+body[data-site-design] .method-disclosure { margin-top:40px; padding:18px 20px; }
+body[data-site-design] .method-disclosure>summary { font:600 14px/1.4 var(--site-body); cursor:pointer; }
+body[data-site-design] .more-links { margin-top:40px; }
+body[data-site-design] .more-links h2 { font-size:24px; margin:0 0 8px; }
+body[data-site-design] .guide-links { display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); column-gap:24px; }
+body[data-site-design] .guide-links a { font:500 15px/1.4 var(--site-body); text-decoration:none; }
+body[data-site-design] .guide-links a::after { content:" →"; color:var(--ink2); }
+body[data-site-design] details.info { border:0; border-radius:0; padding:0; margin:0; background:none; }
+body[data-site-design] details.info>summary { padding:0; min-height:0; }
+@media (max-width:700px) {
+  /* one swipeable row of filters instead of a 2x3 block */
+  body[data-site-design] .method-choices { display:flex; flex-wrap:nowrap; overflow-x:auto; gap:6px; margin:0 -18px 12px; padding:0 18px 4px; scrollbar-width:none; }
+  body[data-site-design] .method-choices::-webkit-scrollbar { display:none; }
+  body[data-site-design] .method-choice { flex:none; min-height:40px; padding:8px 14px; }
+  body[data-site-design] .finder-panel { padding:16px 18px; }
+  body[data-site-design] .finder-hero { padding:18px 0 16px; }
+}
+body[data-site-design] .goal-choice { min-height:0!important; flex-direction:row!important; align-items:center!important; gap:10px!important; padding:12px 14px!important; }
+/* info notes open from their own line (works on every page, not only the finder) */
+body[data-site-design] .fine-line, body[data-site-design] .filter-tools { position:relative; }
+body[data-site-design] .info-pop { left:0; right:auto; width:min(560px, calc(100vw - 32px)); }
+body[data-site-design] .filter-tools .info-pop { top:100%; }
+body[data-site-design] .research-shell>.fine-line { margin:-8px 0 28px; }
+body[data-site-design] .table-scroll td:last-child { font-size:13px; color:var(--ink2); }
+body[data-site-design] .reading .method-disclosure { margin:28px 0 0; }
+body[data-site-design] .method-disclosure .sources { margin:12px 0 0; }
+body[data-site-design] :is(main, .content-card, .article, .reading) p.small { font-size:14px; line-height:1.6; color:var(--ink2); }
+body[data-site-design] .filter-tools .info-pop { left:auto; right:0; }
+body[data-site-design] .site-mobile-menu nav>a.site-get { padding:10px 0 4px; margin:6px 12px 8px; min-height:0; }

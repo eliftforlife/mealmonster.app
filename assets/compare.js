@@ -27,7 +27,7 @@ function filter() {
     card.hidden = !show; if (show) visible++;
   }
   for (const button of methodButtons) button.setAttribute('aria-pressed', String(button.dataset.method === method.value));
-  count.textContent = `${visible} of ${cards.length} apps · A–Z, not ranked`;
+  count.textContent = visible === cards.length ? `${visible} apps` : `${visible} of ${cards.length} apps`;
   empty.hidden = visible !== 0;
   const url = new URL(location.href);
   for (const [key, value] of Object.entries({ q: search.value.trim(), method: method.value, free: free.checked ? '1' : '' })) value ? url.searchParams.set(key, value) : url.searchParams.delete(key);
@@ -61,7 +61,7 @@ async function compare() {
     if (apps.some(app => !app)) throw new Error('App record unavailable');
     const dimensions = { text:'Type a meal', voice:'Voice', photo:'Food photo', barcode:'Barcode', freeTracking:'Free basic logging', export:'Data export' };
     const planNames = { subscription: 'Paid', free: 'Free', mixed: 'Plan varies', not_verified: 'Plan unclear', not_applicable: '' };
-    selected.innerHTML = `<div class="section-heading"><h2 id="comparison-title" tabindex="-1">${apps.map(app => escape(app.name)).join(' vs ')}</h2><button type="button" class="quiet-button" data-close-comparison>Close</button></div><p class="small">Publisher-listed features, not measured performance. Unconfirmed does not mean unavailable. Expand Details for the scope and sources.</p><div class="table-scroll" role="region" aria-label="Selected apps" tabindex="0"><table><thead><tr><th scope="col">Feature</th>${apps.map(app => `<th scope="col"><a href="/compare/apps/${escape(app.slug)}/">${escape(app.name)}</a></th>`).join('')}</tr></thead><tbody>${Object.entries(dimensions).map(([key,label]) => `<tr><th scope="row">${label}</th>${apps.map(app => {
+    selected.innerHTML = `<div class="section-heading"><h2 id="comparison-title" tabindex="-1">${apps.map(app => escape(app.name)).join(' vs ')}</h2><button type="button" class="quiet-button" data-close-comparison>Close</button></div><div class="table-scroll" role="region" aria-label="Selected apps" tabindex="0"><table><thead><tr><th scope="col">Feature</th>${apps.map(app => `<th scope="col"><a href="/compare/apps/${escape(app.slug)}/">${escape(app.name)}</a></th>`).join('')}</tr></thead><tbody>${Object.entries(dimensions).map(([key,label]) => `<tr><th scope="row">${label}</th>${apps.map(app => {
       const claim = app.claims[key];
       const source = app.sources.find(source => source.id === claim.source);
       const label = claim.value === 'yes' ? `Listed${planNames[claim.plan] ? ` · ${planNames[claim.plan]}` : ''}` : claim.value === 'no' ? 'Not offered' : 'Unconfirmed';

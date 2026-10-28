@@ -37,7 +37,7 @@ export function setupSharing(document) {
     groups.documented.hidden = false;
     for (const key of ['check', 'different']) groups[key].hidden = buckets[key] === 0;
     document.querySelector('#different-title').textContent = `Other apps (${buckets.different})`;
-    count.textContent = request.error ? 'All apps are shown while you adjust your choices.' : browsing ? `${cards.length} apps · A–Z, not ranked` : `Matches: ${buckets.documented} · Needs confirmation: ${buckets.check} · Other apps: ${buckets.different}. Based on published descriptions, not app tests.`;
+    count.textContent = request.error ? 'All apps are shown while you adjust your choices.' : browsing ? `${cards.length} apps` : `${buckets.documented} match · ${buckets.check} to confirm · ${buckets.different} other`;
   }
   function change(event) {
     // A diary contains meal details: keep the visible controls compatible.
