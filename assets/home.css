@@ -9,6 +9,7 @@
 }
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--black); color: var(--ink); font-family: var(--sans); -webkit-font-smoothing: antialiased; }
+html { background: var(--black); }   /* iOS overscroll above the black header shows the html background (was white) */
 img { max-width: 100%; height: auto; display: block; }
 a { color: inherit; }
 main { overflow-x: hidden; }
