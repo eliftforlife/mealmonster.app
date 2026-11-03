@@ -1,5 +1,5 @@
 /* Shared website design, after page styles. Rounded brand headings, calm UI. */
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Inter:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800;900&display=swap");
 :root {
   --ink:#243044; --ink2:#5e697a; --slate:#405d82; --slate-dark:#294464;
   --sky:#dce7f2; --sky2:#edf3fa; --line:#e2e7ed; --canvas:#f6f8fb;
@@ -481,3 +481,74 @@ body[data-site-design] .method-disclosure .sources { margin:12px 0 0; }
 body[data-site-design] :is(main, .content-card, .article, .reading) p.small { font-size:14px; line-height:1.6; color:var(--ink2); }
 body[data-site-design] .filter-tools .info-pop { left:auto; right:0; }
 body[data-site-design] .site-mobile-menu nav>a.site-get { padding:10px 0 4px; margin:6px 12px 8px; min-height:0; }
+
+
+/* ===== App theme (11-03, Elijah: "the site doesn't look like the app"). Replaces the 10-27 book theme above with the iPhone app's own tokens
+   (constants/designSystem.ts): #F1F3F5 screens, white rounded cards with soft shadows, graphite #2D2E31 ink + pill buttons, Nunito everywhere,
+   slate #505A66 + sky #A9C7E0 accents. Same selectors as the book theme, later in the file, so it wins on every page. ===== */
+:root {
+  --ink:#2d2e31; --ink2:#606166; --slate:#505a66; --slate-dark:#2d2e31; --sky:#a9c7e0; --sky2:#e8f0f7;
+  --line:#e2e5e9; --canvas:#f1f3f5; --surface:#fff; --ink-secondary:#606166; --research-surface:#fff; --research-muted:#e6e9ed;
+  --site-heading:"Nunito",ui-rounded,"SF Pro Rounded",system-ui,sans-serif; --site-body:"Nunito",ui-rounded,"SF Pro Rounded",system-ui,sans-serif;
+  --site-read:"Nunito",ui-rounded,"SF Pro Rounded",system-ui,sans-serif;
+}
+body[data-site-design] h1 { font-weight:900; letter-spacing:-.03em; line-height:1.06; }
+body[data-site-design] h2, body[data-site-design] h3 { font-weight:800; letter-spacing:-.02em; }
+body[data-site-design] a { color:var(--ink); text-decoration-color:var(--sky); text-decoration-thickness:3px; }
+body[data-site-design] :is(.kicker, .eyebrow, .site-eyebrow, .preview), body[data-site-design] :is(main, .content-card, .article, .reading) :is(.kicker, .eyebrow, .site-eyebrow, .preview) {
+  display:inline-block; font-family:var(--site-body); font-size:12px; font-weight:800; letter-spacing:.04em; text-transform:none; color:var(--slate);
+  background:var(--sky2); border-radius:999px; padding:5px 11px; }
+/* header + footer: white glass like the app's headers */
+body[data-site-design] .site-header { background:rgba(255,255,255,.88); -webkit-backdrop-filter:blur(16px); backdrop-filter:blur(16px); border-bottom:1px solid var(--line); }
+body[data-site-design] .site-brand { color:var(--ink); font-weight:900; font-size:19px; letter-spacing:-.01em; text-transform:none; }
+body[data-site-design] .site-brand img { display:block; width:32px; height:32px; border-radius:9px; box-shadow:0 3px 10px rgba(0,0,0,.06); }
+body[data-site-design] .site-desktop-nav>a:not(.site-store) { font-size:15px; font-weight:700; letter-spacing:0; color:var(--ink2); }
+body[data-site-design] .site-desktop-nav>a:not(.site-store):hover, body[data-site-design] .site-desktop-nav a[aria-current] { color:var(--ink); }
+body[data-site-design] .site-desktop-nav a[aria-current] { box-shadow:inset 0 -3px 0 var(--sky); }
+body[data-site-design] .site-mobile-menu summary { color:var(--ink); font-weight:800; }
+body[data-site-design] .site-mobile-menu nav { background:#fff; border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(0,0,0,.12); }
+body[data-site-design] .site-mobile-menu nav>a:not(.site-store) { color:var(--ink); font-weight:700; }
+body[data-site-design] .site-mobile-menu nav a[aria-current] { box-shadow:inset 3px 0 0 var(--sky); }
+body[data-site-design] .site-footer { background:#fff; border-top:1px solid var(--line); color:var(--ink2); }
+body[data-site-design] .site-footer p, body[data-site-design] .site-footer-notes p, body[data-site-design] .site-footer-notes small { color:var(--ink2); }
+body[data-site-design] .site-footer a { color:var(--ink2); }
+body[data-site-design] .site-footer a:hover { color:var(--ink); }
+body[data-site-design] .site-footer nav>span { color:var(--ink); font-size:13px; font-weight:800; letter-spacing:0; text-transform:none; }
+body[data-site-design] .site-footer-notes { border-top-color:var(--line); }
+/* reading text: the app's rounded sans */
+body[data-site-design] .reading p, body[data-site-design] .reading li, body[data-site-design] .article p, body[data-site-design] .article li,
+body[data-site-design] .content-card p, body[data-site-design] .content-card li, body[data-site-design] .intro, body[data-site-design] .finder-hero .intro {
+  font-family:var(--site-read); font-weight:500; font-size:17px; line-height:1.65; }
+body[data-site-design] .reading h2, body[data-site-design] .article h2, body[data-site-design] .content-card h2 { border-top:0; padding-top:0; }
+body[data-site-design] .reading blockquote { background:#fff; border-left:4px solid var(--sky); border-radius:0 16px 16px 0; font-style:normal; }
+body[data-site-design] .disclosure { background:var(--sky2); border:0; border-radius:16px; }
+body[data-site-design] .stat-panel { background:var(--ink); border-radius:20px; }
+/* legal + support: a white card on the off-white screen */
+body[data-site-design] .content-card { background:#fff; border:1px solid var(--line); border-radius:24px; box-shadow:0 3px 10px rgba(0,0,0,.06); padding:32px clamp(20px,4vw,44px); }
+body[data-site-design] .content-card h1 { border-bottom:0; padding-bottom:0; margin-bottom:20px; }
+/* cards, panels, tables: rounded white with the app's soft shadow */
+body[data-site-design] .finder-panel, body[data-site-design] .app-card, body[data-site-design] .card, body[data-site-design] .case-card,
+body[data-site-design] .table-scroll, body[data-site-design] .other-apps, body[data-site-design] .method-disclosure, body[data-site-design] .filters,
+body[data-site-design] .recorder-grid fieldset { border:1px solid var(--line); border-radius:20px; box-shadow:0 3px 10px rgba(0,0,0,.06); background:#fff; }
+body[data-site-design] .selected-compare { border-radius:20px; background:#fff; }
+body[data-site-design] .compare-tray { border-radius:20px; border-color:var(--line); }
+body[data-site-design] .site-app-mark { background:var(--ink); border-radius:10px; font-weight:900; letter-spacing:0; }
+body[data-site-design] .card b { font-weight:800; }
+body[data-site-design] thead th { background:#e6e9ed; font-size:12px; font-weight:800; letter-spacing:.04em; text-transform:none; }
+body[data-site-design] .claim { border-radius:999px; font-weight:700; }
+body[data-site-design] .claim-yes { background:var(--sky2); color:var(--slate); }
+/* controls: graphite pills, like the app's buttons and chips */
+body[data-site-design] .primary, body[data-site-design] .button { background:var(--ink); border-color:var(--ink); border-radius:999px; font-weight:800; letter-spacing:0; }
+body[data-site-design] .primary:hover, body[data-site-design] .button:hover { background:#45464a; }
+body[data-site-design] .secondary { border-radius:999px; border-color:var(--line); font-weight:800; }
+body[data-site-design] :is(.method-choice, .pick, .selection-chip) { border-radius:999px; }
+body[data-site-design] .method-choice[aria-pressed=true] { background:var(--ink); border-color:var(--ink); }
+body[data-site-design] .goal-choice { border-radius:16px; }
+body[data-site-design] .goal-choice:has(input:checked) { border-color:var(--ink); box-shadow:inset 0 0 0 1px var(--ink); }
+body[data-site-design] .compare-switch a[aria-current] { box-shadow:inset 0 -3px 0 var(--ink); }
+body[data-site-design] input[type=search], body[data-site-design] input[type=text], body[data-site-design] select, body[data-site-design] textarea { border-radius:14px; border-color:var(--line); background:#fff; }
+body[data-site-design] input[type=checkbox], body[data-site-design] input[type=radio] { accent-color:var(--ink); }
+@media (max-width:700px) { body[data-site-design] .site-brand { font-size:17px; letter-spacing:0; } }
+body[data-site-design] .site-get { color:#fff!important; background:var(--ink); border:0; border-radius:999px; padding:9px 16px!important; font-family:var(--site-body); font-size:15px; font-weight:800; letter-spacing:0; }
+body[data-site-design] .site-get:hover { opacity:.88; }
+body[data-site-design] .site-mobile-menu nav>a.site-get { display:inline-block; padding:10px 16px!important; margin:8px 12px; }
