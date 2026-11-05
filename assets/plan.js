@@ -40,6 +40,45 @@
   ];
   const sections = [...new Set(S.map(s => s[0]))];
   let i = 0;
+  // ---- slide images (11-04 test: men's age + goal photos; GPT Images, fictional adults, sky-blue studio). Screens without a set stay text-only.
+  // 11-05: every option screen with people or food has photos (body type matches the goal; Elijah 11-05). g = m_/w_ prefix; food is shared.
+  const g = MEN ? 'm_' : 'w_';
+  const IMG = {
+    age: { '18–29': g + 'age_18', '30–39': g + 'age_30', '40–49': g + 'age_40', '50+': g + 'age_50' },
+    goal: MEN ? { 'Build muscle': 'm_goal_muscle', 'Gain weight': 'm_goal_gain', 'Lose fat': 'm_goal_fat', 'Get fitter': 'm_goal_fitter', 'Eat better': 'm_goal_eat' }
+      : { 'Lose fat': 'w_goal_fat', 'Get toned': 'w_goal_toned', 'Build strength': 'w_goal_strength', 'Get fitter': 'w_goal_fitter', 'Eat better': 'w_goal_eat' },
+    place: { 'At home, no equipment': g + 'place_home', 'At home with dumbbells': g + 'place_dumbbells', 'At a gym': g + 'place_gym' },
+    level: { 'New to it': g + 'level_new', 'I train sometimes': g + 'level_some', 'I train regularly': g + 'level_regular' },
+    day: { 'Mostly sitting': g + 'day_desk', 'On my feet a lot': g + 'day_feet', 'Physical work': g + 'day_physical' },
+    diet: { 'No preference': 'diet_any', 'Vegetarian': 'diet_vegetarian', 'Vegan': 'diet_vegan', 'Low-carb': 'diet_lowcarb', 'Dairy-free': 'diet_dairyfree' },
+  };
+  const HDR = { pushups: g + 'pushups', stairs: g + 'stairs', protein: 'protein_foods' };   // one photo above the options
+  // ---- body picker for the focus + limits screens: each option lights these areas; tapping an area toggles the first option that owns it
+  const AREAS = MEN ? { 'Chest & arms': ['chest', 'arms'], 'Back & shoulders': ['upback', 'shoulders'], 'Core': ['abs', 'lowback'], 'Legs': ['legs', 'glutes'] }
+    : { 'Arms & shoulders': ['arms', 'shoulders'], 'Core': ['abs'], 'Legs & glutes': ['legs', 'glutes'], 'Back & posture': ['upback', 'lowback'] };
+  const LIMITS = { 'Knees': ['legs'], 'Lower back': ['lowback'], 'Shoulders': ['shoulders'] };
+  const MAPS = { focus: AREAS, limits: LIMITS };
+  const ALL = ['chest', 'arms', 'shoulders', 'abs', 'upback', 'lowback', 'legs', 'glutes'];
+  function bodyMap(sel, map = AREAS) {
+    const lit = new Set(sel.includes('Full body') ? ALL : sel.flatMap(o => map[o] || []));
+    const r = (a, d) => `<path data-area="${a}" class="pb-r${lit.has(a) ? ' on' : ''}" d="${d}"/>`;
+    const fig = (x, back) => {
+      // O = ellipse path (mirrored pair when m), N = neutral part
+      const O = (dx, cy, rx, ry) => `M${x + dx - rx} ${cy}a${rx} ${ry} 0 1 0 ${2 * rx} 0a${rx} ${ry} 0 1 0 -${2 * rx} 0z`;
+      const P = (dx, cy, rx, ry) => O(-dx, cy, rx, ry) + O(dx, cy, rx, ry);
+      const N = d => `<path class="pb-n" d="${d}"/>`;
+      const abs = [90, 104, 118].map(y => P(7, y + 6, 6, 6.5)).join('');
+      return N(O(0, 22, 14, 17)) + N(`M${x - 7} 36h14v14h-14z`) + N(P(44, 176, 6, 8)) + N(P(11, 296, 9, 6)) +
+        r('shoulders', P(31, 64, 13, 12)) +
+        (back ? r('upback', P(13, 80, 14, 23)) : r('chest', P(12, 72, 13, 13))) +
+        (back ? r('lowback', P(7, 118, 7, 16)) : r('abs', abs)) +
+        r('arms', P(38, 96, 8, 20) + P(41, 140, 7, 22)) +
+        (back ? r('glutes', P(11, 150, 12, 14)) : N(`M${x - 22} 136h44l-4 22h-36z`)) +
+        r('legs', P(11, back ? 193 : 190, 11, back ? 28 : 31) + P(11, 255, 8.5, 29)) +
+        `<text class="pb-t" x="${x}" y="318">${back ? 'Back' : 'Front'}</text>`;
+    };
+    return `<svg class="pq-body" viewBox="0 0 300 320" role="img" aria-label="Body map of the areas you picked">${fig(80, false)}${fig(220, true)}</svg>`;
+  }
   // ---- exercise library: [name, place min (0 none,1 dumbbells,2 gym), areas, stress tags, kind]
   const X = [
     ['Push-ups', 0, ['Chest & arms', 'Arms & shoulders', 'Full body'], ['shoulders'], 'push'], ['Incline push-ups', 0, ['Chest & arms', 'Arms & shoulders', 'Full body'], [], 'push'],
@@ -109,8 +148,9 @@
   const back = () => i ? `<button type="button" class="pq-back" aria-label="Back">‹ Back</button>` : '';
   function render() {
     const [sec, type, key, title, sub, opts, ex] = S[i]; ex || 0; let body = '';
-    if (type === 'one') body = `<div class="pq-opts">${opts.map(o => `<button type="button" class="pq-o${A[key] === o ? ' on' : ''}" data-v="${E(o)}">${E(o)}</button>`).join('')}</div>`;
-    else if (type === 'many') body = `<div class="pq-opts">${opts.map(o => `<button type="button" class="pq-o pq-m${(A[key] || []).includes(o) ? ' on' : ''}" data-v="${E(o)}"><span class="pq-ck"></span>${E(o)}</button>`).join('')}</div><button type="button" class="pq-next"${(A[key] || []).length ? '' : ' disabled'}>Continue</button>`;
+    if (type === 'one' && IMG[key]) body = `<div class="pq-pics${opts.length === 3 ? ' rows' : opts.length % 2 ? ' odd' : ''}">${opts.map(o => `<button type="button" class="pq-pic${A[key] === o ? ' on' : ''}" data-v="${E(o)}"><img src="/assets/img/plan/${IMG[key][o]}.webp" alt="" width="300" height="300"><span>${E(o)}</span></button>`).join('')}</div>`;
+    else if (type === 'one') body = (HDR[key] ? `<img class="pq-hdr" src="/assets/img/plan/${HDR[key]}.webp" alt="" width="600" height="600">` : '') + `<div class="pq-opts">${opts.map(o => `<button type="button" class="pq-o${A[key] === o ? ' on' : ''}" data-v="${E(o)}">${E(o)}</button>`).join('')}</div>`;
+    else if (type === 'many') body = (MAPS[key] ? bodyMap(A[key] || [], MAPS[key]) : '') +`<div class="pq-opts">${opts.map(o => `<button type="button" class="pq-o pq-m${(A[key] || []).includes(o) ? ' on' : ''}" data-v="${E(o)}"><span class="pq-ck"></span>${E(o)}</button>`).join('')}</div><button type="button" class="pq-next"${(A[key] || []).length ? '' : ' disabled'}>Continue</button>`;
     else if (type === 'info') body = `${S[i][6]?.art ? `<img class="pq-art" src="/assets/img/${S[i][6].art}.webp" alt="" width="220" height="220">` : ''}<button type="button" class="pq-next">Continue</button>`;
     else if (type === 'height') body = `<div class="pq-units"><button type="button" data-u="in" class="${A._u !== 'cm' ? 'on' : ''}">ft / in</button><button type="button" data-u="cm" class="${A._u === 'cm' ? 'on' : ''}">cm</button></div>` +
       (A._u === 'cm' ? `<div class="pq-num"><input id="pq-cm" inputmode="numeric" placeholder="${MEN ? 178 : 165}" value="${A.height?.cm ? Math.round(A.height.cm) : ''}"><span>cm</span></div>`
@@ -124,10 +164,16 @@
   }
   const next = () => { i = Math.min(S.length - 1, i + 1); render(); };
   root.addEventListener('click', e => {
+    const ar = e.target.closest('[data-area]');
+    const mk = S[i][2];
+    if (ar && MAPS[mk]) {   // tap a body area: toggle the option that owns it ('Full body' / 'None' off first)
+      const M = MAPS[mk], o = Object.keys(M).find(k => M[k].includes(ar.dataset.area)); if (!o) return;
+      let v = (A[mk] || []).filter(x => x !== 'Full body' && x !== 'None'); v = v.includes(o) ? v.filter(x => x !== o) : [...v, o]; A[mk] = v; return render();
+    }
     const b = e.target.closest('button'); if (!b) return; const [, type, key] = S[i];
     if (b.classList.contains('pq-back')) { i = Math.max(0, i - 1); return render(); }
     if (b.dataset.u) { if (type === 'height') A._u = b.dataset.u; else A._w = b.dataset.u; return render(); }
-    if (b.classList.contains('pq-o') && type === 'one') { A[key] = b.dataset.v; b.classList.add('on'); return setTimeout(next, 180); }
+    if ((b.classList.contains('pq-o') || b.classList.contains('pq-pic')) && type === 'one') { A[key] = b.dataset.v; b.classList.add('on'); return setTimeout(next, 180); }
     if (b.classList.contains('pq-o') && type === 'many') {
       let v = A[key] || [], o = b.dataset.v;
       if (o === 'None' || o === 'Just consistency') v = v.includes(o) ? [] : [o]; else v = v.includes(o) ? v.filter(x => x !== o) : [...v.filter(x => x !== 'None' && x !== 'Just consistency'), o];

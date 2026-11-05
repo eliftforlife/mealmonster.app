@@ -47,6 +47,31 @@ button { font: inherit; color: inherit; cursor: pointer; -webkit-tap-highlight-c
 .pq-o.on .pq-ck { border-color: var(--ink); background: var(--ink); }
 .pq-o.on .pq-ck::after { content: ""; width: 10px; height: 6px; border: solid #fff; border-width: 0 0 2.5px 2.5px; transform: translate(0, -1px) rotate(-45deg); }
 
+/* photo options (11-04 test) */
+.pq-pics { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 4px; }
+.pq-pic { position: relative; display: grid; padding: 0; overflow: hidden; border: 3px solid transparent; border-radius: 20px; background: var(--sky);
+  transition: border-color .15s, transform .1s; }
+.pq-pic img { width: 100%; aspect-ratio: 1; height: auto; object-fit: cover; }
+.pq-pic span { padding: 10px 8px 12px; background: var(--surface); font-weight: 800; font-size: 16px; line-height: 1.2; }
+.pq-pic:active { transform: scale(.985); }
+.pq-pic.on { border-color: var(--ink); }
+.pq-pic.on span { background: var(--ice); }
+.pq-pics.odd .pq-pic:last-child { grid-column: 1 / -1; }
+.pq-pics.odd .pq-pic:last-child img { aspect-ratio: 2.2; }
+/* 3 options: one row each, photo left (11-05) */
+.pq-pics.rows { grid-template-columns: 1fr; }
+.pq-pics.rows .pq-pic { grid-template-columns: 112px 1fr; align-items: center; }
+.pq-pics.rows .pq-pic img { width: 112px; height: 112px; }
+.pq-pics.rows .pq-pic span { height: 100%; display: flex; align-items: center; padding: 0 16px; font-size: 18px; text-align: left; }
+/* one photo above the options */
+.pq-hdr { justify-self: center; width: 100%; max-width: 380px; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 22px; }
+/* body map on the focus screen */
+.pq-body { justify-self: center; width: min(100%, 300px); height: auto; }
+.pq-body .pb-n { fill: var(--muted); }
+.pq-body .pb-r { fill: var(--muted); stroke: var(--surface); stroke-width: 2; cursor: pointer; transition: fill .2s; }
+.pq-body .pb-r.on { fill: #5b8fc7; }
+.pq-body .pb-t { fill: var(--ink3); font: 800 13px var(--font); text-anchor: middle; }
+
 .pq-next { width: 100%; min-height: 56px; margin-top: 4px; border: 0; border-radius: 999px; background: var(--ink); color: #fff; font-weight: 900; font-size: 17px; transition: opacity .15s; }
 .pq-next:disabled { opacity: .3; cursor: default; }
 .pq-art { justify-self: center; width: min(52vw, 210px); filter: drop-shadow(0 14px 18px rgba(52, 59, 68, .2)); }
