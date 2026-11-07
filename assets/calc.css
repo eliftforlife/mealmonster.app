@@ -1,5 +1,6 @@
 /* free calculators + protein pages (11-06). Matches the app: off-white page, white rounded cards, sky-blue accent. */
-.calc-page { background: #f1f3f5; color: #1b232c; }
+html:has(.calc-page) { background: #f1f3f5; }
+.calc-page { background: #f1f3f5; color: #1b232c; margin: 0; }
 .c-shell { max-width: 760px; margin: 0 auto; padding: 28px 16px 56px; display: grid; gap: 22px; }
 .c-crumbs { font-size: 14px; color: #5a6470; margin: 0; } .c-crumbs a { color: inherit; }
 .c-shell h1 { font-size: clamp(32px, 7vw, 46px); line-height: 1.08; letter-spacing: -.02em; margin: 6px 0 10px; }

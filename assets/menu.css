@@ -1,0 +1,64 @@
+/* Fast food ranked by protein (11-06). Black and white; blue only marks the top of a list and the dial. */
+.m-head { display: flex; align-items: center; gap: 16px; }
+.m-head h1 { min-width: 0; }
+.m-logo { height: 52px; width: auto; max-width: 150px; flex: none; }
+.m-tabs { display: flex; gap: 22px; overflow-x: auto; border-bottom: 1px solid var(--line); scrollbar-width: none; margin-bottom: 4px; }
+.m-tabs::-webkit-scrollbar { display: none; }
+.m-tabs button { font: 600 15px/1 var(--mono-font); padding: 12px 0 11px; border: 0; border-bottom: 2px solid transparent; margin-bottom: -1px; background: none; color: var(--mut); cursor: pointer; white-space: nowrap; -webkit-tap-highlight-color: transparent; }
+.m-tabs button.on { color: var(--ink); border-bottom-color: var(--ink); }
+.m-tabs.sort button { font-size: 14px; }
+.m-chart { border-top: 0; padding-top: 0; min-width: 0; }
+.m-rows { display: grid; counter-reset: rank; min-width: 0; grid-template-columns: minmax(0, 1fr); }
+.m-row { display: grid; grid-template-columns: 30px minmax(0, 1fr) auto; gap: 5px 8px; align-items: center; padding: 13px 0; border-bottom: 1px solid var(--line); color: inherit; text-decoration: none !important; }
+.m-row[hidden] { display: none; }
+.m-row::before { counter-increment: rank; content: counter(rank); grid-row: 1 / 3; color: var(--mut); font-size: 14px; font-variant-numeric: tabular-nums; }
+.m-n { font-weight: 600; font-size: 16px; line-height: 1.3; min-width: 0; }
+.m-n small { display: block; font-weight: 400; font-size: 13px; color: var(--mut); }
+.m-b { grid-column: 2; grid-row: 2; height: 8px; background: var(--alt); }
+.m-b i { display: block; height: 100%; background: var(--ink); }
+.m-rows > .m-row:nth-child(-n+3) .m-b i { background: var(--blue); }
+.m-v { grid-column: 3; grid-row: 1 / 3; text-align: right; font-variant-numeric: tabular-nums; min-width: 72px; }
+.m-v b { display: block; font-size: 21px; font-weight: 700; letter-spacing: -.02em; }
+.m-v em { display: block; font-style: normal; font-size: 13px; color: var(--mut); white-space: nowrap; }
+.m-row:hover .m-n { color: var(--blue); }
+.m-src { margin-top: 14px; }
+.m-chains { display: grid; grid-template-columns: minmax(0, 1fr); }
+.m-chain { display: grid; grid-template-columns: 88px minmax(0, 1fr) auto; gap: 14px; align-items: center; padding: 18px 0; border-bottom: 1px solid var(--line); color: inherit; text-decoration: none !important; }
+.m-chain img { height: 40px; width: 80px; object-fit: contain; object-position: left center; }
+.m-chain div { min-width: 0; }
+.m-chain b { font-size: 19px; letter-spacing: -.015em; display: block; } .m-chain span { display: block; color: var(--mut); font-size: 14px; }
+.m-chain::after { content: "\2192"; font-size: 20px; color: var(--mut); } .m-chain:hover b, .m-chain:hover::after { color: var(--blue); }
+.m-item { display: grid; grid-template-columns: minmax(0, 260px) minmax(0, 1fr); gap: 28px; align-items: center; }
+.m-dial { margin: 0; text-align: center; }
+.m-dial svg { display: block; width: 100%; max-width: 260px; margin: 0 auto; }
+.m-track, .m-fill { fill: none; stroke-width: 14; } .m-track { stroke: var(--line); } .m-fill { stroke: var(--blue); }
+.m-needle { transform-origin: 110px 112px; transform: rotate(var(--a)); } .m-needle line { stroke: var(--ink); stroke-width: 4; } .m-needle circle { fill: var(--ink); }
+.m-dial figcaption b { display: block; font-size: 40px; line-height: 1.1; letter-spacing: -.03em; } .m-dial figcaption span { font-size: 14px; color: var(--mut); }
+@media (prefers-reduced-motion: no-preference) { .m-needle { animation: m-swing .9s cubic-bezier(.2, 1.3, .4, 1) both; } @keyframes m-swing { from { transform: rotate(-90deg); } } }
+.m-tiles { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 20px; }
+.m-tiles div { border-bottom: 1px solid var(--line); padding: 12px 0; min-width: 0; }
+.m-tiles b { display: block; font-size: 24px; letter-spacing: -.02em; font-variant-numeric: tabular-nums; } .m-tiles span { font-size: 13px; color: var(--mut); }
+.m-back { margin: 10px 0 0; font-weight: 700; }
+@media (max-width: 620px) { .m-item { grid-template-columns: 1fr; } .m-head { align-items: flex-start; } .m-logo { height: 38px; max-width: 84px; margin-top: 6px; } .m-chain { grid-template-columns: 62px minmax(0, 1fr) auto; } .m-chain img { width: 56px; } }
+/* 11-07: chains with no free logo file get their name set in type */
+.m-word { display: block; font-weight: 800; font-size: 17px; line-height: 1.05; letter-spacing: -.02em; color: var(--ink); width: 80px; }
+.h-logos .m-word { width: auto; font-size: 20px; }
+@media (max-width: 620px) { .m-chain .m-word { width: 56px; font-size: 13px; } }
+
+/* 11-07: chain grid on /menu/ (logo, name, the #1 item) */
+.m-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+.m-tile { display: flex; flex-direction: column; gap: 4px; padding: 20px 18px 18px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); color: inherit; text-decoration: none !important; min-width: 0; }
+.m-tile:hover { background: var(--alt); } .m-tile:hover > b { color: var(--blue); }
+.m-tl { height: 48px; display: flex; align-items: center; margin-bottom: 10px; }
+.m-tl img { height: 44px; width: auto; max-width: 140px; object-fit: contain; object-position: left center; }
+.m-tl .m-word { width: auto; font-size: 22px; }
+.m-tile > b { font-size: 18px; letter-spacing: -.015em; }
+.m-tt { font-size: 14px; color: #333; line-height: 1.35; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.m-tn { font-size: 13px; color: var(--mut); font-variant-numeric: tabular-nums; } .m-tn b { color: var(--ink); }
+@media (max-width: 860px) { .m-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 420px) { .m-tile { padding: 16px 12px 14px; } .m-tl img { height: 34px; max-width: 110px; } .m-tl .m-word { font-size: 18px; } .m-tile > b { font-size: 16px; } }
+/* home logo row: even cells */
+.h-logos { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px 20px; align-items: center; }
+.h-logos a { display: flex; align-items: center; height: 44px; }
+.h-logos img { height: 36px !important; max-width: 100% !important; object-fit: contain; object-position: left center; }
+.m-tile > b.m-dup { visibility: hidden; }

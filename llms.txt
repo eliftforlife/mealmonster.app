@@ -18,6 +18,25 @@
 
 The earlier transformation studies, lessons study, and two associated guides are temporarily withdrawn while supporting source records and calculations are reviewed. Do not cite their previous counts, percentages, rankings, or study-based recommendations as verified Meal Monster research. See https://mealmonster.app/research/ for current evidence status.
 
+## Fast food ranked by protein
+Every food item at 15 US chains, ranked by grams of protein, with calories, carbs, fat and protein per 100 calories. Numbers come from each chain's published nutrition information; every page names its source and date. Numbers only, no judgment of any food.
+- [All chains](https://mealmonster.app/menu/)
+- [McDonald's foods ranked by protein](https://mealmonster.app/menu/mcdonalds/)
+- [Starbucks foods ranked by protein](https://mealmonster.app/menu/starbucks/)
+- [Chick-fil-A foods ranked by protein](https://mealmonster.app/menu/chick-fil-a/)
+- [Taco Bell foods ranked by protein](https://mealmonster.app/menu/taco-bell/)
+- [Wendy's foods ranked by protein](https://mealmonster.app/menu/wendys/)
+- [Dunkin' foods ranked by protein](https://mealmonster.app/menu/dunkin/)
+- [Burger King foods ranked by protein](https://mealmonster.app/menu/burger-king/)
+- [Subway foods ranked by protein](https://mealmonster.app/menu/subway/)
+- [Popeyes foods ranked by protein](https://mealmonster.app/menu/popeyes/)
+- [Panda Express foods ranked by protein](https://mealmonster.app/menu/panda-express/)
+- [KFC foods ranked by protein](https://mealmonster.app/menu/kfc/)
+- [Sonic foods ranked by protein](https://mealmonster.app/menu/sonic/)
+- [Arby's foods ranked by protein](https://mealmonster.app/menu/arbys/)
+- [Jack in the Box foods ranked by protein](https://mealmonster.app/menu/jack-in-the-box/)
+- [Panera Bread foods ranked by protein](https://mealmonster.app/menu/panera/)
+
 ## Pages
 - [Home](https://mealmonster.app/): what Meal Monster is, how logging works, FAQ
 - [Support](https://mealmonster.app/support/)

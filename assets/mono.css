@@ -1,0 +1,65 @@
+/* Mono (11-06, Elijah: black and white, Meal Monster blue on about 10% of things, no pills, not AI-looking).
+   Loaded last on every page except the quiz. One font stack, hairlines instead of shadows, square-ish corners, plain text tabs. */
+:root { --ink: #0a0a0a; --mut: #666; --line: #e6e6e6; --alt: #f7f7f7; --blue: #2f7fc1;
+  --mono-font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --site-heading: var(--mono-font); --site-body: var(--mono-font); --site-read: var(--mono-font); --canvas: #fff; --sky: #e6e6e6; --sky2: #f7f7f7; }
+html, body, body[data-site-design], .calc-page, html:has(.calc-page) { background: #fff !important; color: var(--ink); font-family: var(--mono-font); }
+body { -webkit-font-smoothing: antialiased; }
+h1, h2, h3, body[data-site-design] h1, body[data-site-design] h2, body[data-site-design] h3 { font-family: var(--mono-font) !important; color: var(--ink); font-weight: 700; letter-spacing: -.022em; }
+h1 { font-weight: 700; letter-spacing: -.028em; }
+a { color: inherit; }
+main a:not([class]), .c-crumbs a, .c-card p a, .c-fine a { text-decoration: underline; text-decoration-color: #bbb; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+main a:not([class]):hover, .c-card p a:hover { text-decoration-color: var(--blue); color: var(--blue); }
+
+/* header */
+.gh { --gh-ink: #0a0a0a; --gh-dim: #333; --gh-bg: rgba(255, 255, 255, .92); --gh-line: #e6e6e6; --gh-cta: #0a0a0a; }
+.gh-brand { font-family: var(--mono-font) !important; font-weight: 700 !important; letter-spacing: -.02em; }
+.gh-cta { border-radius: 7px !important; height: 32px; }
+.gh-links a { font-size: 14px; color: #333; }
+.gh-links a[aria-current] { color: #0a0a0a; font-weight: 600; box-shadow: 0 2px 0 var(--blue); }
+
+/* page frame */
+.c-shell { max-width: 920px; padding: 44px 20px 72px; gap: 28px; grid-template-columns: minmax(0, 1fr); }
+.c-shell h1 { font-size: clamp(34px, 6vw, 56px); line-height: 1.04; margin: 8px 0 12px; }
+.c-crumbs { font-size: 13px; color: var(--mut); }
+.c-lede { font-size: 19px; line-height: 1.45; color: #333; max-width: 62ch; }
+.c-card { background: #fff; border: 0; border-top: 1px solid var(--ink); border-radius: 0; box-shadow: none; padding: 22px 0 8px; }
+.c-card h2 { font-size: 24px; margin-bottom: 12px; }
+.c-card p, .c-card li { color: #333; }
+.c-fine { color: var(--mut); }
+
+/* tables */
+.c-t { font-size: 16px; } .c-t th { background: none; color: var(--mut); font-weight: 600; font-size: 13px; border-bottom: 1px solid var(--ink); padding: 8px 8px 8px 0; }
+.c-t td { border-bottom: 1px solid var(--line); padding: 12px 8px 12px 0; }
+.c-t td a { text-decoration: none; font-weight: 600; } .c-t td a:hover { color: var(--blue); }
+
+/* no pills: lists of links are plain rows */
+.c-links { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 0 28px; }
+.c-links li { border-bottom: 1px solid var(--line); }
+.c-links a { background: none; border-radius: 0; padding: 14px 0; color: var(--ink); font-weight: 600; text-decoration: none !important; display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.c-links a::after { content: "\2192"; color: var(--mut); font-weight: 400; } .c-links a:hover { color: var(--blue); } .c-links a:hover::after { color: var(--blue); }
+
+/* forms */
+.c-f input, .c-f select, input[type=text], input[type=number], select { border-radius: 7px; border-color: #bbb; }
+.c-f input:focus, .c-f select:focus { outline: 2px solid var(--blue); outline-offset: 0; border-color: var(--blue); }
+.c-go, .c-btn, body[data-site-design] .primary, body[data-site-design] .button { background: var(--ink) !important; color: #fff !important; border-radius: 7px !important; box-shadow: none !important; font-weight: 600; }
+.c-go:hover, .c-btn:hover { background: #2a2a2a !important; }
+.c-res { gap: 0; } .c-stat { background: none; border-radius: 0; border-bottom: 1px solid var(--line); padding: 14px 0; }
+.c-stat.big { background: none; } .c-stat.big b { color: var(--ink); font-size: clamp(48px, 10vw, 72px); letter-spacing: -.03em; } .c-stat b { font-size: 28px; }
+.c-faq details { border-top: 1px solid var(--line); } .c-faq summary { font-weight: 600; }
+.c-app { border-top: 1px solid var(--ink); gap: 16px; } .c-app img { border-radius: 10px; }
+
+/* leftovers from the older pages */
+body[data-site-design] .secondary, .pill, .claim, .chip, .selection-chip, .pick, .method-choice { border-radius: 7px !important; box-shadow: none !important; }
+.site-header { background: #fff !important; }
+.c-foot { border-top: 1px solid var(--line); text-align: left; max-width: 920px; margin: 0 auto; padding: 24px 20px 40px; display: flex; flex-wrap: wrap; gap: 8px 22px; }
+.c-foot a { margin: 0; color: var(--mut); text-decoration: none; } .c-foot a:hover { color: var(--ink); }
+
+/* older tool and compare pages */
+select, input[type=search], .c-f select, .c-f input { border-radius: 7px !important; }
+.tool-eyebrow, .kicker { display: none !important; }
+.finder-panel, .app-card, .case-card, .table-scroll, .selected-compare, .filters, .disclosure, .stat-panel { border-radius: 8px !important; box-shadow: none !important; }
+.app-card { border-color: var(--line) !important; } .app-card.is-selected { border-color: var(--ink) !important; box-shadow: 0 0 0 1px var(--ink) !important; }
+.method-choice[aria-pressed="true"], .method-choice.is-active { background: var(--ink) !important; color: #fff !important; }
+.claim { background: none !important; border: 1px solid var(--line); } .compare-switch { border-radius: 8px !important; }
+.input-panel, .result-panel, .tool-hero { border-radius: 0 !important; box-shadow: none !important; }
