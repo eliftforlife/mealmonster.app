@@ -21,6 +21,14 @@
     let h = '';
     if (tool === 'bmr') h = stat(fmt(round(bmr, 10)), 'calories a day at complete rest', true) + stat(fmt(round(tdee, 10)), 'calories a day with your activity') + note('BMR is what your body burns before you move. It isn&#39;t a target to eat.');
     if (tool === 'tdee') h = stat(fmt(round(tdee, 10)), 'calories a day to stay about the same weight', true) + stat(fmt(round(bmr, 10)), 'BMR, at complete rest') + note('This is a starting estimate. Track your weight for 2 to 3 weeks and adjust from what actually happens.');
+    if (tool === 'maint') { // 11-09: maintenance calorie calculator. Same limits: 18+ only, floors on the slow-loss line, no deficit for a low BMI.
+      const lv = [[1.2, 'Mostly sitting'], [1.375, 'Light activity'], [1.55, 'Moderate activity'], [1.725, 'Very active']];
+      const tbl = `<table class="c-t c-maint"><thead><tr><th>Activity</th><th>Maintenance</th></tr></thead><tbody>${lv.map(([a, n]) => `<tr${a === act ? ' class="on"' : ''}><td>${n}${a === act ? ' (you)' : ''}</td><td>${fmt(round(bmr * a, 10))}</td></tr>`).join('')}</tbody></table>`;
+      const lose = round(tdee - 250, 10);
+      h = stat(fmt(round(tdee, 10)), 'calories a day to stay about the same weight', true) + stat(fmt(round(bmr, 10)), 'BMR, at complete rest') + tbl
+        + (low ? note(lowMsg) : lose < floor ? note(`A slow-loss number would go below ${fmt(floor)} calories, the lowest this calculator shows, so we don&#39;t show one. A doctor or dietitian can help you set a goal.`) : stat(fmt(lose), 'calories a day to lose slowly (about 250 under maintenance)'))
+        + note('This is a starting estimate. Eat close to it for 2 to 3 weeks and adjust from what your weight actually does.');
+    }
     if (tool === 'deficit') {
       if (low) h = stat(fmt(round(tdee, 10)), 'calories a day to stay about the same weight', true) + note(lowMsg);
       else { const d = parseFloat(val('rate')) || 250, t = tdee - d, cal = Math.max(floor, round(t, 10)), capped = t < floor;

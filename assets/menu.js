@@ -3,7 +3,8 @@
   const box = document.getElementById('m-rows');
   if (!box) return;
   const rows = [...box.querySelectorAll('.m-row')], chips = document.querySelectorAll('[data-f]'), sorts = document.querySelectorAll('[data-s]');
-  let f = '', s = 'pro';
+  const on0 = document.querySelector('[data-s].on');
+  let f = '', s = on0 ? on0.dataset.s : 'pro';   // 11-09: the ranked lists start on protein per 100 calories or fewest calories
   const by = { ppc: (r) => -parseFloat(r.dataset.ppc), pro: (r) => -parseFloat(r.dataset.pro), cal: (r) => parseFloat(r.dataset.cal) };
   const unit = { ppc: 'ppc', pro: 'pro', cal: 'cal' };
   const on = (list, b) => list.forEach((x) => x.classList.toggle('on', x === b));
