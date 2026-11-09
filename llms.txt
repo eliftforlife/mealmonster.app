@@ -62,3 +62,8 @@ Contact: support@mealmonster.app · YouTube: https://www.youtube.com/@mealmonste
 - Protein calculator: https://mealmonster.app/tools/protein-calculator/
 - Macro calculator: https://mealmonster.app/tools/macro-calculator/
 - Protein in foods: https://mealmonster.app/protein/
+- Maintenance calorie calculator: https://mealmonster.app/tools/maintenance-calorie-calculator/
+- High-protein foods ranked by protein per 100 calories (USDA data): https://mealmonster.app/high-protein-foods/
+- High-protein snacks: https://mealmonster.app/high-protein-snacks/
+- High-protein fast food, top 100 items across 17 chains: https://mealmonster.app/high-protein-fast-food/
+- Low-calorie Starbucks drinks (Grande, 150 calories or fewer): https://mealmonster.app/low-calorie-starbucks-drinks/
