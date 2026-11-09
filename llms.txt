@@ -57,7 +57,7 @@ Contact: support@mealmonster.app · YouTube: https://www.youtube.com/@mealmonste
 - Which weight should I log?: https://mealmonster.app/tools/which-weight-to-log/ — a guided check of explicit label wording against raw, cooked, prepared, drained or as-packaged measurements; unclear cases are flagged, with no cooking factors or calorie estimates.
 
 - BMR calculator: https://mealmonster.app/tools/bmr-calculator/
-- TDEE and maintenance calorie calculator: https://mealmonster.app/tools/tdee-calculator/
+- TDEE calculator: https://mealmonster.app/tools/tdee-calculator/
 - Calorie deficit calculator: https://mealmonster.app/tools/calorie-deficit-calculator/
 - Protein calculator: https://mealmonster.app/tools/protein-calculator/
 - Macro calculator: https://mealmonster.app/tools/macro-calculator/
