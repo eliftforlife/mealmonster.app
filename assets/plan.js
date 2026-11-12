@@ -6,7 +6,7 @@
 (() => {
   const root = document.getElementById('plan'); if (!root) return;
   const FOR = root.dataset.for === 'women' ? 'women' : 'men', MEN = FOR === 'men';
-  const APP = 'https://apps.apple.com/app/id6787743894?ct=plan_' + FOR;
+  const APP = 'https://apps.apple.com/app/apple-store/id6787743894?pt=128870776&ct=plan_' + FOR + '&mt=8';
   const E = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   const A = {};   // answers
   // ---- screens: [section, type, key, title, sub, options|null, extra]
